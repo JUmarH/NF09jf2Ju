@@ -14,86 +14,245 @@ const slideData = [
         </div>
       </div>
     `,
-    speakerNote: "Selamat datang di Modul 1."
+    speakerNote: "Selamat pagi dan selamat datang di Modul 1 Workshop Perpustakaan FISIPOL UGM."
   },
   {
     id: 2,
-    title: "Seni Mencari: Boolean Logic",
-    subtitle: "AND, OR, NOT",
+    title: "Akses E-Resources UGM",
+    subtitle: "Gerbang Utama Literatur Ilmiah",
     layout: "standard",
     content: `
       <div class="slide-layout-standard">
         <ul style="font-size:1.5rem; line-height:2;">
-          <li><strong style="color:var(--accent-sky);">AND:</strong> Mempersempit hasil (A &cap; B)</li>
-          <li><strong style="color:var(--accent-cyan);">OR:</strong> Memperluas hasil (A &cup; B)</li>
-          <li><strong style="color:var(--accent-purple);">NOT:</strong> Mengecualikan kata kunci tertentu</li>
-          <li><strong>Gunakan Tanda Kutip (")</strong> untuk frasa persis (Exact Match).</li>
+          <li>Akses jaringan database jurnal internasional via <strong>lib.ugm.ac.id</strong></li>
+          <li>Gunakan kredensial <strong>SSO UGM</strong> untuk masuk.</li>
+          <li><strong style="color:var(--accent-cyan);">EZProxy (Remote Access)</strong> memungkinkan akses jurnal dari rumah seolah Anda berada di jaringan UGM.</li>
         </ul>
       </div>
     `,
-    speakerNote: "Boolean logic adalah fundamental sebelum kita beralih ke AI."
+    speakerNote: "Ingat untuk selalu login menggunakan SSO UGM."
   },
   {
     id: 3,
-    title: "Penelusuran Semantik AI",
-    subtitle: "Mencari Makna, Bukan Sekadar Kata Kunci",
+    title: "OPAC (Online Public Access Catalog)",
+    subtitle: "Katalog Cetak & Skripsi",
     layout: "standard",
     content: `
       <div class="slide-layout-standard" style="display:flex; gap:2rem;">
         <div style="flex:1;">
-          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Consensus AI</h3>
-          <p>Mencari klaim dan konsensus dari paper ilmiah (Yes/No/Maybe). Sangat cocok untuk pertanyaan spesifik.</p>
+          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Buku Cetak</h3>
+          <p>Gunakan OPAC untuk mencari ketersediaan fisik buku di rak Perpustakaan FISIPOL maupun perpustakaan pusat.</p>
         </div>
         <div style="flex:1;">
-          <h3 style="color:var(--accent-purple); margin-bottom:1rem;">SciSpace (Typeset.io)</h3>
-          <p>Mencari artikel dengan ringkasan AI instan, membaca PDF interaktif dengan Copilot.</p>
+          <h3 style="color:var(--accent-purple); margin-bottom:1rem;">Tugas Akhir / ETD</h3>
+          <p>Skripsi dan Tesis cetak dapat dicari melalui sistem ini sebelum meminta akses ke pustakawan.</p>
         </div>
       </div>
     `,
-    speakerNote: "AI Semantic Search memahami konteks kalimat."
+    speakerNote: "Tidak semua ada di digital, buku cetak tetap relevan."
   },
   {
     id: 4,
-    title: "Etika UGM: AI Sebagai Stimulator",
-    subtitle: "Hal. 8 - Panduan UGM 2025",
+    title: "Navigasi Summon 2.0",
+    subtitle: "Mesin Pencari 'One-Search' UGM",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="background:rgba(59,130,246,0.1); border-left:5px solid #3b82f6; padding:2rem; border-radius:0.5rem;">
+        <h3 style="color:#3b82f6; margin-bottom:1rem;">Apa itu Summon?</h3>
+        <p style="font-size:1.2rem;">Summon adalah <em>Discovery Service</em>. Seperti Google, tapi khusus untuk <strong>seluruh database jurnal yang dilanggan UGM</strong> secara bersamaan.</p>
+        <p style="margin-top:1rem; color:var(--text-muted);">Sangat berguna untuk pencarian awal yang meluas sebelum mengerucut ke database spesifik seperti Scopus atau JSTOR.</p>
+      </div>
+    `,
+    speakerNote: "Summon sangat menghemat waktu pencarian awal."
+  },
+  {
+    id: 5,
+    title: "Boolean Logic",
+    subtitle: "Dasar Pencarian Terstruktur",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard">
+        <p style="font-size:1.3rem; margin-bottom: 2rem;">Sebelum mengenal AI, Anda WAJIB menguasai logika dasar pencarian pangkalan data.</p>
+        <ul style="font-size:1.5rem; line-height:2;">
+          <li><strong style="color:var(--accent-sky);">AND:</strong> Mempersempit hasil (A &cap; B) - Kedua syarat harus terpenuhi.</li>
+          <li><strong style="color:var(--accent-cyan);">OR:</strong> Memperluas hasil (A &cup; B) - Salah satu atau keduanya terpenuhi. (Sangat berguna untuk sinonim)</li>
+          <li><strong style="color:#ef4444;">NOT:</strong> Mengecualikan kata kunci tertentu dari hasil.</li>
+        </ul>
+      </div>
+    `,
+    speakerNote: "Boolean logic adalah fundamental."
+  },
+  {
+    id: 6,
+    title: "Visualisasi AND & OR",
+    subtitle: "Contoh Kasus Query",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="display:flex; gap:2rem;">
+        <div style="flex:1;">
+          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Contoh AND</h3>
+          <p><code>Democracy AND Digital</code></p>
+          <p style="color:var(--text-muted);">Hanya memunculkan artikel yang mengandung KEDUA kata tersebut.</p>
+        </div>
+        <div style="flex:1;">
+          <h3 style="color:var(--accent-cyan); margin-bottom:1rem;">Contoh OR</h3>
+          <p><code>Democracy OR Autocracy</code></p>
+          <p style="color:var(--text-muted);">Memunculkan artikel yang membahas salah satu dari topik tersebut.</p>
+        </div>
+      </div>
+    `,
+    speakerNote: "Gunakan OR untuk padanan kata yang maknanya sama."
+  },
+  {
+    id: 7,
+    title: "Wildcard & Truncation",
+    subtitle: "Memotong Akar Kata (?, *)",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard">
+        <ul style="font-size:1.4rem; line-height:2;">
+          <li><strong style="color:#facc15;">Truncation (*) :</strong> Mengambil semua variasi akhiran kata.<br>
+          <em>Contoh:</em> <code>Democra*</code> &rarr; Democracy, Democratic, Democratization</li>
+          <li><strong style="color:#fb923c;">Wildcard (?) :</strong> Mengganti satu karakter huruf.<br>
+          <em>Contoh:</em> <code>Wom?n</code> &rarr; Woman, Women</li>
+        </ul>
+      </div>
+    `,
+    speakerNote: "Sangat berguna untuk mengatasi perbedaan ejaan bahasa Inggris (British vs US)."
+  },
+  {
+    id: 8,
+    title: "Exact Phrase Search",
+    subtitle: 'Kekuatan Tanda Kutip (" ")',
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="background:rgba(16, 185, 129, 0.1); border-left:5px solid #10b981; padding:2rem; border-radius:0.5rem;">
+        <h3 style="color:#10b981; margin-bottom:1rem;">Menghindari Pemecahan Frasa</h3>
+        <p style="font-size:1.2rem;">Tanpa tanda kutip, mencari <code>Artificial Intelligence</code> akan mencari kata <em>Artificial</em> DAN kata <em>Intelligence</em> yang mungkin terpisah jauh.</p>
+        <p style="margin-top:1rem; color:var(--text-muted);">Gunakan <strong>"Artificial Intelligence"</strong> agar sistem mencari tepat frasa dua kata tersebut secara berdampingan.</p>
+      </div>
+    `,
+    speakerNote: "Tanda kutip wajib digunakan untuk konsep teori."
+  },
+  {
+    id: 9,
+    title: "Era Penelusuran Semantik AI",
+    subtitle: "Mencari Makna Konteks, Bukan Hanya Kata",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard">
+        <p style="font-size:1.3rem; margin-bottom: 2rem;">Pencarian tradisional bergantung pada kecocokan <em>Keyword</em>. AI Semantic Search memahami <strong>konteks kalimat dan klaim</strong>.</p>
+        <ul style="font-size:1.5rem; line-height:2;">
+          <li>AI membaca jutaan isi paper dan mengekstrak klaim kesimpulan.</li>
+          <li>Anda dapat mengetik pertanyaan utuh (Natural Language) alih-alih merumuskan Query yang rumit.</li>
+          <li>Hasil yang disajikan berupa <em>Summary</em> (Ringkasan) ber-sitasi, bukan sekadar daftar tautan.</li>
+        </ul>
+      </div>
+    `,
+    speakerNote: "AI mengubah cara kita melakukan literatur review."
+  },
+  {
+    id: 10,
+    title: "Consensus AI",
+    subtitle: "Menemukan Klaim Berbasis Bukti",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="display:flex; gap:2rem;">
+        <div style="flex:1;">
+          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Fungsi Utama</h3>
+          <p>Mencari meteran konsensus (Yes/No/Maybe) dari para ilmuwan terhadap pertanyaan spesifik Anda.</p>
+        </div>
+        <div style="flex:1;">
+          <h3 style="color:var(--accent-purple); margin-bottom:1rem;">Skenario Penggunaan</h3>
+          <p>Ketik: <em>"Apakah media sosial meningkatkan polarisasi politik?"</em> - Consensus akan menampilkan persentase setuju/tidak berdasarkan paper yang terindeks.</p>
+        </div>
+      </div>
+    `,
+    speakerNote: "Consensus sangat bagus untuk membuktikan hipotesis awal."
+  },
+  {
+    id: 11,
+    title: "SciSpace (Typeset.io)",
+    subtitle: "Asisten Membaca PDF (Copilot)",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard">
+        <ul style="font-size:1.5rem; line-height:2;">
+          <li>Memiliki fitur pencarian literatur dengan ekstraksi tabel wawasan (*insights*).</li>
+          <li><strong>Copilot AI:</strong> Unggah PDF jurnal yang sulit dibaca. Blok rumus matematika, metodologi, atau tabel, dan minta AI menjelaskannya dengan bahasa sederhana.</li>
+          <li>Bisa merangkum hasil temuan (*findings*) secara instan.</li>
+        </ul>
+      </div>
+    `,
+    speakerNote: "SciSpace sangat populer di kalangan mahasiswa tingkat akhir."
+  },
+  {
+    id: 12,
+    title: "Elicit.org",
+    subtitle: "Sintesis dan Matrik Literatur",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="background:rgba(236, 72, 153, 0.1); border-left:5px solid #ec4899; padding:2rem; border-radius:0.5rem;">
+        <h3 style="color:#ec4899; margin-bottom:1rem;">Membangun Matrik Literatur Otomatis</h3>
+        <p style="font-size:1.2rem;">Elicit dapat membaca kumpulan PDF dan mengekstrak variabel tertentu (misal: Jumlah Sampel, Metodologi, Limitasi Riset) ke dalam tabel yang rapi.</p>
+        <p style="margin-top:1rem; color:var(--text-muted);">Sangat membantu dalam bab Tinjauan Pustaka (*Literature Review*) untuk menemukan celah penelitian (*Research Gap*).</p>
+      </div>
+    `,
+    speakerNote: "Elicit membantu mempercepat proses reviu sistematik."
+  },
+  {
+    id: 13,
+    title: "Pemetaan Jejaring Paper",
+    subtitle: "Connected Papers & Litmaps",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard">
+        <ul style="font-size:1.5rem; line-height:2;">
+          <li><strong style="color:var(--accent-cyan);">Connected Papers:</strong> Temukan satu *paper* relevan (bibit), dan sistem akan membuat graf visual jurnal lain yang sitasinya saling terkait.</li>
+          <li><strong style="color:var(--accent-sky);">Litmaps:</strong> Melacak evolusi sebuah topik (Linimasa Waktu) dari *paper* klasik ke riset paling modern.</li>
+          <li>Berfungsi meminimalisir kemungkinan Anda terlewat jurnal penting pendahulu (*Prior Art*).</li>
+        </ul>
+      </div>
+    `,
+    speakerNote: "Gunakan untuk memastikan referensi utama Anda tidak ketinggalan zaman."
+  },
+  {
+    id: 14,
+    title: "Etika UGM: Skeptisisme Sehat",
+    subtitle: "Hal. 8 - Panduan Etika Akademik UGM 2025",
     layout: "standard",
     content: `
       <div class="slide-layout-standard" style="background:rgba(239,68,68,0.1); border-left:5px solid #ef4444; padding:2rem; border-radius:0.5rem;">
-        <h3 style="color:#ef4444; margin-bottom:1rem;">Skeptisisme Sehat</h3>
-        <p style="font-size:1.2rem;">Menurut Panduan Etika Akademik UGM 2025, AI harus diposisikan sebagai <strong>Asisten Pemantik Ide (Stimulator)</strong>, BUKAN otoritas rujukan akhir.</p>
-        <p style="margin-top:1rem; color:var(--text-muted);">Selalu verifikasi referensi yang diberikan oleh AI ke database asli (Scopus/ProQuest) untuk menghindari Halusinasi Referensi.</p>
+        <h3 style="color:#ef4444; margin-bottom:1rem;">Bahaya Halusinasi AI</h3>
+        <p style="font-size:1.2rem;">AI Generatif dapat menciptakan kutipan atau bahkan judul jurnal fiktif (*Halusinasi Referensi*) yang terlihat sangat meyakinkan.</p>
+        <p style="margin-top:1rem; color:var(--text-muted);">Selalu verifikasi silang (Cross-check) nama penulis, DOIs, dan judul jurnal yang diberikan AI ke database asli (Scopus / portal resmi) sebelum mencantumkannya di skripsi.</p>
       </div>
     `,
-    speakerNote: "Ini poin paling penting. Jangan telan mentah-mentah hasil AI."
+    speakerNote: "Halusinasi AI adalah musuh terbesar integritas akademik."
+  },
+  {
+    id: 15,
+    title: "Posisi AI: Asisten Pemantik Ide",
+    subtitle: "AI Bukan Otoritas Final",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="display:flex; gap:2rem;">
+        <div style="flex:1;">
+          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Benar (Etis)</h3>
+          <p>Menggunakan AI untuk <em>brainstorming</em> kata kunci, memahami konsep rumit, dan menemukan jurnal relevan secara cepat.</p>
+        </div>
+        <div style="flex:1;">
+          <h3 style="color:#ef4444; margin-bottom:1rem;">Salah (Pelanggaran)</h3>
+          <p>Mengklaim sintesis teks yang digenerasi AI sebagai tulisan pribadi secara utuh dan menjadikannya sebagai rujukan definitif.</p>
+        </div>
+      </div>
+    `,
+    speakerNote: "Gunakan AI dengan bijak dan bermartabat."
   }
 ];
 
 // 2. STATE MANAGEMENT
 let currentSlideIndex = 0;
-
-// Mock node dataset for VOSviewer widgets (Slides 18, 19, 20)
-const vosNodes = [
-  { id: 1, label: "Artificial Intelligence", x: 50, y: 55, size: 45, cluster: 1, year: 2021.5, density: 0.9 },
-  { id: 2, label: "Higher Education", x: 30, y: 40, size: 35, cluster: 1, year: 2022.0, density: 0.8 },
-  { id: 3, label: "ChatGPT", x: 65, y: 35, size: 28, cluster: 2, year: 2024.2, density: 0.75 },
-  { id: 4, label: "Academic Integrity", x: 75, y: 60, size: 25, cluster: 2, year: 2023.8, density: 0.65 },
-  { id: 5, label: "Policy & Governance", x: 45, y: 80, size: 30, cluster: 3, year: 2022.5, density: 0.6 },
-  { id: 6, label: "Online Learning", x: 20, y: 70, size: 22, cluster: 4, year: 2020.1, density: 0.4 },
-  { id: 7, label: "Machine Learning", x: 60, y: 75, size: 20, cluster: 3, year: 2021.8, density: 0.5 }
-];
-
-const vosLines = [
-  { from: 1, to: 2 }, { from: 1, to: 3 }, { from: 1, to: 5 }, { from: 1, to: 7 },
-  { from: 3, to: 4 }, { from: 2, to: 6 }, { from: 5, to: 7 }, { from: 2, to: 5 }
-];
-
-// Color palettes for VOSviewer tabs
-const clusterColors = {
-  1: "#3b82f6", // Blue
-  2: "#a855f7", // Purple
-  3: "#10b981", // Emerald
-  4: "#f43f5e"  // Rose
-};
 
 // 3. ENGINE INITIALIZATION
 document.addEventListener("DOMContentLoaded", () => {
@@ -110,27 +269,25 @@ function renderSlide(index) {
   const slide = slideData[index];
   const wrapper = document.getElementById("active-slide-wrapper");
   
-  // Clean wrapper
   wrapper.innerHTML = "";
   
-  // 3.1 Inject Web Navigation Mockup (like Eric Kunto style) if layout is not cover
+  // 3.1 Inject Web Navigation khusus Modul 1
   let headerHtml = "";
   if (slide.layout !== "cover") {
     headerHtml = `
       <header class="mock-web-header">
         <div class="mock-web-brand"><i class="fa-solid fa-book-open-reader"></i> <span>DIGILIB <strong>FISIPOL</strong></span></div>
         <nav class="mock-web-nav">
-          <button class="mock-web-link ${slide.id <= 5 ? 'active' : ''}" onclick="jumpToSlide(1)">Home</button>
-          <button class="mock-web-link ${slide.id > 5 && slide.id <= 9 ? 'active' : ''}" onclick="jumpToSlide(6)">1. Query Scopus</button>
-          <button class="mock-web-link ${slide.id > 9 && slide.id <= 14 ? 'active' : ''}" onclick="jumpToSlide(10)">2. OpenRefine</button>
-          <button class="mock-web-link ${slide.id > 14 && slide.id <= 21 ? 'active' : ''}" onclick="jumpToSlide(15)">3. VOSviewer</button>
-          <button class="mock-web-link ${slide.id > 21 ? 'active' : ''}" onclick="jumpToSlide(22)">4. AI & Gap</button>
+          <button class="mock-web-link ${slide.id === 1 ? 'active' : ''}" onclick="jumpToSlide(1)">Home</button>
+          <button class="mock-web-link ${slide.id > 1 && slide.id <= 4 ? 'active' : ''}" onclick="jumpToSlide(2)">1. Akses E-Resources</button>
+          <button class="mock-web-link ${slide.id > 4 && slide.id <= 8 ? 'active' : ''}" onclick="jumpToSlide(5)">2. Boolean Logic</button>
+          <button class="mock-web-link ${slide.id > 8 && slide.id <= 13 ? 'active' : ''}" onclick="jumpToSlide(9)">3. Semantic AI</button>
+          <button class="mock-web-link ${slide.id > 13 ? 'active' : ''}" onclick="jumpToSlide(14)">4. Etika Pencarian</button>
         </nav>
       </header>
     `;
   }
   
-  // Set structure inside wrapper based on layout
   wrapper.innerHTML = `
     ${headerHtml}
     
@@ -149,16 +306,11 @@ function renderSlide(index) {
     </div>
   `;
   
-  // Update indicator
   document.getElementById("slide-indicator").innerText = `${slide.id} / ${slideData.length}`;
   
-  // Update Presenter Notes
-  document.getElementById("discussion-note-box").innerHTML = slide.discussionNote || "â€”";
-  document.getElementById("speaker-note-box").innerHTML = slide.speakerNote || "â€”";
-  document.getElementById("reference-note-box").innerHTML = slide.referenceNote || "â€”";
-  
-  // Trigger layout specific widgets activation
-  activateWidgets(slide.id);
+  document.getElementById("discussion-note-box").innerHTML = slide.discussionNote || "A,??";
+  document.getElementById("speaker-note-box").innerHTML = slide.speakerNote || "A,??";
+  document.getElementById("reference-note-box").innerHTML = slide.referenceNote || "A,??";
   
   // Highlight active item in drawer
   document.querySelectorAll(".drawer-item").forEach((el, idx) => {
@@ -168,22 +320,14 @@ function renderSlide(index) {
 }
 
 function setupEventHandlers() {
-  // Navigation buttons
   document.getElementById("btn-prev").addEventListener("click", prevSlide);
   document.getElementById("btn-next").addEventListener("click", nextSlide);
-  
-  // Drawer Panel toggle
   document.getElementById("btn-drawer-toggle").addEventListener("click", toggleSlideDrawer);
   document.getElementById("btn-close-drawer").addEventListener("click", toggleSlideDrawer);
-  
-  // Notes Sidebar toggle
   document.getElementById("btn-notes-toggle").addEventListener("click", toggleNotesPanel);
   document.getElementById("btn-close-notes").addEventListener("click", toggleNotesPanel);
-  
-  // Fullscreen toggle
   document.getElementById("btn-fullscreen").addEventListener("click", toggleFullscreen);
   
-  // Keyboard listeners
   document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowRight" || e.key === " ") {
       nextSlide();
@@ -195,7 +339,6 @@ function setupEventHandlers() {
   });
 }
 
-// 4. NAV ACTIONS
 function nextSlide() {
   if (currentSlideIndex < slideData.length - 1) {
     currentSlideIndex++;
@@ -203,7 +346,6 @@ function nextSlide() {
   }
 }
 
-// Jump navigation for mock header nav links
 function jumpToSlide(slideNumber) {
   const index = slideNumber - 1;
   if (index >= 0 && index < slideData.length) {
@@ -240,7 +382,6 @@ function toggleFullscreen() {
   }
 }
 
-// Build Slide Drawer list
 function buildSlideDrawer() {
   const listContainer = document.getElementById("drawer-list");
   listContainer.innerHTML = "";
@@ -258,215 +399,5 @@ function buildSlideDrawer() {
       toggleSlideDrawer();
     });
     listContainer.appendChild(item);
-  });
-}
-
-// 5. INTERACTIVE WIDGET LOGICS
-function activateWidgets(slideId) {
-  // Slide 7 Query Builder (previously Slide 6, pushed by 1 page profile addition)
-  if (slideId === 7) {
-    const inputs = ["qb-concept-1", "qb-concept-2", "qb-concept-3", "qb-year"];
-    inputs.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener("input", updateQueryBuilderOutput);
-    });
-  }
-  
-  // VOSviewer Mock Widgets (Slides 18, 19, 20)
-  if (slideId === 18) {
-    renderVosMockMap("vos-canvas", "network");
-  } else if (slideId === 19) {
-    renderVosMockMap("vos-canvas-2", "overlay");
-  } else if (slideId === 20) {
-    renderVosMockMap("vos-canvas-3", "density");
-  }
-}
-
-// WIDGET 1: Query Builder
-function updateQueryBuilderOutput() {
-  const c1 = document.getElementById("qb-concept-1").value;
-  const c2 = document.getElementById("qb-concept-2").value;
-  const c3 = document.getElementById("qb-concept-3").value;
-  const yearVal = parseInt(document.getElementById("qb-year").value) - 1;
-  
-  const query = `TITLE-ABS-KEY(${c1}) AND TITLE-ABS-KEY(${c2}) AND TITLE-ABS-KEY(${c3}) AND PUBYEAR > ${yearVal} AND (LIMIT-TO(DOCTYPE, "ar") OR LIMIT-TO(DOCTYPE, "cp")) AND LIMIT-TO(LANGUAGE, "English")`;
-  
-  const codeBox = document.getElementById("qb-output-code");
-  if (codeBox) codeBox.innerText = query;
-}
-
-// WIDGET 2: VOSviewer Interactive Map
-function renderVosMockMap(canvasId, mode) {
-  const canvas = document.getElementById(canvasId);
-  if (!canvas) return;
-  canvas.innerHTML = "";
-  
-  const canvasWidth = canvas.clientWidth || 600;
-  const canvasHeight = canvas.clientHeight || 250;
-  
-  // Render Background Grid / Heatmap for Density mode
-  if (mode === "density") {
-    canvas.style.background = "radial-gradient(circle at 45% 50%, rgba(239, 68, 68, 0.4) 0%, rgba(245, 158, 11, 0.1) 40%, #030712 70%)";
-  } else {
-    canvas.style.background = "#030712";
-  }
-
-  // Draw lines first (beneath nodes)
-  vosLines.forEach(line => {
-    const fromNode = vosNodes.find(n => n.id === line.from);
-    const toNode = vosNodes.find(n => n.id === line.to);
-    
-    if (fromNode && toNode) {
-      const x1 = (fromNode.x / 100) * canvasWidth;
-      const y1 = (fromNode.y / 100) * canvasHeight;
-      const x2 = (toNode.x / 100) * canvasWidth;
-      const y2 = (toNode.y / 100) * canvasHeight;
-      
-      const length = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-      const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
-      
-      const lineEl = document.createElement("div");
-      lineEl.className = "vos-line";
-      lineEl.style.width = `${length}px`;
-      lineEl.style.left = `${x1}px`;
-      lineEl.style.top = `${y1}px`;
-      lineEl.style.transform = `rotate(${angle}deg)`;
-      
-      canvas.appendChild(lineEl);
-    }
-  });
-
-  // Draw nodes
-  vosNodes.forEach(node => {
-    const nodeEl = document.createElement("div");
-    nodeEl.className = "vos-node";
-    nodeEl.style.width = `${node.size}px`;
-    nodeEl.style.height = `${node.size}px`;
-    
-    // Position node center
-    const posX = (node.x / 100) * canvasWidth - (node.size / 2);
-    const posY = (node.y / 100) * canvasHeight - (node.size / 2);
-    nodeEl.style.left = `${posX}px`;
-    nodeEl.style.top = `${posY}px`;
-    
-    // Set colors based on mode
-    if (mode === "network") {
-      nodeEl.style.backgroundColor = clusterColors[node.cluster];
-      nodeEl.style.color = "#ffffff";
-    } else if (mode === "overlay") {
-      // Color gradient by year: 2020 (blue) to 2024 (yellow)
-      const ratio = (node.year - 2020) / (2024.5 - 2020);
-      nodeEl.style.backgroundColor = getInterpolatedColor("#3b82f6", "#f59e0b", ratio);
-      nodeEl.style.color = "#ffffff";
-    } else if (mode === "density") {
-      // Glow colors for heatmap
-      nodeEl.style.backgroundColor = `rgba(245, 158, 11, ${node.density})`;
-      nodeEl.style.color = "#000000";
-      nodeEl.style.boxShadow = `0 0 15px rgba(245, 158, 11, ${node.density})`;
-    }
-    
-    nodeEl.innerHTML = `<span>${node.label}</span>`;
-    
-    // Attach click metadata listener
-    nodeEl.addEventListener("click", () => {
-      let infoText = "";
-      if (mode === "network") {
-        infoText = `<h5>ðŸ”µ Node: ${node.label}</h5>
-                   <p>Klaster: <strong>Klaster ${node.cluster}</strong></p>
-                   <p>Kemunculan: <strong>${Math.round(node.size * 2.3)} kali</strong></p>
-                   <p>Kekuatan Tautan: <strong>${Math.round(node.size * 1.5)}</strong></p>`;
-      } else if (mode === "overlay") {
-        infoText = `<h5>ðŸ•’ Node: ${node.label}</h5>
-                   <p>Rata-rata Tahun Terbit: <strong>${node.year.toFixed(1)}</strong></p>
-                   <p>Status: <strong>${node.year >= 2023.5 ? 'Emerging Topic (Mulai Tren)' : 'Established Topic'}</strong></p>`;
-      } else if (mode === "density") {
-        infoText = `<h5>ðŸ”¥ Node: ${node.label}</h5>
-                   <p>Kepadatan Riset: <strong>${(node.density * 100).toFixed(0)}%</strong></p>
-                   <p>Status: <strong>${node.density >= 0.75 ? 'Hotspot (Sangat Padat)' : 'Coldspot (Peluang Riset)'}</strong></p>`;
-      }
-      
-      const boxId = mode === "network" ? "vos-info-box" : (mode === "overlay" ? "vos-info-box-2" : "vos-info-box-3");
-      const infoBox = document.getElementById(boxId);
-      if (infoBox) infoBox.innerHTML = infoText;
-    });
-    
-    canvas.appendChild(nodeEl);
-  });
-}
-
-// Color interpolator helper
-function getInterpolatedColor(color1, color2, factor) {
-  if (factor < 0) factor = 0;
-  if (factor > 1) factor = 1;
-  
-  // Simple hex parsing
-  const c1 = {
-    r: parseInt(color1.substring(1, 3), 16),
-    g: parseInt(color1.substring(3, 5), 16),
-    b: parseInt(color1.substring(5, 7), 16)
-  };
-  const c2 = {
-    r: parseInt(color2.substring(1, 3), 16),
-    g: parseInt(color2.substring(3, 5), 16),
-    b: parseInt(color2.substring(5, 7), 16)
-  };
-  
-  const r = Math.round(c1.r + factor * (c2.r - c1.r));
-  const g = Math.round(c1.g + factor * (c2.g - c1.g));
-  const b = Math.round(c1.b + factor * (c2.b - c1.b));
-  
-  return `rgb(${r}, ${g}, ${b})`;
-}
-
-// Tab switcher for VOSviewer interactive widget
-function switchVosTab(tabName) {
-  if (tabName === "network") {
-    currentSlideIndex = 17; // Slide 18 index is 17
-  } else if (tabName === "overlay") {
-    currentSlideIndex = 18; // Slide 19 index is 18
-  } else if (tabName === "density") {
-    currentSlideIndex = 19; // Slide 20 index is 19
-  }
-  renderSlide(currentSlideIndex);
-}
-
-// WIDGET 3: Data Cleaning Game demo merge
-function mergeDemo(btnId, cleanValue) {
-  const btn = document.getElementById(`merge-btn-${btnId}`);
-  if (!btn || btn.classList.contains("merged")) return;
-  
-  btn.classList.add("merged");
-  btn.innerHTML = `<i class="fa-solid fa-check"></i> Merged`;
-  
-  const msg = document.getElementById("merge-result-msg");
-  msg.innerHTML = `<i class="fa-solid fa-circle-check"></i> Berhasil mengkonsolidasikan data ke nama baku: <strong>"${cleanValue}"</strong>!`;
-}
-
-// WIDGET 4: Interactive Checklist
-function toggleChecklist(el) {
-  el.classList.toggle("checked");
-  const icon = el.querySelector(".checkbox-icon");
-  if (el.classList.contains("checked")) {
-    icon.className = "checkbox-icon fa-regular fa-square-check";
-  } else {
-    icon.className = "checkbox-icon fa-regular fa-square";
-  }
-}
-
-// Utilities: Copy text to clipboard
-function copyToClipboard(elementId) {
-  const codeText = document.getElementById(elementId).innerText;
-  navigator.clipboard.writeText(codeText).then(() => {
-    // Show feedback popup or button change
-    const btn = document.querySelector(`[onclick="copyToClipboard('${elementId}')"]`);
-    const origText = btn.innerHTML;
-    btn.innerHTML = `<i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Copied!`;
-    btn.style.borderColor = "var(--accent-emerald)";
-    setTimeout(() => {
-      btn.innerHTML = origText;
-      btn.style.borderColor = "";
-    }, 2000);
-  }).catch(err => {
-    console.error("Gagal menyalin teks: ", err);
   });
 }
