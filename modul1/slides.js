@@ -139,15 +139,24 @@ const slideData = [
             <div style="flex:1;"><input type="text" value="Digital" readonly class="mock-input" style="width:100%; text-align:center; background:#1e293b;"></div>
           </div>
           
-          <div style="display:flex; justify-content:center; margin-top:1rem;">
-            <div id="boolean-venn-diagram" style="width: 300px; height: 180px; position:relative;">
-              <!-- Circle A -->
-              <div id="venn-a" style="position:absolute; width:140px; height:140px; border-radius:50%; background:rgba(59, 130, 246, 0.5); border: 2px solid #3b82f6; left:10px; top:20px; display:flex; align-items:center; justify-content:flex-start; padding-left:10px; font-weight:bold; font-size:0.8rem; z-index:1; mix-blend-mode: screen;">Democracy</div>
-              <!-- Circle B -->
-              <div id="venn-b" style="position:absolute; width:140px; height:140px; border-radius:50%; background:rgba(236, 72, 153, 0.5); border: 2px solid #ec4899; right:10px; top:20px; display:flex; align-items:center; justify-content:flex-end; padding-right:10px; font-weight:bold; font-size:0.8rem; z-index:1; mix-blend-mode: screen;">Digital</div>
-              <!-- Intersection Highlights -->
-              <div id="venn-result-text" style="position:absolute; bottom:-10px; width:100%; text-align:center; font-weight:bold; color:var(--accent-cyan);">Pilih Operator...</div>
-            </div>
+          <div style="display:flex; justify-content:center; margin-top:1rem; position:relative;">
+            <svg viewBox="0 0 300 180" style="width:300px; height:180px;">
+              <defs>
+                <clipPath id="clip-venn">
+                  <circle cx="110" cy="90" r="70" />
+                </clipPath>
+              </defs>
+              <!-- Left Circle -->
+              <circle id="venn-a-svg" cx="110" cy="90" r="70" stroke="#3b82f6" stroke-width="2" fill="transparent" />
+              <!-- Right Circle -->
+              <circle id="venn-b-svg" cx="190" cy="90" r="70" stroke="#ec4899" stroke-width="2" fill="transparent" />
+              <!-- Intersection -->
+              <circle id="venn-intersect-svg" cx="190" cy="90" r="70" fill="transparent" clip-path="url(#clip-venn)" />
+              
+              <text x="75" y="95" fill="white" font-size="12" text-anchor="middle" font-weight="bold">Democracy</text>
+              <text x="225" y="95" fill="white" font-size="12" text-anchor="middle" font-weight="bold">Digital</text>
+            </svg>
+            <div id="venn-result-text" style="position:absolute; bottom:-10px; width:100%; text-align:center; font-weight:bold; color:var(--accent-cyan);">Pilih Operator...</div>
           </div>
 
         </div>
@@ -411,27 +420,31 @@ function renderSlide(index) {
 function activateWidgets(slideId) {
   if (slideId === 7) {
     const operatorSelect = document.getElementById('boolean-operator');
-    const vennA = document.getElementById('venn-a');
-    const vennB = document.getElementById('venn-b');
+    const vennA = document.getElementById('venn-a-svg');
+    const vennB = document.getElementById('venn-b-svg');
+    const vennIntersect = document.getElementById('venn-intersect-svg');
     const vennResult = document.getElementById('venn-result-text');
     
     if (operatorSelect) {
       operatorSelect.addEventListener('change', (e) => {
         const op = e.target.value;
         if (op === "AND") {
-          vennA.style.background = "rgba(59, 130, 246, 0.2)";
-          vennB.style.background = "rgba(236, 72, 153, 0.2)";
+          vennA.setAttribute('fill', 'transparent');
+          vennB.setAttribute('fill', 'transparent');
+          vennIntersect.setAttribute('fill', '#0ea5e9'); // light blue cyan for intersection
           vennResult.innerText = "Hasil: Irisan tengah (Artikel yg mengandung kedua kata)";
           vennResult.style.color = "var(--accent-cyan)";
         } else if (op === "OR") {
-          vennA.style.background = "rgba(59, 130, 246, 0.6)";
-          vennB.style.background = "rgba(236, 72, 153, 0.6)";
+          vennA.setAttribute('fill', 'rgba(59, 130, 246, 0.6)');
+          vennB.setAttribute('fill', 'rgba(236, 72, 153, 0.6)');
+          vennIntersect.setAttribute('fill', 'rgba(168, 85, 247, 0.6)'); // purple-ish overlap mix
           vennResult.innerText = "Hasil: Seluruh area (Artikel yg mengandung salah satu/keduanya)";
           vennResult.style.color = "#fb923c";
         } else if (op === "NOT") {
-          vennA.style.background = "rgba(59, 130, 246, 0.6)";
-          vennB.style.background = "rgba(30, 41, 59, 0.8)";
-          vennResult.innerText = "Hasil: Area biru saja (Mengecualikan artikel yg mengandung kata Digital)";
+          vennA.setAttribute('fill', 'rgba(59, 130, 246, 0.8)');
+          vennB.setAttribute('fill', 'transparent');
+          vennIntersect.setAttribute('fill', '#1e293b'); // background color to mask out the intersection
+          vennResult.innerText = "Hasil: Area biru (Mengecualikan artikel yg mengandung kata Digital)";
           vennResult.style.color = "#ef4444";
         }
       });
