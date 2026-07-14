@@ -4,7 +4,7 @@ const slideData = [
     title: "Penelusuran Semantik AI",
     subtitle: "Modul 1: Boolean Logic, Consensus AI, SciSpace, & Elicit",
     layout: "cover",
-    content: 
+    content: `
       <div class="slide-layout-cover">
         <h1>Penelusuran Semantik AI</h1>
         <p class="subtitle">Modul 1: Boolean Logic, Consensus AI, SciSpace, & Elicit</p>
@@ -13,7 +13,7 @@ const slideData = [
           Digital Library Staff | Academic Library FISIPOL UGM
         </div>
       </div>
-    ,
+    `,
     speakerNote: "Selamat datang di Modul 1."
   },
   {
@@ -21,16 +21,16 @@ const slideData = [
     title: "Seni Mencari: Boolean Logic",
     subtitle: "AND, OR, NOT",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard">
         <ul style="font-size:1.5rem; line-height:2;">
-          <li><strong style="color:var(--accent-sky);">AND:</strong> Mempersempit hasil (A ∩ B)</li>
-          <li><strong style="color:var(--accent-cyan);">OR:</strong> Memperluas hasil (A ∪ B)</li>
+          <li><strong style="color:var(--accent-sky);">AND:</strong> Mempersempit hasil (A &cap; B)</li>
+          <li><strong style="color:var(--accent-cyan);">OR:</strong> Memperluas hasil (A &cup; B)</li>
           <li><strong style="color:var(--accent-purple);">NOT:</strong> Mengecualikan kata kunci tertentu</li>
           <li><strong>Gunakan Tanda Kutip (")</strong> untuk frasa persis (Exact Match).</li>
         </ul>
       </div>
-    ,
+    `,
     speakerNote: "Boolean logic adalah fundamental sebelum kita beralih ke AI."
   },
   {
@@ -38,7 +38,7 @@ const slideData = [
     title: "Penelusuran Semantik AI",
     subtitle: "Mencari Makna, Bukan Sekadar Kata Kunci",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard" style="display:flex; gap:2rem;">
         <div style="flex:1;">
           <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Consensus AI</h3>
@@ -49,7 +49,7 @@ const slideData = [
           <p>Mencari artikel dengan ringkasan AI instan, membaca PDF interaktif dengan Copilot.</p>
         </div>
       </div>
-    ,
+    `,
     speakerNote: "AI Semantic Search memahami konteks kalimat."
   },
   {
@@ -57,13 +57,13 @@ const slideData = [
     title: "Etika UGM: AI Sebagai Stimulator",
     subtitle: "Hal. 8 - Panduan UGM 2025",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard" style="background:rgba(239,68,68,0.1); border-left:5px solid #ef4444; padding:2rem; border-radius:0.5rem;">
         <h3 style="color:#ef4444; margin-bottom:1rem;">Skeptisisme Sehat</h3>
         <p style="font-size:1.2rem;">Menurut Panduan Etika Akademik UGM 2025, AI harus diposisikan sebagai <strong>Asisten Pemantik Ide (Stimulator)</strong>, BUKAN otoritas rujukan akhir.</p>
         <p style="margin-top:1rem; color:var(--text-muted);">Selalu verifikasi referensi yang diberikan oleh AI ke database asli (Scopus/ProQuest) untuk menghindari Halusinasi Referensi.</p>
       </div>
-    ,
+    `,
     speakerNote: "Ini poin paling penting. Jangan telan mentah-mentah hasil AI."
   }
 ];

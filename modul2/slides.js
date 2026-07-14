@@ -4,7 +4,7 @@ const slideData = [
     title: "Mendeley Cite & AI Reader",
     subtitle: "Modul 2: Reference Manager & Integrasi NotebookLM",
     layout: "cover",
-    content: 
+    content: `
       <div class="slide-layout-cover">
         <h1>Mendeley Cite & AI Reader</h1>
         <p class="subtitle">Modul 2: Reference Manager & Integrasi NotebookLM</p>
@@ -13,7 +13,7 @@ const slideData = [
           Digital Library Staff | Academic Library FISIPOL UGM
         </div>
       </div>
-    ,
+    `,
     speakerNote: "Selamat datang di Modul 2."
   },
   {
@@ -21,7 +21,7 @@ const slideData = [
     title: "Migrasi ke Mendeley Baru",
     subtitle: "Dari Desktop ke Reference Manager",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard">
         <ul style="font-size:1.5rem; line-height:2;">
           <li>Tinggalkan Mendeley Desktop (Legacy), beralih ke <strong>Mendeley Reference Manager</strong> (Cloud-Sync).</li>
@@ -29,7 +29,7 @@ const slideData = [
           <li>Manfaatkan fitur <em>Watch Folder</em> untuk import PDF otomatis.</li>
         </ul>
       </div>
-    ,
+    `,
     speakerNote: "Mendeley Cite jauh lebih stabil."
   },
   {
@@ -37,7 +37,7 @@ const slideData = [
     title: "Sintesis Lintas Dokumen dengan NotebookLM",
     subtitle: "AI sebagai Asisten Peneliti",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard" style="display:flex; gap:2rem;">
         <div style="flex:1;">
           <h3 style="color:var(--accent-cyan); margin-bottom:1rem;">Cara Kerja</h3>
@@ -48,7 +48,7 @@ const slideData = [
           <p>Jangan pernah mengunggah data primer yang belum dipublikasi (wawancara rahasia, data pasien) ke versi gratis NotebookLM.</p>
         </div>
       </div>
-    ,
+    `,
     speakerNote: "Peringatan etika terkait data."
   },
   {
@@ -56,13 +56,13 @@ const slideData = [
     title: "Aturan UGM: Penulisan & Plagiarisme",
     subtitle: "Bebas dari Intervensi AI Berlebih",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard" style="background:rgba(59, 130, 246, 0.1); border-left:5px solid #3b82f6; padding:2rem; border-radius:0.5rem;">
         <h3 style="color:#3b82f6; margin-bottom:1rem;">Deklarasi Penggunaan (Hal. 43)</h3>
         <p style="font-size:1.2rem;">Mahasiswa wajib mengisi Surat Pernyataan bahwa naskah akhir bebas dari intervensi AI berlebih.</p>
         <p style="margin-top:1rem; color:var(--text-muted);">AI hanya diizinkan untuk: 1. Penyuntingan Bahasa (Grammarly). 2. Sintesis Konsep awal. BUKAN untuk menyusun paragraf argumen utama secara utuh.</p>
       </div>
-    ,
+    `,
     speakerNote: "Jangan biarkan AI menulis tesis."
   }
 ];

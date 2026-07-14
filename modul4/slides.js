@@ -4,7 +4,7 @@ const slideData = [
     title: "Pasca-Sidang ETD",
     subtitle: "Modul 4: Bebas Pustaka SIMASTER & Unggah Mandiri",
     layout: "cover",
-    content: 
+    content: `
       <div class="slide-layout-cover">
         <h1>Pasca-Sidang ETD</h1>
         <p class="subtitle">Modul 4: Bebas Pustaka SIMASTER & Unggah Mandiri</p>
@@ -13,7 +13,7 @@ const slideData = [
           Digital Library Staff | Academic Library FISIPOL UGM
         </div>
       </div>
-    ,
+    `,
     speakerNote: "Selamat datang di Modul 4."
   },
   {
@@ -21,7 +21,7 @@ const slideData = [
     title: "Prosedur Bebas Pustaka SIMASTER",
     subtitle: "Syarat Mutlak Kelulusan",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard">
         <ul style="font-size:1.5rem; line-height:2;">
           <li>Pastikan seluruh <strong>denda dan pinjaman buku</strong> telah diselesaikan.</li>
@@ -29,7 +29,7 @@ const slideData = [
           <li>Cetak Bukti Digital Bebas Pustaka sebagai syarat administrasi fakultas.</li>
         </ul>
       </div>
-    ,
+    `,
     speakerNote: "Selesaikan denda."
   },
   {
@@ -37,7 +37,7 @@ const slideData = [
     title: "Standardisasi Unggah Mandiri ETD",
     subtitle: "Memecah Berkas Sesuai Aturan",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard" style="display:flex; gap:2rem;">
         <div style="flex:1;">
           <h3 style="color:#facc15; margin-bottom:1rem;">Pemecahan File (Maks 50MB)</h3>
@@ -48,7 +48,7 @@ const slideData = [
           <p>Penulisan Judul dan Abstrak harus sesuai kaidah PUEBI. Kesalahan ejaan adalah alasan utama penolakan verifikasi oleh Universitas.</p>
         </div>
       </div>
-    ,
+    `,
     speakerNote: "Format file sangat penting."
   },
   {
@@ -56,13 +56,13 @@ const slideData = [
     title: "Kebijakan Akses Terbatas ETD FISIPOL",
     subtitle: "Perlindungan Hak Kekayaan Intelektual",
     layout: "standard",
-    content: 
+    content: `
       <div class="slide-layout-standard" style="background:rgba(16, 185, 129, 0.1); border-left:5px solid #10b981; padding:2rem; border-radius:0.5rem;">
         <h3 style="color:#10b981; margin-bottom:1rem;">Mengapa Fulltext Dikunci?</h3>
         <p style="font-size:1.2rem;">FISIPOL menetapkan kebijakan bahwa <em>fulltext</em> naskah tesis/skripsi hanya dapat diakses melalui <strong>intranet kampus</strong> (jaringan UGM).</p>
         <p style="margin-top:1rem; color:var(--text-muted);">Hal ini bertujuan untuk melindungi karya orisinal mahasiswa dari plagiarisme eksternal. Publik luar hanya dapat mengakses Abstrak dan Daftar Pustaka (Open Access terbatas).</p>
       </div>
-    ,
+    `,
     speakerNote: "Perlindungan HKI mahasiswa."
   }
 ];
