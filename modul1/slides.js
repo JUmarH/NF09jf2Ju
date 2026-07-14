@@ -12,127 +12,179 @@ const slideData = [
           <strong>Juvita Umar Hadinata</strong><br>
           Digital Library Staff | Academic Library FISIPOL UGM
         </div>
+        <div style="font-size: 0.85rem; color: var(--accent-sky); font-weight: 500;">
+          <i class="fa-solid fa-globe"></i> <a href="https://juvitaumarhadinata.web.ugm.ac.id" target="_blank" style="color: inherit; text-decoration: underline;">juvitaumarhadinata.web.ugm.ac.id</a>
+        </div>
       </div>
     `,
     speakerNote: "Selamat pagi dan selamat datang di Modul 1 Workshop Perpustakaan FISIPOL UGM."
   },
   {
     id: 2,
-    title: "Akses E-Resources UGM",
-    subtitle: "Gerbang Utama Literatur Ilmiah",
-    layout: "standard",
+    title: "Tentang Pemateri",
+    subtitle: "Juvita Umar Hadinata (Academic Library FISIPOL UGM)",
+    layout: "custom-widget",
     content: `
-      <div class="slide-layout-standard">
-        <ul style="font-size:1.5rem; line-height:2;">
-          <li>Akses jaringan database jurnal internasional via <strong>lib.ugm.ac.id</strong></li>
-          <li>Gunakan kredensial <strong>SSO UGM</strong> untuk masuk.</li>
-          <li><strong style="color:var(--accent-cyan);">EZProxy (Remote Access)</strong> memungkinkan akses jurnal dari rumah seolah Anda berada di jaringan UGM.</li>
-        </ul>
+      <div class="profile-card-container" style="background: rgba(30, 41, 59, 0.2); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 20px;">
+        <div class="profile-card-photo" style="width: 150px; height: 150px; font-size: 4rem; margin: 0 auto; overflow: hidden; border: 4px solid var(--accent-sky);">
+          <img src="https://github.com/jumarh.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <i class="fa-solid fa-user-tie" style="display: none; font-size: 4rem; line-height: 140px;"></i>
+        </div>
+        <div class="profile-card-info" style="text-align: center;">
+          <div class="profile-card-name" style="font-size: 1.4rem;">Juvita Umar Hadinata</div>
+          <div class="profile-card-title" style="font-size: 0.9rem; color: var(--accent-cyan);">Digital Library Staff | Academic Library FISIPOL UGM</div>
+          <p style="font-size: 0.8rem; line-height: 1.4; color: var(--text-muted); max-width: 600px; margin: 5px auto;">
+            Alumni Magister Manajemen Informasi dan Perpustakaan (MIP) UGM. Fokus pada pengembangan ekosistem data ilmiah, pengelolaan repositori digital (ETD), asisten penelusuran pustaka, dan visualisasi bibliometrik di lingkungan FISIPOL UGM.
+          </p>
+        </div>
       </div>
     `,
-    speakerNote: "Ingat untuk selalu login menggunakan SSO UGM."
+    speakerNote: "Perkenalan singkat."
   },
   {
     id: 3,
-    title: "OPAC (Online Public Access Catalog)",
-    subtitle: "Katalog Cetak & Skripsi",
+    title: "Layanan Perpustakaan Universitas Gadjah Mada",
+    subtitle: "Gerbang Utama Literatur Ilmiah (lib.ugm.ac.id)",
     layout: "standard",
     content: `
       <div class="slide-layout-standard" style="display:flex; gap:2rem;">
-        <div style="flex:1;">
-          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Buku Cetak</h3>
-          <p>Gunakan OPAC untuk mencari ketersediaan fisik buku di rak Perpustakaan FISIPOL maupun perpustakaan pusat.</p>
+        <div style="flex:1; background:rgba(30, 41, 59, 0.5); padding:1.5rem; border-radius:8px;">
+          <h3 style="color:var(--accent-sky); margin-bottom:1rem;"><i class="fa-solid fa-building-columns"></i> lib.ugm.ac.id</h3>
+          <p>Portal resmi Perpustakaan Pusat UGM. Menyediakan akses ke puluhan database jurnal internasional langganan UGM (Scopus, ScienceDirect, JSTOR, dll).</p>
         </div>
-        <div style="flex:1;">
-          <h3 style="color:var(--accent-purple); margin-bottom:1rem;">Tugas Akhir / ETD</h3>
-          <p>Skripsi dan Tesis cetak dapat dicari melalui sistem ini sebelum meminta akses ke pustakawan.</p>
+        <div style="flex:1; background:rgba(168, 85, 247, 0.1); border:1px solid var(--accent-purple); padding:1.5rem; border-radius:8px;">
+          <h3 style="color:var(--accent-purple); margin-bottom:1rem;"><i class="fa-solid fa-wifi"></i> EZProxy (Remote Access)</h3>
+          <p>Wajib digunakan saat mengakses jurnal dari luar jaringan kampus (dari rumah/kos). Login menggunakan kredensial <strong>SSO UGM</strong> agar sistem mendeteksi Anda sebagai sivitas UGM.</p>
         </div>
       </div>
     `,
-    speakerNote: "Tidak semua ada di digital, buku cetak tetap relevan."
+    speakerNote: "Perpustakaan pusat adalah gerbang utama menuju literatur internasional."
   },
   {
     id: 4,
-    title: "Navigasi Summon 2.0",
-    subtitle: "Mesin Pencari 'One-Search' UGM",
+    title: "Layanan Eksklusif Perpustakaan FISIPOL UGM",
+    subtitle: "Akses Spesifik Sivitas FISIPOL (ugm.id/digilib)",
     layout: "standard",
     content: `
-      <div class="slide-layout-standard" style="background:rgba(59,130,246,0.1); border-left:5px solid #3b82f6; padding:2rem; border-radius:0.5rem;">
-        <h3 style="color:#3b82f6; margin-bottom:1rem;">Apa itu Summon?</h3>
-        <p style="font-size:1.2rem;">Summon adalah <em>Discovery Service</em>. Seperti Google, tapi khusus untuk <strong>seluruh database jurnal yang dilanggan UGM</strong> secara bersamaan.</p>
-        <p style="margin-top:1rem; color:var(--text-muted);">Sangat berguna untuk pencarian awal yang meluas sebelum mengerucut ke database spesifik seperti Scopus atau JSTOR.</p>
+      <div class="slide-layout-standard" style="background:rgba(239, 68, 68, 0.1); border-left:5px solid #ef4444; padding:2rem; border-radius:0.5rem;">
+        <h3 style="color:#ef4444; margin-bottom:1rem;"><i class="fa-solid fa-graduation-cap"></i> Portal OSS FISIPOL UGM (ugm.id/digilib)</h3>
+        <p style="font-size:1.2rem;">Layanan perpustakaan khusus untuk sivitas akademik FISIPOL UGM. Menyediakan repositori lokal, koleksi ilmu sosial dan politik terkurasi, dan peminjaman ruang diskusi.</p>
+        <p style="margin-top:1rem; font-size:1.1rem; font-weight:bold; color:var(--text-light);">Syarat Akses Penuh: Wajib login menggunakan akun email <strong>@ugm.ac.id</strong> untuk membuka fasilitas unggah mandiri dan akses ETD (Electronic Theses & Dissertations) FISIPOL.</p>
       </div>
     `,
-    speakerNote: "Summon sangat menghemat waktu pencarian awal."
+    speakerNote: "Tekankan bahwa ETD FISIPOL ada di OSS, wajib pakai email UGM."
   },
   {
     id: 5,
-    title: "Boolean Logic",
-    subtitle: "Dasar Pencarian Terstruktur",
+    title: "Sumber Informasi Lokal & Nasional",
+    subtitle: "Portal Garuda, SINTA, & Neliti",
     layout: "standard",
     content: `
-      <div class="slide-layout-standard">
-        <p style="font-size:1.3rem; margin-bottom: 2rem;">Sebelum mengenal AI, Anda WAJIB menguasai logika dasar pencarian pangkalan data.</p>
-        <ul style="font-size:1.5rem; line-height:2;">
-          <li><strong style="color:var(--accent-sky);">AND:</strong> Mempersempit hasil (A &cap; B) - Kedua syarat harus terpenuhi.</li>
-          <li><strong style="color:var(--accent-cyan);">OR:</strong> Memperluas hasil (A &cup; B) - Salah satu atau keduanya terpenuhi. (Sangat berguna untuk sinonim)</li>
-          <li><strong style="color:#ef4444;">NOT:</strong> Mengecualikan kata kunci tertentu dari hasil.</li>
-        </ul>
+      <div class="slide-layout-standard" style="display:flex; gap:1.5rem;">
+        <div style="flex:1; background:rgba(30,41,59,0.3); padding:1rem; border-radius:8px; text-align:center;">
+          <i class="fa-solid fa-book-journal-whills" style="font-size:3rem; color:var(--accent-sky); margin-bottom:1rem;"></i>
+          <h4>Garuda (Garba Rujukan Digital)</h4>
+          <p style="font-size:0.9rem; color:var(--text-muted);">Database puluhan ribu jurnal berbahasa Indonesia dari berbagai universitas nasional.</p>
+        </div>
+        <div style="flex:1; background:rgba(30,41,59,0.3); padding:1rem; border-radius:8px; text-align:center;">
+          <i class="fa-solid fa-chart-line" style="font-size:3rem; color:var(--accent-cyan); margin-bottom:1rem;"></i>
+          <h4>SINTA</h4>
+          <p style="font-size:0.9rem; color:var(--text-muted);">Indeks kinerja riset dan pemeringkatan jurnal terakreditasi Kemdikbudristek (S1-S6).</p>
+        </div>
+        <div style="flex:1; background:rgba(30,41,59,0.3); padding:1rem; border-radius:8px; text-align:center;">
+          <i class="fa-solid fa-magnifying-glass-location" style="font-size:3rem; color:var(--accent-purple); margin-bottom:1rem;"></i>
+          <h4>Neliti</h4>
+          <p style="font-size:0.9rem; color:var(--text-muted);">Mesin pencari repositori institusi dan jurnal ilmiah di Indonesia.</p>
+        </div>
       </div>
     `,
-    speakerNote: "Boolean logic adalah fundamental."
+    speakerNote: "Jangan lupakan riset-riset lokal dari peneliti Indonesia."
   },
   {
     id: 6,
-    title: "Visualisasi AND & OR",
-    subtitle: "Contoh Kasus Query",
+    title: "Navigasi Summon 2.0 & OPAC",
+    subtitle: "Mesin Pencari 'One-Search' & Koleksi Cetak",
     layout: "standard",
     content: `
       <div class="slide-layout-standard" style="display:flex; gap:2rem;">
         <div style="flex:1;">
-          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Contoh AND</h3>
-          <p><code>Democracy AND Digital</code></p>
-          <p style="color:var(--text-muted);">Hanya memunculkan artikel yang mengandung KEDUA kata tersebut.</p>
+          <h3 style="color:var(--accent-sky); margin-bottom:1rem;"><i class="fa-solid fa-magnifying-glass"></i> Summon 2.0</h3>
+          <p>Fitur <em>Discovery Service</em> di lib.ugm.ac.id. Mencari di semua database jurnal langganan UGM dalam satu kali klik. Sangat efisien untuk literatur review tahap awal.</p>
         </div>
         <div style="flex:1;">
-          <h3 style="color:var(--accent-cyan); margin-bottom:1rem;">Contoh OR</h3>
-          <p><code>Democracy OR Autocracy</code></p>
-          <p style="color:var(--text-muted);">Memunculkan artikel yang membahas salah satu dari topik tersebut.</p>
+          <h3 style="color:var(--accent-purple); margin-bottom:1rem;"><i class="fa-solid fa-book"></i> OPAC (Katalog Cetak)</h3>
+          <p>Meski di era digital, banyak buku teori fundamental FISIPOL hanya tersedia versi cetak. Gunakan OPAC untuk mencari letak buku di rak perpustakaan.</p>
         </div>
       </div>
     `,
-    speakerNote: "Gunakan OR untuk padanan kata yang maknanya sama."
+    speakerNote: "Koleksi cetak tidak bisa diabaikan, terutama untuk buku babon (teori klasik)."
   },
   {
     id: 7,
-    title: "Wildcard & Truncation",
-    subtitle: "Memotong Akar Kata (?, *)",
-    layout: "standard",
+    title: "Boolean Logic: Simulasi",
+    subtitle: "AND, OR, NOT",
+    layout: "custom-widget",
     content: `
       <div class="slide-layout-standard">
-        <ul style="font-size:1.4rem; line-height:2;">
-          <li><strong style="color:#facc15;">Truncation (*) :</strong> Mengambil semua variasi akhiran kata.<br>
-          <em>Contoh:</em> <code>Democra*</code> &rarr; Democracy, Democratic, Democratization</li>
-          <li><strong style="color:#fb923c;">Wildcard (?) :</strong> Mengganti satu karakter huruf.<br>
-          <em>Contoh:</em> <code>Wom?n</code> &rarr; Woman, Women</li>
-        </ul>
+        <p style="margin-bottom: 1rem;">Coba berinteraksi dengan operator logika di bawah ini untuk melihat bagaimana hasil pencarian menyempit atau meluas.</p>
+        <div style="display:flex; flex-direction:column; gap:1rem; background: rgba(30,41,59,0.5); padding: 1.5rem; border-radius: 8px;">
+          
+          <div style="display:flex; gap:1rem; align-items:center;">
+            <div style="flex:1;"><input type="text" value="Democracy" readonly class="mock-input" style="width:100%; text-align:center; background:#1e293b;"></div>
+            <select id="boolean-operator" class="mock-input" style="font-weight:bold; color:var(--accent-cyan); width:120px;">
+              <option value="AND">AND</option>
+              <option value="OR">OR</option>
+              <option value="NOT">NOT</option>
+            </select>
+            <div style="flex:1;"><input type="text" value="Digital" readonly class="mock-input" style="width:100%; text-align:center; background:#1e293b;"></div>
+          </div>
+          
+          <div style="display:flex; justify-content:center; margin-top:1rem;">
+            <div id="boolean-venn-diagram" style="width: 300px; height: 180px; position:relative;">
+              <!-- Circle A -->
+              <div id="venn-a" style="position:absolute; width:140px; height:140px; border-radius:50%; background:rgba(59, 130, 246, 0.5); border: 2px solid #3b82f6; left:10px; top:20px; display:flex; align-items:center; justify-content:flex-start; padding-left:10px; font-weight:bold; font-size:0.8rem; z-index:1; mix-blend-mode: screen;">Democracy</div>
+              <!-- Circle B -->
+              <div id="venn-b" style="position:absolute; width:140px; height:140px; border-radius:50%; background:rgba(236, 72, 153, 0.5); border: 2px solid #ec4899; right:10px; top:20px; display:flex; align-items:center; justify-content:flex-end; padding-right:10px; font-weight:bold; font-size:0.8rem; z-index:1; mix-blend-mode: screen;">Digital</div>
+              <!-- Intersection Highlights -->
+              <div id="venn-result-text" style="position:absolute; bottom:-10px; width:100%; text-align:center; font-weight:bold; color:var(--accent-cyan);">Pilih Operator...</div>
+            </div>
+          </div>
+
+        </div>
       </div>
     `,
-    speakerNote: "Sangat berguna untuk mengatasi perbedaan ejaan bahasa Inggris (British vs US)."
+    speakerNote: "Visualisasi diagram Venn. AND mempersempit, OR memperluas."
   },
   {
     id: 8,
-    title: "Exact Phrase Search",
-    subtitle: 'Kekuatan Tanda Kutip (" ")',
+    title: "Wildcard, Truncation & Exact Phrase",
+    subtitle: "Mengoptimalkan Sintaksis Pencarian",
     layout: "standard",
     content: `
-      <div class="slide-layout-standard" style="background:rgba(16, 185, 129, 0.1); border-left:5px solid #10b981; padding:2rem; border-radius:0.5rem;">
-        <h3 style="color:#10b981; margin-bottom:1rem;">Menghindari Pemecahan Frasa</h3>
-        <p style="font-size:1.2rem;">Tanpa tanda kutip, mencari <code>Artificial Intelligence</code> akan mencari kata <em>Artificial</em> DAN kata <em>Intelligence</em> yang mungkin terpisah jauh.</p>
-        <p style="margin-top:1rem; color:var(--text-muted);">Gunakan <strong>"Artificial Intelligence"</strong> agar sistem mencari tepat frasa dua kata tersebut secara berdampingan.</p>
+      <div class="slide-layout-standard" style="display:flex; gap:1.5rem;">
+        <div style="flex:1; background:rgba(30,41,59,0.5); padding:1.5rem; border-radius:8px;">
+          <h3 style="color:#facc15; margin-bottom:1rem;">Truncation ( * )</h3>
+          <p>Mencari seluruh variasi akhiran kata.</p>
+          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center;">Democra*</p>
+          <p style="font-size:0.8rem; color:var(--text-muted); text-align:center;">&rarr; Democracy, Democratic, Democratization</p>
+        </div>
+        
+        <div style="flex:1; background:rgba(30,41,59,0.5); padding:1.5rem; border-radius:8px;">
+          <h3 style="color:#fb923c; margin-bottom:1rem;">Wildcard ( ? )</h3>
+          <p>Mencari variasi satu karakter ejaan.</p>
+          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center;">Wom?n</p>
+          <p style="font-size:0.8rem; color:var(--text-muted); text-align:center;">&rarr; Woman, Women</p>
+        </div>
+        
+        <div style="flex:1; background:rgba(16, 185, 129, 0.2); border:1px solid #10b981; padding:1.5rem; border-radius:8px;">
+          <h3 style="color:#10b981; margin-bottom:1rem;">Exact Phrase ( " " )</h3>
+          <p>Mencegah pemecahan kalimat frasa utuh.</p>
+          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center;">"Social Media"</p>
+          <p style="font-size:0.8rem; color:var(--text-muted); text-align:center;">&rarr; Wajib berdampingan, bukan "Social" dan "Media" terpisah.</p>
+        </div>
       </div>
     `,
-    speakerNote: "Tanda kutip wajib digunakan untuk konsep teori."
+    speakerNote: "Teknik ini wajib sebelum masuk ke Scopus/Summon."
   },
   {
     id: 9,
@@ -141,30 +193,51 @@ const slideData = [
     layout: "standard",
     content: `
       <div class="slide-layout-standard">
-        <p style="font-size:1.3rem; margin-bottom: 2rem;">Pencarian tradisional bergantung pada kecocokan <em>Keyword</em>. AI Semantic Search memahami <strong>konteks kalimat dan klaim</strong>.</p>
-        <ul style="font-size:1.5rem; line-height:2;">
-          <li>AI membaca jutaan isi paper dan mengekstrak klaim kesimpulan.</li>
-          <li>Anda dapat mengetik pertanyaan utuh (Natural Language) alih-alih merumuskan Query yang rumit.</li>
-          <li>Hasil yang disajikan berupa <em>Summary</em> (Ringkasan) ber-sitasi, bukan sekadar daftar tautan.</li>
-        </ul>
+        <div style="display:flex; justify-content: space-between; align-items:center; gap: 2rem;">
+          <div style="flex:1; text-align:center; padding:2rem; background: rgba(30,41,59,0.5); border-radius: 8px;">
+            <i class="fa-solid fa-magnifying-glass" style="font-size:3rem; color:#64748b; margin-bottom:1rem;"></i>
+            <h3>Pencarian Tradisional</h3>
+            <p style="color:var(--text-muted); font-size:0.9rem;">Hanya mencocokkan kata kunci sama persis. Tidak paham konteks.</p>
+          </div>
+          <div style="font-size: 2rem; color: var(--accent-cyan);"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+          <div style="flex:1; text-align:center; padding:2rem; background: rgba(14, 165, 233, 0.1); border:1px solid var(--accent-sky); border-radius: 8px;">
+            <i class="fa-solid fa-brain" style="font-size:3rem; color:var(--accent-sky); margin-bottom:1rem;"></i>
+            <h3 style="color:var(--accent-sky);">AI Semantic Search</h3>
+            <p style="color:var(--text-muted); font-size:0.9rem;">Memahami makna kalimat, merangkum jawaban dari isi paper, dan mendukung <em>Natural Language</em>.</p>
+          </div>
+        </div>
       </div>
     `,
     speakerNote: "AI mengubah cara kita melakukan literatur review."
   },
   {
     id: 10,
-    title: "Consensus AI",
+    title: "Consensus AI: Simulasi Pencarian",
     subtitle: "Menemukan Klaim Berbasis Bukti",
-    layout: "standard",
+    layout: "custom-widget",
     content: `
-      <div class="slide-layout-standard" style="display:flex; gap:2rem;">
-        <div style="flex:1;">
-          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Fungsi Utama</h3>
-          <p>Mencari meteran konsensus (Yes/No/Maybe) dari para ilmuwan terhadap pertanyaan spesifik Anda.</p>
-        </div>
-        <div style="flex:1;">
-          <h3 style="color:var(--accent-purple); margin-bottom:1rem;">Skenario Penggunaan</h3>
-          <p>Ketik: <em>"Apakah media sosial meningkatkan polarisasi politik?"</em> - Consensus akan menampilkan persentase setuju/tidak berdasarkan paper yang terindeks.</p>
+      <div class="slide-layout-standard">
+        <p style="margin-bottom: 1rem;">Consensus AI membaca ribuan paper dan menghitung proporsi kesepakatan ilmuwan (Yes/No/Maybe).</p>
+        
+        <div style="background: rgba(30,41,59,0.8); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+          <div style="display:flex; gap:10px; margin-bottom:1.5rem;">
+            <input type="text" value="Does social media increase political polarization?" readonly class="mock-input" style="flex:1; font-size:1.1rem; padding:10px; background:#0f172a; border:1px solid #334155;">
+            <button class="mock-btn" style="background:var(--accent-sky);"><i class="fa-solid fa-magnifying-glass"></i> Ask</button>
+          </div>
+          
+          <div style="display:flex; align-items:center; gap: 2rem; background: #0f172a; padding: 1.5rem; border-radius:8px;">
+            <div style="flex: 0 0 150px; text-align:center;">
+              <div style="font-size:2.5rem; font-weight:bold; color:#10b981;">75%</div>
+              <div style="font-size:0.9rem; color:var(--text-muted);">Say "Yes"</div>
+            </div>
+            
+            <div style="flex:1;">
+              <h4 style="color:#fff; margin-bottom:0.5rem;"><i class="fa-solid fa-wand-magic-sparkles" style="color:var(--accent-purple);"></i> Consensus Summary</h4>
+              <p style="font-size:0.9rem; line-height:1.6; color:var(--text-light);">
+                Multiple studies indicate that social media use is associated with increased political polarization, primarily through the formation of echo chambers and algorithmic curation of partisan content <sup>[1][2][3]</sup>.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     `,
@@ -176,15 +249,23 @@ const slideData = [
     subtitle: "Asisten Membaca PDF (Copilot)",
     layout: "standard",
     content: `
-      <div class="slide-layout-standard">
-        <ul style="font-size:1.5rem; line-height:2;">
-          <li>Memiliki fitur pencarian literatur dengan ekstraksi tabel wawasan (*insights*).</li>
-          <li><strong>Copilot AI:</strong> Unggah PDF jurnal yang sulit dibaca. Blok rumus matematika, metodologi, atau tabel, dan minta AI menjelaskannya dengan bahasa sederhana.</li>
-          <li>Bisa merangkum hasil temuan (*findings*) secara instan.</li>
-        </ul>
+      <div class="slide-layout-standard" style="display:flex; gap:2rem;">
+        <div style="flex:1;">
+          <ul style="font-size:1.3rem; line-height:1.8;">
+            <li><strong style="color:var(--accent-sky);">Literature Search:</strong> Menampilkan ringkasan tabel dan <em>insights</em> dari jurnal.</li>
+            <li><strong style="color:var(--accent-purple);">PDF Copilot:</strong> Fitur interaktif untuk "mengobrol" dengan dokumen.</li>
+            <li><strong style="color:#facc15;">Explain Math/Table:</strong> Memblokir rumus metodologi kuantitatif kompleks untuk dijelaskan AI ke bahasa sederhana.</li>
+          </ul>
+        </div>
+        <div style="flex:1; text-align:center; background: rgba(30,41,59,0.5); padding: 1rem; border-radius:8px; border: 1px dashed var(--accent-cyan);">
+           <i class="fa-solid fa-file-pdf" style="font-size:4rem; color:#ef4444; margin-bottom:1rem;"></i>
+           <br><i class="fa-solid fa-arrow-down" style="color:var(--accent-cyan); margin-bottom:1rem;"></i><br>
+           <i class="fa-solid fa-robot" style="font-size:3rem; color:var(--accent-purple); margin-bottom:1rem;"></i>
+           <p style="font-size:0.9rem;"><em>"Tolong jelaskan metodologi sampling yang digunakan dalam paper ini?"</em></p>
+        </div>
       </div>
     `,
-    speakerNote: "SciSpace sangat populer di kalangan mahasiswa tingkat akhir."
+    speakerNote: "SciSpace sangat populer di kalangan mahasiswa S2/S3 untuk bedah jurnal."
   },
   {
     id: 12,
@@ -193,12 +274,12 @@ const slideData = [
     layout: "standard",
     content: `
       <div class="slide-layout-standard" style="background:rgba(236, 72, 153, 0.1); border-left:5px solid #ec4899; padding:2rem; border-radius:0.5rem;">
-        <h3 style="color:#ec4899; margin-bottom:1rem;">Membangun Matrik Literatur Otomatis</h3>
-        <p style="font-size:1.2rem;">Elicit dapat membaca kumpulan PDF dan mengekstrak variabel tertentu (misal: Jumlah Sampel, Metodologi, Limitasi Riset) ke dalam tabel yang rapi.</p>
-        <p style="margin-top:1rem; color:var(--text-muted);">Sangat membantu dalam bab Tinjauan Pustaka (*Literature Review*) untuk menemukan celah penelitian (*Research Gap*).</p>
+        <h3 style="color:#ec4899; margin-bottom:1rem;"><i class="fa-solid fa-table"></i> Membangun Matrik Literatur Otomatis</h3>
+        <p style="font-size:1.2rem;">Elicit dapat membaca kumpulan PDF Anda secara serentak dan mengekstrak variabel tertentu (misal: <em>Sample Size, Methodology, Main Findings</em>) langsung ke dalam format tabel (CSV).</p>
+        <p style="margin-top:1rem; color:var(--text-muted);">Alat ini adalah "senjata rahasia" dalam mempercepat penulisan bab Tinjauan Pustaka (*Literature Review*) untuk menemukan celah penelitian (*Research Gap*).</p>
       </div>
     `,
-    speakerNote: "Elicit membantu mempercepat proses reviu sistematik."
+    speakerNote: "Elicit membantu mempercepat proses reviu sistematik. Menghindari pekerjaan manual membaca satu per satu untuk buat matrik."
   },
   {
     id: 13,
@@ -206,15 +287,20 @@ const slideData = [
     subtitle: "Connected Papers & Litmaps",
     layout: "standard",
     content: `
-      <div class="slide-layout-standard">
-        <ul style="font-size:1.5rem; line-height:2;">
-          <li><strong style="color:var(--accent-cyan);">Connected Papers:</strong> Temukan satu *paper* relevan (bibit), dan sistem akan membuat graf visual jurnal lain yang sitasinya saling terkait.</li>
-          <li><strong style="color:var(--accent-sky);">Litmaps:</strong> Melacak evolusi sebuah topik (Linimasa Waktu) dari *paper* klasik ke riset paling modern.</li>
-          <li>Berfungsi meminimalisir kemungkinan Anda terlewat jurnal penting pendahulu (*Prior Art*).</li>
-        </ul>
+      <div class="slide-layout-standard" style="display:flex; gap:2rem; align-items:center;">
+        <div style="flex:1;">
+          <h3 style="color:var(--accent-sky); margin-bottom:1rem;"><i class="fa-solid fa-project-diagram"></i> Visualisasi Sitasi</h3>
+          <p style="margin-bottom:1rem;">Masukkan satu judul paper referensi utama Anda (Bibit / <em>Seed Paper</em>).</p>
+          <ul style="font-size:1.1rem; line-height:1.8;">
+            <li><strong>Connected Papers:</strong> Membangun klaster visual kemiripan paper.</li>
+            <li><strong>Litmaps:</strong> Mengurutkan peta sitasi berdasarkan linimasa waktu (Tahun terbit).</li>
+          </ul>
+        </div>
+        <div style="flex:1; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="8" fill="%233b82f6"/><circle cx="20" cy="30" r="5" fill="%23a855f7"/><circle cx="80" cy="20" r="6" fill="%23ec4899"/><circle cx="70" cy="80" r="4" fill="%2310b981"/><line x1="50" y1="50" x2="20" y2="30" stroke="%23334155" stroke-width="1"/><line x1="50" y1="50" x2="80" y2="20" stroke="%23334155" stroke-width="1"/><line x1="50" y1="50" x2="70" y2="80" stroke="%23334155" stroke-width="1"/></svg>') center center / contain no-repeat; height:200px;">
+        </div>
       </div>
     `,
-    speakerNote: "Gunakan untuk memastikan referensi utama Anda tidak ketinggalan zaman."
+    speakerNote: "Gunakan untuk memastikan referensi utama Anda tidak ketinggalan zaman (Missing Prior Art)."
   },
   {
     id: 14,
@@ -223,31 +309,31 @@ const slideData = [
     layout: "standard",
     content: `
       <div class="slide-layout-standard" style="background:rgba(239,68,68,0.1); border-left:5px solid #ef4444; padding:2rem; border-radius:0.5rem;">
-        <h3 style="color:#ef4444; margin-bottom:1rem;">Bahaya Halusinasi AI</h3>
-        <p style="font-size:1.2rem;">AI Generatif dapat menciptakan kutipan atau bahkan judul jurnal fiktif (*Halusinasi Referensi*) yang terlihat sangat meyakinkan.</p>
-        <p style="margin-top:1rem; color:var(--text-muted);">Selalu verifikasi silang (Cross-check) nama penulis, DOIs, dan judul jurnal yang diberikan AI ke database asli (Scopus / portal resmi) sebelum mencantumkannya di skripsi.</p>
+        <h3 style="color:#ef4444; margin-bottom:1rem;"><i class="fa-solid fa-triangle-exclamation"></i> Bahaya Halusinasi AI</h3>
+        <p style="font-size:1.2rem;">AI Generatif seringkali bertindak "terlalu percaya diri" dengan menciptakan kutipan atau bahkan judul jurnal fiktif (*Halusinasi Referensi*).</p>
+        <p style="margin-top:1rem; color:var(--text-muted); font-style:italic;">Mandat UGM: "Selalu lakukan verifikasi silang (Cross-check) untuk setiap klaim substantif dan rujukan yang dihasilkan oleh AI ke pangkalan data primer (misal: Scopus/Summon) sebelum mengutipnya ke dalam karya akademik."</p>
       </div>
     `,
-    speakerNote: "Halusinasi AI adalah musuh terbesar integritas akademik."
+    speakerNote: "Halusinasi AI adalah musuh terbesar integritas akademik. Banyak mahasiswa S1 terjebak mensitasi paper bodong buatan ChatGPT."
   },
   {
     id: 15,
-    title: "Posisi AI: Asisten Pemantik Ide",
+    title: "Posisi Etis AI di Universitas",
     subtitle: "AI Bukan Otoritas Final",
     layout: "standard",
     content: `
       <div class="slide-layout-standard" style="display:flex; gap:2rem;">
-        <div style="flex:1;">
-          <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Benar (Etis)</h3>
-          <p>Menggunakan AI untuk <em>brainstorming</em> kata kunci, memahami konsep rumit, dan menemukan jurnal relevan secara cepat.</p>
+        <div style="flex:1; background: rgba(16,185,129,0.1); border: 1px solid #10b981; padding: 2rem; border-radius: 8px;">
+          <h3 style="color:#10b981; margin-bottom:1rem; text-align:center;"><i class="fa-solid fa-check-circle" style="font-size:2rem;"></i><br><br>Asisten Pemantik Ide</h3>
+          <p style="text-align:center;">Menggunakan AI untuk *brainstorming* kata kunci, meringkas jurnal rumit, dan menemukan teori yang relevan secara cepat adalah **tindakan etis** (Stimulator Ide).</p>
         </div>
-        <div style="flex:1;">
-          <h3 style="color:#ef4444; margin-bottom:1rem;">Salah (Pelanggaran)</h3>
-          <p>Mengklaim sintesis teks yang digenerasi AI sebagai tulisan pribadi secara utuh dan menjadikannya sebagai rujukan definitif.</p>
+        <div style="flex:1; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; padding: 2rem; border-radius: 8px;">
+          <h3 style="color:#ef4444; margin-bottom:1rem; text-align:center;"><i class="fa-solid fa-xmark-circle" style="font-size:2rem;"></i><br><br>Otoritas Final (Plagiasi)</h3>
+          <p style="text-align:center;">Menyalin langsung hasil sintesis AI Generatif secara utuh tanpa analisis kritis manusia (*Cognitive Debt*) adalah **pelanggaran etika** berat.</p>
         </div>
       </div>
     `,
-    speakerNote: "Gunakan AI dengan bijak dan bermartabat."
+    speakerNote: "AI adalah co-pilot, manusia tetap memegang kendali (Pilot)."
   }
 ];
 
@@ -279,9 +365,9 @@ function renderSlide(index) {
         <div class="mock-web-brand"><i class="fa-solid fa-book-open-reader"></i> <span>DIGILIB <strong>FISIPOL</strong></span></div>
         <nav class="mock-web-nav">
           <button class="mock-web-link ${slide.id === 1 ? 'active' : ''}" onclick="jumpToSlide(1)">Home</button>
-          <button class="mock-web-link ${slide.id > 1 && slide.id <= 4 ? 'active' : ''}" onclick="jumpToSlide(2)">1. Akses E-Resources</button>
-          <button class="mock-web-link ${slide.id > 4 && slide.id <= 8 ? 'active' : ''}" onclick="jumpToSlide(5)">2. Boolean Logic</button>
-          <button class="mock-web-link ${slide.id > 8 && slide.id <= 13 ? 'active' : ''}" onclick="jumpToSlide(9)">3. Semantic AI</button>
+          <button class="mock-web-link ${slide.id > 1 && slide.id <= 6 ? 'active' : ''}" onclick="jumpToSlide(2)">1. Akses Portal & Koleksi</button>
+          <button class="mock-web-link ${slide.id > 6 && slide.id <= 8 ? 'active' : ''}" onclick="jumpToSlide(7)">2. Boolean & Sintaksis</button>
+          <button class="mock-web-link ${slide.id > 8 && slide.id <= 13 ? 'active' : ''}" onclick="jumpToSlide(9)">3. Semantic AI Tools</button>
           <button class="mock-web-link ${slide.id > 13 ? 'active' : ''}" onclick="jumpToSlide(14)">4. Etika Pencarian</button>
         </nav>
       </header>
@@ -312,11 +398,47 @@ function renderSlide(index) {
   document.getElementById("speaker-note-box").innerHTML = slide.speakerNote || "A,??";
   document.getElementById("reference-note-box").innerHTML = slide.referenceNote || "A,??";
   
+  // Custom Widget Activators
+  activateWidgets(slide.id);
+  
   // Highlight active item in drawer
   document.querySelectorAll(".drawer-item").forEach((el, idx) => {
     if (idx === index) el.classList.add("active");
     else el.classList.remove("active");
   });
+}
+
+function activateWidgets(slideId) {
+  if (slideId === 7) {
+    const operatorSelect = document.getElementById('boolean-operator');
+    const vennA = document.getElementById('venn-a');
+    const vennB = document.getElementById('venn-b');
+    const vennResult = document.getElementById('venn-result-text');
+    
+    if (operatorSelect) {
+      operatorSelect.addEventListener('change', (e) => {
+        const op = e.target.value;
+        if (op === "AND") {
+          vennA.style.background = "rgba(59, 130, 246, 0.2)";
+          vennB.style.background = "rgba(236, 72, 153, 0.2)";
+          vennResult.innerText = "Hasil: Irisan tengah (Artikel yg mengandung kedua kata)";
+          vennResult.style.color = "var(--accent-cyan)";
+        } else if (op === "OR") {
+          vennA.style.background = "rgba(59, 130, 246, 0.6)";
+          vennB.style.background = "rgba(236, 72, 153, 0.6)";
+          vennResult.innerText = "Hasil: Seluruh area (Artikel yg mengandung salah satu/keduanya)";
+          vennResult.style.color = "#fb923c";
+        } else if (op === "NOT") {
+          vennA.style.background = "rgba(59, 130, 246, 0.6)";
+          vennB.style.background = "rgba(30, 41, 59, 0.8)";
+          vennResult.innerText = "Hasil: Area biru saja (Mengecualikan artikel yg mengandung kata Digital)";
+          vennResult.style.color = "#ef4444";
+        }
+      });
+      // trigger initial state
+      operatorSelect.dispatchEvent(new Event('change'));
+    }
+  }
 }
 
 function setupEventHandlers() {
