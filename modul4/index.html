@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide Interaktif Modul 3: Analisis Bibliometrik & Deteksi Research Gap</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+
+  <div id="app-container" class="layout-presentation">
+    
+    <!-- 1. MAIN PRESENTATION AREA -->
+    <main id="presentation-area">
+      <div id="slide-container">
+        <!-- Slide content will be rendered dynamically here via slides.js -->
+        <div id="active-slide-wrapper"></div>
+      </div>
+      
+      <!-- Slide Navigation Controls overlay -->
+      <div id="nav-overlay">
+        <div class="nav-control-group">
+          <button id="btn-prev" class="nav-btn" title="Slide Sebelumnya (Panah Kiri)"><i class="fa-solid fa-chevron-left"></i></button>
+          <span id="slide-indicator">1 / 28</span>
+          <button id="btn-next" class="nav-btn" title="Slide Selanjutnya (Panah Kanan / Spasi)"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="nav-control-group">
+          <button id="btn-drawer-toggle" class="nav-btn" title="Daftar Slide"><i class="fa-solid fa-list-ul"></i></button>
+          <button id="btn-notes-toggle" class="nav-btn" title="Tampilkan Catatan Presenter"><i class="fa-solid fa-comment-dots"></i></button>
+          <button id="btn-fullscreen" class="nav-btn" title="Layar Penuh (F)"><i class="fa-solid fa-expand"></i></button>
+        </div>
+      </div>
+    </main>
+    
+    <!-- 2. PRESENTER NOTES PANEL (Toggleable Sidebar) -->
+    <aside id="presenter-panel" class="hidden">
+      <div class="panel-header">
+        <h3><i class="fa-solid fa-chalkboard-user"></i> Presenter Hub</h3>
+        <button id="btn-close-notes" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="panel-content">
+        <div class="notes-section">
+          <h4><i class="fa-solid fa-comments"></i> 💬 Diskusi Pemantik</h4>
+          <div id="discussion-note-box" class="note-box discussion">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+        <div class="notes-section">
+          <h4><i class="fa-solid fa-microphone"></i> 🎤 Catatan Pembicara</h4>
+          <div id="speaker-note-box" class="note-box speaker">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+        <div class="notes-section">
+          <h4><i class="fa-solid fa-circle-info"></i> 📊 Data & Referensi</h4>
+          <div id="reference-note-box" class="note-box reference">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 3. SLIDE DRAWER (Slide List / Thumbnails Navigation) -->
+    <div id="slide-drawer" class="drawer-hidden">
+      <div class="drawer-header">
+        <h3>Peta Navigasi Slide</h3>
+        <button id="btn-close-drawer" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="drawer-list" class="drawer-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Slide Data and Presentation Engine -->
+  <script src="slides.js"></script>
+</body>
+</html>
