@@ -130,13 +130,13 @@ const slideData = [
         <div style="display:flex; flex-direction:column; gap:1rem; background: rgba(30,41,59,0.5); padding: 1.5rem; border-radius: 8px;">
           
           <div style="display:flex; gap:1rem; align-items:center;">
-            <div style="flex:1;"><input type="text" value="Democracy" readonly class="mock-input" style="width:100%; text-align:center; background:#1e293b;"></div>
+            <div style="flex:1;"><input type="text" value="Democracy" readonly class="mock-input" style="width:100%; text-align:center; background:#1e293b; color:#fff;"></div>
             <select id="boolean-operator" class="mock-input" style="font-weight:bold; color:var(--accent-cyan); width:120px;">
               <option value="AND">AND</option>
               <option value="OR">OR</option>
               <option value="NOT">NOT</option>
             </select>
-            <div style="flex:1;"><input type="text" value="Digital" readonly class="mock-input" style="width:100%; text-align:center; background:#1e293b;"></div>
+            <div style="flex:1;"><input type="text" value="Digital" readonly class="mock-input" style="width:100%; text-align:center; background:#1e293b; color:#fff;"></div>
           </div>
           
           <div style="display:flex; justify-content:center; margin-top:1rem; position:relative;">
@@ -174,21 +174,21 @@ const slideData = [
         <div style="flex:1; background:rgba(30,41,59,0.5); padding:1.5rem; border-radius:8px;">
           <h3 style="color:#facc15; margin-bottom:1rem;">Truncation ( * )</h3>
           <p>Mencari seluruh variasi akhiran kata.</p>
-          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center;">Democra*</p>
+          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center; color:#fff; background:#1e293b; padding:5px; border-radius:4px;">Democra*</p>
           <p style="font-size:0.8rem; color:var(--text-muted); text-align:center;">&rarr; Democracy, Democratic, Democratization</p>
         </div>
         
         <div style="flex:1; background:rgba(30,41,59,0.5); padding:1.5rem; border-radius:8px;">
           <h3 style="color:#fb923c; margin-bottom:1rem;">Wildcard ( ? )</h3>
           <p>Mencari variasi satu karakter ejaan.</p>
-          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center;">Wom?n</p>
+          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center; color:#fff; background:#1e293b; padding:5px; border-radius:4px;">Wom?n</p>
           <p style="font-size:0.8rem; color:var(--text-muted); text-align:center;">&rarr; Woman, Women</p>
         </div>
         
         <div style="flex:1; background:rgba(16, 185, 129, 0.2); border:1px solid #10b981; padding:1.5rem; border-radius:8px;">
           <h3 style="color:#10b981; margin-bottom:1rem;">Exact Phrase ( " " )</h3>
           <p>Mencegah pemecahan kalimat frasa utuh.</p>
-          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center;">"Social Media"</p>
+          <p class="mock-input" style="font-family:monospace; margin-top:0.5rem; text-align:center; color:#fff; background:#1e293b; padding:5px; border-radius:4px;">"Social Media"</p>
           <p style="font-size:0.8rem; color:var(--text-muted); text-align:center;">&rarr; Wajib berdampingan, bukan "Social" dan "Media" terpisah.</p>
         </div>
       </div>
@@ -230,7 +230,7 @@ const slideData = [
         
         <div style="background: rgba(30,41,59,0.8); padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
           <div style="display:flex; gap:10px; margin-bottom:1.5rem;">
-            <input type="text" value="Does social media increase political polarization?" readonly class="mock-input" style="flex:1; font-size:1.1rem; padding:10px; background:#0f172a; border:1px solid #334155;">
+            <input type="text" value="Does social media increase political polarization?" readonly class="mock-input" style="flex:1; font-size:1.1rem; padding:10px; background:#0f172a; border:1px solid #334155; color:#fff;">
             <button class="mock-btn" style="background:var(--accent-sky);"><i class="fa-solid fa-magnifying-glass"></i> Ask</button>
           </div>
           
@@ -282,10 +282,38 @@ const slideData = [
     subtitle: "Sintesis dan Matrik Literatur",
     layout: "standard",
     content: `
-      <div class="slide-layout-standard" style="background:rgba(236, 72, 153, 0.1); border-left:5px solid #ec4899; padding:2rem; border-radius:0.5rem;">
-        <h3 style="color:#ec4899; margin-bottom:1rem;"><i class="fa-solid fa-table"></i> Membangun Matrik Literatur Otomatis</h3>
-        <p style="font-size:1.2rem;">Elicit dapat membaca kumpulan PDF Anda secara serentak dan mengekstrak variabel tertentu (misal: <em>Sample Size, Methodology, Main Findings</em>) langsung ke dalam format tabel (CSV).</p>
-        <p style="margin-top:1rem; color:var(--text-muted);">Alat ini adalah "senjata rahasia" dalam mempercepat penulisan bab Tinjauan Pustaka (*Literature Review*) untuk menemukan celah penelitian (*Research Gap*).</p>
+      <div class="slide-layout-standard">
+        <div style="background:rgba(236, 72, 153, 0.1); border-left:5px solid #ec4899; padding:1.5rem; border-radius:0.5rem; margin-bottom:1.5rem;">
+          <h3 style="color:#ec4899; margin-bottom:0.5rem;"><i class="fa-solid fa-table"></i> Membangun Matrik Literatur Otomatis</h3>
+          <p style="font-size:1.1rem;">Elicit dapat mengekstrak variabel tertentu (misal: <em>Sample Size, Methodology, Findings</em>) dari ratusan PDF ke dalam format tabel (CSV).</p>
+        </div>
+        
+        <div style="overflow-x:auto; background:#0f172a; border-radius:8px; border:1px solid #334155;">
+          <table style="width:100%; text-align:left; border-collapse:collapse; font-size:0.85rem;">
+            <thead>
+              <tr style="background:#1e293b; color:var(--accent-sky);">
+                <th style="padding:10px; border-bottom:1px solid #334155;">Paper Title</th>
+                <th style="padding:10px; border-bottom:1px solid #334155;">Sample Size</th>
+                <th style="padding:10px; border-bottom:1px solid #334155;">Methodology</th>
+                <th style="padding:10px; border-bottom:1px solid #334155;">Main Findings</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:10px; border-bottom:1px solid #334155;">Social Media and Polarization</td>
+                <td style="padding:10px; border-bottom:1px solid #334155;">N = 1,240</td>
+                <td style="padding:10px; border-bottom:1px solid #334155;">Survey & Network Analysis</td>
+                <td style="padding:10px; border-bottom:1px solid #334155;">Algorithms increase echo chambers by 34%.</td>
+              </tr>
+              <tr>
+                <td style="padding:10px;">Digital Democracy in SE Asia</td>
+                <td style="padding:10px;">N = 850</td>
+                <td style="padding:10px;">Longitudinal Panel Study</td>
+                <td style="padding:10px;">Positive correlation with civic engagement.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     `,
     speakerNote: "Elicit membantu mempercepat proses reviu sistematik. Menghindari pekerjaan manual membaca satu per satu untuk buat matrik."
@@ -305,7 +333,21 @@ const slideData = [
             <li><strong>Litmaps:</strong> Mengurutkan peta sitasi berdasarkan linimasa waktu (Tahun terbit).</li>
           </ul>
         </div>
-        <div style="flex:1; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="8" fill="%233b82f6"/><circle cx="20" cy="30" r="5" fill="%23a855f7"/><circle cx="80" cy="20" r="6" fill="%23ec4899"/><circle cx="70" cy="80" r="4" fill="%2310b981"/><line x1="50" y1="50" x2="20" y2="30" stroke="%23334155" stroke-width="1"/><line x1="50" y1="50" x2="80" y2="20" stroke="%23334155" stroke-width="1"/><line x1="50" y1="50" x2="70" y2="80" stroke="%23334155" stroke-width="1"/></svg>') center center / contain no-repeat; height:200px;">
+        <div style="flex:1; height:200px; display:flex; align-items:center; justify-content:center;">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:100%;">
+            <line x1="50" y1="50" x2="20" y2="30" stroke="#334155" stroke-width="1"/>
+            <line x1="50" y1="50" x2="80" y2="20" stroke="#334155" stroke-width="1"/>
+            <line x1="50" y1="50" x2="70" y2="80" stroke="#334155" stroke-width="1"/>
+            <line x1="80" y1="20" x2="90" y2="50" stroke="#334155" stroke-width="1"/>
+            <line x1="20" y1="30" x2="30" y2="70" stroke="#334155" stroke-width="1"/>
+            
+            <circle cx="50" cy="50" r="8" fill="#3b82f6"/>
+            <circle cx="20" cy="30" r="5" fill="#a855f7"/>
+            <circle cx="80" cy="20" r="6" fill="#ec4899"/>
+            <circle cx="70" cy="80" r="4" fill="#10b981"/>
+            <circle cx="90" cy="50" r="3" fill="#facc15"/>
+            <circle cx="30" cy="70" r="4" fill="#fb923c"/>
+          </svg>
         </div>
       </div>
     `,
@@ -343,6 +385,33 @@ const slideData = [
       </div>
     `,
     speakerNote: "AI adalah co-pilot, manusia tetap memegang kendali (Pilot)."
+  },
+  {
+    id: 16,
+    title: "Terima Kasih & Daftar Referensi",
+    subtitle: "Akhir dari Modul 1",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard">
+        <div style="background: rgba(30,41,59,0.5); padding: 2rem; border-radius: 8px; margin-bottom: 2rem; text-align:center;">
+          <h2 style="color:var(--accent-sky); margin-bottom:1rem;">Terima Kasih!</h2>
+          <p style="font-size:1.1rem;">Semoga Modul 1 ini memberikan wawasan baru tentang strategi pencarian literatur di era AI.</p>
+          <div style="margin-top:1.5rem; font-size:1.2rem; color:var(--accent-purple);">
+            <i class="fa-solid fa-envelope"></i> juvitaumarhadinata@ugm.ac.id
+          </div>
+        </div>
+        
+        <h4 style="color:var(--text-light); margin-bottom:1rem; border-bottom:1px solid #334155; padding-bottom:5px;">Daftar Referensi Modul 1:</h4>
+        <ul style="font-size:0.85rem; color:var(--text-muted); line-height:1.6; list-style-type:circle; padding-left:20px;">
+          <li>Universitas Gadjah Mada. (2025). <em>Panduan Etika Akademik Penggunaan AI Generatif</em>. Yogyakarta: UGM Press.</li>
+          <li>Perpustakaan UGM. (2024). <em>Panduan Akses E-Resources via EZProxy & Summon 2.0</em>. lib.ugm.ac.id.</li>
+          <li>Consensus AI. (2025). <em>How Consensus Search Works</em>. consensus.app.</li>
+          <li>SciSpace. (2025). <em>AI Copilot for Researchers</em>. typeset.io.</li>
+          <li>Elicit. (2025). <em>Automating Systematic Reviews</em>. elicit.org.</li>
+        </ul>
+      </div>
+    `,
+    speakerNote: "Penutup Modul 1. Persilakan peserta untuk sesi tanya jawab sebelum lanjut ke Modul 2."
   }
 ];
 
