@@ -111,3 +111,29 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MOBILE-FRIENDLY)
+   ========================================================================== */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .modules-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .module-card {
+    padding: 1.5rem;
+  }
+}

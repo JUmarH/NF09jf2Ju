@@ -1,98 +1,262 @@
 const slideData = [
   {
     id: 1,
-    title: "Mendeley Cite & AI Reader",
-    subtitle: "Modul 2: Reference Manager & Integrasi NotebookLM",
+    title: "Manajemen Referensi & AI Reading Assistant",
+    subtitle: "Modul 2: Mendeley to Cite & Read (NotebookLM & SciSpace)",
     layout: "cover",
     content: `
       <div class="slide-layout-cover">
-        <h1>Mendeley Cite & AI Reader</h1>
-        <p class="subtitle">Modul 2: Reference Manager & Integrasi NotebookLM</p>
+        <h1>Manajemen Referensi & AI Reading Assistant</h1>
+        <p class="subtitle">Modul 2: Mendeley to Cite & Read (NotebookLM & SciSpace)</p>
         <div class="cover-meta" style="margin-bottom: 20px;">
           <strong>Juvita Umar Hadinata</strong><br>
           Digital Library Staff | Academic Library FISIPOL UGM
         </div>
+        <div style="font-size: 0.85rem; color: var(--accent-sky); font-weight: 500;">
+          <i class="fa-solid fa-globe"></i> <a href="https://juvitaumarhadinata.web.ugm.ac.id" target="_blank" style="color: inherit; text-decoration: underline;">juvitaumarhadinata.web.ugm.ac.id</a>
+        </div>
       </div>
     `,
-    speakerNote: "Selamat datang di Modul 2."
+    speakerNote: "Selamat datang di Modul 2. Di sini kita akan beralih dari fase 'Pencarian' ke fase 'Pengelolaan dan Membaca'."
   },
   {
     id: 2,
-    title: "Migrasi ke Mendeley Baru",
-    subtitle: "Dari Desktop ke Reference Manager",
-    layout: "standard",
+    title: "Tentang Pemateri",
+    subtitle: "Juvita Umar Hadinata (Academic Library FISIPOL UGM)",
+    layout: "custom-widget",
     content: `
-      <div class="slide-layout-standard">
-        <ul style="font-size:1.5rem; line-height:2;">
-          <li>Tinggalkan Mendeley Desktop (Legacy), beralih ke <strong>Mendeley Reference Manager</strong> (Cloud-Sync).</li>
-          <li>Gunakan <strong>Mendeley Cite</strong> sebagai Add-in di Microsoft Word (Online/365).</li>
-          <li>Manfaatkan fitur <em>Watch Folder</em> untuk import PDF otomatis.</li>
-        </ul>
+      <div class="profile-card-container" style="background: rgba(30, 41, 59, 0.2); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 20px;">
+        <div class="profile-card-photo" style="width: 150px; height: 150px; font-size: 4rem; margin: 0 auto; overflow: hidden; border: 4px solid var(--accent-sky);">
+          <img src="https://github.com/jumarh.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <i class="fa-solid fa-user-tie" style="display: none; font-size: 4rem; line-height: 140px;"></i>
+        </div>
+        <div class="profile-card-info" style="text-align: center;">
+          <div class="profile-card-name" style="font-size: 1.4rem;">Juvita Umar Hadinata</div>
+          <div class="profile-card-title" style="font-size: 0.9rem; color: var(--accent-cyan);">Digital Library Staff | Academic Library FISIPOL UGM</div>
+          <p style="font-size: 0.8rem; line-height: 1.4; color: var(--text-muted); max-width: 600px; margin: 5px auto;">
+            Alumni Magister Manajemen Informasi dan Perpustakaan (MIP) UGM. Fokus pada pengembangan ekosistem data ilmiah, pengelolaan repositori digital (ETD), asisten penelusuran pustaka, dan visualisasi bibliometrik di lingkungan FISIPOL UGM.
+          </p>
+        </div>
       </div>
     `,
-    speakerNote: "Mendeley Cite jauh lebih stabil."
+    speakerNote: "Perkenalan singkat."
   },
   {
     id: 3,
-    title: "Sintesis Lintas Dokumen dengan NotebookLM",
-    subtitle: "AI sebagai Asisten Peneliti",
+    title: "Meninggalkan Mendeley Desktop",
+    subtitle: "Migrasi ke Mendeley Reference Manager (MRM)",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="display:flex; gap:2rem;">
+        <div style="flex:1; background:rgba(239, 68, 68, 0.1); padding:1.5rem; border-radius:8px; border-left:4px solid #ef4444;">
+          <h3 style="color:#ef4444; margin-bottom:1rem;"><i class="fa-solid fa-clock-rotate-left"></i> Mendeley Desktop (Legacy)</h3>
+          <p>Mendeley versi lama (logo merah gelap) sudah dihentikan dukungannya (*Discontinued*) sejak September 2022. Sering mengalami *error* sinkronisasi di MacOS baru dan Windows 11.</p>
+        </div>
+        <div style="flex:1; background:rgba(16, 185, 129, 0.1); padding:1.5rem; border-radius:8px; border-left:4px solid #10b981;">
+          <h3 style="color:#10b981; margin-bottom:1rem;"><i class="fa-solid fa-cloud"></i> Mendeley Reference Manager</h3>
+          <p>Versi terbaru (logo merah cerah). 100% berbasis Cloud (*Cloud-centric*). Memungkinkan akses perpustakaan referensi Anda dari perangkat mana saja tanpa khawatir kehilangan data jika laptop rusak.</p>
+        </div>
+      </div>
+    `,
+    speakerNote: "Tekankan bahwa pakai Mendeley versi lama berisiko hilang data. Segera migrasi."
+  },
+  {
+    id: 4,
+    title: "Mendeley Cite untuk MS Word",
+    subtitle: "Sitasi Cerdas & Dinamis",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="background:rgba(30,41,59,0.5); padding:2rem; border-radius:0.5rem; text-align:center;">
+        <i class="fa-brands fa-microsoft" style="font-size:3rem; color:#3b82f6; margin-bottom:1rem;"></i>
+        <h3 style="color:var(--accent-sky); margin-bottom:1rem;">Instalasi via Office Add-ins</h3>
+        <p style="font-size:1.1rem; max-width:700px; margin:0 auto; color:var(--text-light);">
+          Mendeley Cite tidak lagi di-install melalui aplikasi utama Mendeley, melainkan diunduh langsung dari dalam <strong>Microsoft Word -> Insert -> Get Add-ins</strong>.
+        </p>
+        <div style="margin-top:1.5rem; display:inline-block; padding:10px 20px; background:rgba(59, 130, 246, 0.2); border:1px dashed #3b82f6; border-radius:8px; color:var(--accent-sky);">
+          Mendukung Word 365, Word 2016+, dan Word Online (iPad/Web).
+        </div>
+      </div>
+    `,
+    speakerNote: "Banyak mahasiswa kebingungan mencari tombol install plugin di Mendeley baru. Sekarang pindah ke Word Store."
+  },
+  {
+    id: 5,
+    title: "Manajemen Library yang Rapi",
+    subtitle: "Kunci dari Penulisan Tesis yang Bebas Stres",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+          <div style="background:rgba(30,41,59,0.5); padding:1.5rem; border-radius:8px;">
+            <h4 style="color:#facc15;"><i class="fa-solid fa-folder-tree"></i> Collections (Folder)</h4>
+            <p style="font-size:0.9rem; margin-top:0.5rem;">Jangan campur semua jurnal. Buat folder per Bab Tesis (Misal: <em>Bab 2 - Teori X</em>, <em>Bab 3 - Metodologi</em>).</p>
+          </div>
+          <div style="background:rgba(30,41,59,0.5); padding:1.5rem; border-radius:8px;">
+            <h4 style="color:var(--accent-purple);"><i class="fa-solid fa-eye"></i> Watch Folder</h4>
+            <p style="font-size:0.9rem; margin-top:0.5rem;">Otomatisasi! Setiap kali Anda men-download PDF jurnal ke folder 'Downloads', Mendeley otomatis menariknya ke library tanpa <em>drag & drop</em>.</p>
+          </div>
+          <div style="background:rgba(30,41,59,0.5); padding:1.5rem; border-radius:8px;">
+            <h4 style="color:#ef4444;"><i class="fa-solid fa-trash-can"></i> Deduplication</h4>
+            <p style="font-size:0.9rem; margin-top:0.5rem;">Bersihkan referensi ganda agar daftar pustaka Anda tidak mencantumkan jurnal yang sama dua kali.</p>
+          </div>
+          <div style="background:rgba(30,41,59,0.5); padding:1.5rem; border-radius:8px;">
+            <h4 style="color:var(--accent-cyan);"><i class="fa-solid fa-pen-to-square"></i> Manual Entry</h4>
+            <p style="font-size:0.9rem; margin-top:0.5rem;">Wajib dikuasai untuk mensitasi sumber non-jurnal (Website Berita, Buku Cetak, Undang-Undang).</p>
+          </div>
+        </div>
+      </div>
+    `,
+    speakerNote: "Manajemen data penting sebelum kita beri makan ke AI."
+  },
+  {
+    id: 6,
+    title: "Sintesis Lintas-Dokumen dengan Google NotebookLM",
+    subtitle: "Asisten Peneliti Pribadi Tanpa Halusinasi",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="display:flex; gap:2rem; align-items:center;">
+        <div style="flex:1;">
+          <h3 style="color:#facc15; margin-bottom:1rem;"><i class="fa-brands fa-google"></i> NotebookLM</h3>
+          <p style="margin-bottom:1rem;">Berbeda dengan ChatGPT yang menjawab dari data internet (rawan halusinasi), NotebookLM <strong>hanya</strong> menjawab berdasarkan PDF jurnal yang Anda unggah (maksimal 50 dokumen).</p>
+          <ul style="font-size:1.1rem; line-height:1.8;">
+            <li>Sintesis konsep dari 10 jurnal sekaligus.</li>
+            <li>Memberikan kutipan sumber (klik untuk langsung ke paragraf asli di PDF).</li>
+            <li>Sangat etis karena tidak mengarang teori baru.</li>
+          </ul>
+        </div>
+        <div style="flex:1; background:rgba(30,41,59,0.5); border:1px solid #334155; padding:1.5rem; border-radius:8px; text-align:center;">
+          <i class="fa-solid fa-file-pdf" style="font-size:2.5rem; color:#ef4444;"></i>
+          <i class="fa-solid fa-plus" style="font-size:1rem; color:var(--text-muted); margin:0 10px;"></i>
+          <i class="fa-solid fa-file-pdf" style="font-size:2.5rem; color:#ef4444;"></i>
+          <br><i class="fa-solid fa-arrow-down" style="color:var(--accent-sky); margin:1rem 0;"></i><br>
+          <i class="fa-solid fa-brain" style="font-size:3rem; color:#facc15; margin-bottom:1rem;"></i>
+          <p style="font-size:0.8rem; color:var(--text-muted);"><em>NotebookLM Source Grounding</em></p>
+        </div>
+      </div>
+    `,
+    speakerNote: "NotebookLM adalah game changer. AI yang membatasi dirinya hanya pada dokumen yang kita beri."
+  },
+  {
+    id: 7,
+    title: "Simulasi NotebookLM",
+    subtitle: "Sintesis Konsep Secara Real-Time",
+    layout: "custom-widget",
+    content: `
+      <div class="slide-layout-standard">
+        <p style="margin-bottom:1rem;">Coba simulasikan bagaimana NotebookLM menjawab pertanyaan dengan menyertakan kutipan (Citations).</p>
+        
+        <div style="background:#1e293b; border-radius:8px; border:1px solid #334155; display:flex; flex-direction:column; height:300px;">
+          <!-- Chat History -->
+          <div style="flex:1; padding:1.5rem; overflow-y:auto; display:flex; flex-direction:column; gap:1rem;">
+            <!-- User Message -->
+            <div style="align-self:flex-end; background:var(--accent-sky); color:#fff; padding:10px 15px; border-radius:12px 12px 0 12px; max-width:80%;">
+              Apa perbedaan definisi modal sosial menurut 3 jurnal yang saya unggah?
+            </div>
+            <!-- AI Response -->
+            <div style="align-self:flex-start; background:#0f172a; border:1px solid #334155; color:var(--text-light); padding:10px 15px; border-radius:12px 12px 12px 0; max-width:90%; font-size:0.95rem; line-height:1.5;">
+              Berdasarkan dokumen yang Anda unggah, terdapat tiga pandangan mengenai modal sosial:
+              <br><br>
+              1. <strong>Bourdieu</strong> mendefinisikan modal sosial sebagai sumber daya aktual atau potensial yang terkait dengan kepemilikan jaringan hubungan <span class="citation-badge" style="background:#334155; color:var(--accent-sky); padding:2px 6px; border-radius:10px; font-size:0.75rem; cursor:pointer;" onclick="alert('Membuka PDF 1 halaman 4...')">[1]</span>.
+              <br>2. <strong>Putnam</strong> melihatnya sebagai fitur organisasi sosial seperti jaringan, norma, dan kepercayaan sosial <span class="citation-badge" style="background:#334155; color:var(--accent-sky); padding:2px 6px; border-radius:10px; font-size:0.75rem; cursor:pointer;" onclick="alert('Membuka PDF 2 halaman 12...')">[2]</span>.
+              <br>3. <strong>Coleman</strong> menyoroti fungsinya sebagai entitas yang terdiri dari aspek struktur sosial <span class="citation-badge" style="background:#334155; color:var(--accent-sky); padding:2px 6px; border-radius:10px; font-size:0.75rem; cursor:pointer;" onclick="alert('Membuka PDF 3 halaman 2...')">[3]</span>.
+            </div>
+          </div>
+          <!-- Input Area -->
+          <div style="border-top:1px solid #334155; padding:10px; display:flex; gap:10px; background:#0f172a; border-radius:0 0 8px 8px;">
+            <input type="text" value="Bagaimana cara mereka mengukurnya?" readonly class="mock-input" style="flex:1; background:#1e293b; border:none; padding:10px; color:#fff; border-radius:4px;">
+            <button class="mock-btn" style="background:var(--accent-sky); border-radius:4px;"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    `,
+    speakerNote: "Perhatikan badge angka [1], [2]. Itu adalah bukti bahwa AI ini grounded (berbasis data yang diunggah)."
+  },
+  {
+    id: 8,
+    title: "Batas Etis: Enterprise Data Protection",
+    subtitle: "Hal. 21 - Panduan Etika Akademik UGM 2025",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard" style="background:rgba(239, 68, 68, 0.1); border-left:5px solid #ef4444; padding:2rem; border-radius:0.5rem;">
+        <h3 style="color:#ef4444; margin-bottom:1rem;"><i class="fa-solid fa-user-secret"></i> Awas Membocorkan Data Riset Primer!</h3>
+        <p style="font-size:1.2rem;">Jangan pernah mengunggah <strong>Transkrip Wawancara Rahasia</strong>, Data Medis Pasien, atau Data Korban ke ChatGPT/Claude versi gratis (Non-Enterprise).</p>
+        <p style="margin-top:1rem; color:var(--text-light);">Kenapa? Karena data yang diunggah ke AI gratis akan digunakan oleh perusahaan AI (OpenAI/Google) untuk melatih model mereka. Data riset Anda bisa "bocor" menjadi jawaban untuk orang lain!</p>
+        <p style="margin-top:1rem; color:var(--text-muted); font-size:0.9rem;"><em>Pengecualian: Boleh mengunggah PDF Jurnal publik karena datanya memang sudah terpublikasi (Open Access).</em></p>
+      </div>
+    `,
+    speakerNote: "Data pribadi informan adalah tanggung jawab peneliti. Jangan diserahkan ke AI gratis."
+  },
+  {
+    id: 9,
+    title: "SciSpace: Menaklukkan PDF Rumit",
+    subtitle: "Membaca Grafik dan Rumus Metode",
     layout: "standard",
     content: `
       <div class="slide-layout-standard" style="display:flex; gap:2rem;">
         <div style="flex:1;">
-          <h3 style="color:var(--accent-cyan); margin-bottom:1rem;">Cara Kerja</h3>
-          <p>Unggah PDF paper Anda ke NotebookLM. Tanyakan pertanyaan lintas-dokumen, dan AI akan menjawab disertai <strong>sitasi akurat</strong> ke dokumen sumber Anda.</p>
+          <h3 style="color:var(--accent-purple); margin-bottom:1rem;"><i class="fa-solid fa-crop-simple"></i> Fitur "Snip & Explain"</h3>
+          <p style="margin-bottom:1rem;">Menghadapi jurnal metodologi kuantitatif yang penuh dengan rumus matematika atau grafik yang membingungkan?</p>
+          <p>Di SciSpace, Anda bisa melakukan <em>screenshot</em> potongan rumus tersebut di dalam PDF, lalu meminta AI untuk menjelaskannya ke dalam bahasa mahasiswa ilmu sosial yang sederhana.</p>
         </div>
-        <div style="flex:1;">
-          <h3 style="color:#ef4444; margin-bottom:1rem;">Peringatan Keamanan (Hal. 21)</h3>
-          <p>Jangan pernah mengunggah data primer yang belum dipublikasi (wawancara rahasia, data pasien) ke versi gratis NotebookLM.</p>
+        <div style="flex:1; background:#0f172a; padding:1.5rem; border-radius:8px; border:1px solid #334155; position:relative;">
+          <div style="font-family:serif; font-size:1.5rem; text-align:center; margin-bottom:1rem; padding:1rem; border:2px dashed var(--accent-purple); color:#cbd5e1;">
+            Y = &beta;<sub>0</sub> + &beta;<sub>1</sub>X<sub>1</sub> + &epsilon;
+          </div>
+          <div style="background:var(--accent-purple); color:#fff; padding:10px; border-radius:8px; font-size:0.9rem;">
+            <strong>AI Explain:</strong> Ini adalah rumus regresi linier sederhana. Dalam konteks FISIPOL, jika Y adalah "Partisipasi Pemilu", maka X1 bisa jadi adalah "Tingkat Pendidikan".
+          </div>
         </div>
       </div>
     `,
-    speakerNote: "Peringatan etika terkait data."
+    speakerNote: "Mahasiswa ilmu sosial sering kesulitan baca jurnal kuantitatif. SciSpace adalah penyelamat."
   },
   {
-    id: 4,
-    title: "Aturan UGM: Penulisan & Plagiarisme",
-    subtitle: "Bebas dari Intervensi AI Berlebih",
+    id: 10,
+    title: "Deklarasi Penggunaan AI",
+    subtitle: "Hal. 43 - Bukti Kejujuran Akademik UGM",
     layout: "standard",
     content: `
-      <div class="slide-layout-standard" style="background:rgba(59, 130, 246, 0.1); border-left:5px solid #3b82f6; padding:2rem; border-radius:0.5rem;">
-        <h3 style="color:#3b82f6; margin-bottom:1rem;">Deklarasi Penggunaan (Hal. 43)</h3>
-        <p style="font-size:1.2rem;">Mahasiswa wajib mengisi Surat Pernyataan bahwa naskah akhir bebas dari intervensi AI berlebih.</p>
-        <p style="margin-top:1rem; color:var(--text-muted);">AI hanya diizinkan untuk: 1. Penyuntingan Bahasa (Grammarly). 2. Sintesis Konsep awal. BUKAN untuk menyusun paragraf argumen utama secara utuh.</p>
+      <div class="slide-layout-standard" style="background:rgba(16, 185, 129, 0.1); border-left:5px solid #10b981; padding:2rem; border-radius:0.5rem;">
+        <h3 style="color:#10b981; margin-bottom:1rem;"><i class="fa-solid fa-file-signature"></i> Wajib Disisipkan di Tesis/Disertasi</h3>
+        <p style="font-size:1.1rem; margin-bottom:1rem;">Sesuai mandat UGM, jika Anda menggunakan AI untuk memperbaiki grammar (Grammarly) atau menyintesis konsep awal (NotebookLM), Anda wajib melampirkan <strong>Surat Pernyataan Penggunaan AI</strong> di karya akhir.</p>
+        
+        <div style="background:rgba(255,255,255,0.05); padding:1rem; border-left:3px solid var(--text-muted); font-style:italic; font-size:0.95rem;">
+          "Saya mendeklarasikan bahwa saya menggunakan NotebookLM semata-mata untuk tujuan pengorganisasian ide dan merangkum jurnal literatur. Seluruh analisis substantif dan pengambilan kesimpulan adalah hasil pemikiran orisinal saya tanpa campur tangan kecerdasan buatan (Cognitive Debt)."
+        </div>
       </div>
     `,
-    speakerNote: "Jangan biarkan AI menulis tesis."
+    speakerNote: "Transparansi. Daripada dituduh plagiat oleh Turnitin AI-Detector, lebih baik deklarasikan dari awal di halaman depan Tesis."
+  },
+  {
+    id: 11,
+    title: "Terima Kasih & Daftar Referensi",
+    subtitle: "Akhir dari Modul 2",
+    layout: "standard",
+    content: `
+      <div class="slide-layout-standard">
+        <div style="background: rgba(30,41,59,0.5); padding: 2rem; border-radius: 8px; margin-bottom: 2rem; text-align:center;">
+          <h2 style="color:var(--accent-sky); margin-bottom:1rem;">Terima Kasih!</h2>
+          <p style="font-size:1.1rem;">Semoga Modul 2 ini membantu Anda mengatur ribuan PDF dan membaca jurnal dengan kecepatan 10x lipat tanpa kehilangan pemahaman kritis.</p>
+          <div style="margin-top:1.5rem; font-size:1.2rem; color:var(--accent-purple);">
+            <i class="fa-solid fa-envelope"></i> juvitaumarhadinata@ugm.ac.id
+          </div>
+        </div>
+        
+        <h4 style="color:var(--text-light); margin-bottom:1rem; border-bottom:1px solid #334155; padding-bottom:5px;">Daftar Referensi Modul 2:</h4>
+        <ul style="font-size:0.85rem; color:var(--text-muted); line-height:1.6; list-style-type:circle; padding-left:20px;">
+          <li>Universitas Gadjah Mada. (2025). <em>Panduan Etika Akademik Penggunaan AI Generatif</em>. Yogyakarta: UGM Press.</li>
+          <li>Elsevier. (2025). <em>Mendeley Reference Manager User Guide</em>. mendeley.com.</li>
+          <li>Google Labs. (2025). <em>NotebookLM: Grounded AI for Research</em>. notebooklm.google.</li>
+          <li>SciSpace. (2025). <em>AI Copilot for Researchers</em>. typeset.io.</li>
+        </ul>
+      </div>
+    `,
+    speakerNote: "Penutup Modul 2. Persilakan peserta untuk istirahat atau sesi tanya jawab."
   }
 ];
 
 // 2. STATE MANAGEMENT
 let currentSlideIndex = 0;
-
-// Mock node dataset for VOSviewer widgets (Slides 18, 19, 20)
-const vosNodes = [
-  { id: 1, label: "Artificial Intelligence", x: 50, y: 55, size: 45, cluster: 1, year: 2021.5, density: 0.9 },
-  { id: 2, label: "Higher Education", x: 30, y: 40, size: 35, cluster: 1, year: 2022.0, density: 0.8 },
-  { id: 3, label: "ChatGPT", x: 65, y: 35, size: 28, cluster: 2, year: 2024.2, density: 0.75 },
-  { id: 4, label: "Academic Integrity", x: 75, y: 60, size: 25, cluster: 2, year: 2023.8, density: 0.65 },
-  { id: 5, label: "Policy & Governance", x: 45, y: 80, size: 30, cluster: 3, year: 2022.5, density: 0.6 },
-  { id: 6, label: "Online Learning", x: 20, y: 70, size: 22, cluster: 4, year: 2020.1, density: 0.4 },
-  { id: 7, label: "Machine Learning", x: 60, y: 75, size: 20, cluster: 3, year: 2021.8, density: 0.5 }
-];
-
-const vosLines = [
-  { from: 1, to: 2 }, { from: 1, to: 3 }, { from: 1, to: 5 }, { from: 1, to: 7 },
-  { from: 3, to: 4 }, { from: 2, to: 6 }, { from: 5, to: 7 }, { from: 2, to: 5 }
-];
-
-// Color palettes for VOSviewer tabs
-const clusterColors = {
-  1: "#3b82f6", // Blue
-  2: "#a855f7", // Purple
-  3: "#10b981", // Emerald
-  4: "#f43f5e"  // Rose
-};
 
 // 3. ENGINE INITIALIZATION
 document.addEventListener("DOMContentLoaded", () => {
@@ -109,27 +273,25 @@ function renderSlide(index) {
   const slide = slideData[index];
   const wrapper = document.getElementById("active-slide-wrapper");
   
-  // Clean wrapper
   wrapper.innerHTML = "";
   
-  // 3.1 Inject Web Navigation Mockup (like Eric Kunto style) if layout is not cover
+  // 3.1 Inject Web Navigation khusus Modul 2
   let headerHtml = "";
   if (slide.layout !== "cover") {
     headerHtml = `
       <header class="mock-web-header">
         <div class="mock-web-brand"><i class="fa-solid fa-book-open-reader"></i> <span>DIGILIB <strong>FISIPOL</strong></span></div>
         <nav class="mock-web-nav">
-          <button class="mock-web-link ${slide.id <= 5 ? 'active' : ''}" onclick="jumpToSlide(1)">Home</button>
-          <button class="mock-web-link ${slide.id > 5 && slide.id <= 9 ? 'active' : ''}" onclick="jumpToSlide(6)">1. Query Scopus</button>
-          <button class="mock-web-link ${slide.id > 9 && slide.id <= 14 ? 'active' : ''}" onclick="jumpToSlide(10)">2. OpenRefine</button>
-          <button class="mock-web-link ${slide.id > 14 && slide.id <= 21 ? 'active' : ''}" onclick="jumpToSlide(15)">3. VOSviewer</button>
-          <button class="mock-web-link ${slide.id > 21 ? 'active' : ''}" onclick="jumpToSlide(22)">4. AI & Gap</button>
+          <button class="mock-web-link ${slide.id === 1 ? 'active' : ''}" onclick="jumpToSlide(1)">Home</button>
+          <button class="mock-web-link ${slide.id > 1 && slide.id <= 5 ? 'active' : ''}" onclick="jumpToSlide(3)">1. Migrasi Mendeley</button>
+          <button class="mock-web-link ${slide.id > 5 && slide.id <= 7 ? 'active' : ''}" onclick="jumpToSlide(6)">2. NotebookLM</button>
+          <button class="mock-web-link ${slide.id === 9 ? 'active' : ''}" onclick="jumpToSlide(9)">3. SciSpace</button>
+          <button class="mock-web-link ${slide.id === 8 || slide.id >= 10 ? 'active' : ''}" onclick="jumpToSlide(8)">4. Etika Data</button>
         </nav>
       </header>
     `;
   }
   
-  // Set structure inside wrapper based on layout
   wrapper.innerHTML = `
     ${headerHtml}
     
@@ -148,16 +310,11 @@ function renderSlide(index) {
     </div>
   `;
   
-  // Update indicator
   document.getElementById("slide-indicator").innerText = `${slide.id} / ${slideData.length}`;
   
-  // Update Presenter Notes
-  document.getElementById("discussion-note-box").innerHTML = slide.discussionNote || "â€”";
-  document.getElementById("speaker-note-box").innerHTML = slide.speakerNote || "â€”";
-  document.getElementById("reference-note-box").innerHTML = slide.referenceNote || "â€”";
-  
-  // Trigger layout specific widgets activation
-  activateWidgets(slide.id);
+  document.getElementById("discussion-note-box").innerHTML = slide.discussionNote || "A,??";
+  document.getElementById("speaker-note-box").innerHTML = slide.speakerNote || "A,??";
+  document.getElementById("reference-note-box").innerHTML = slide.referenceNote || "A,??";
   
   // Highlight active item in drawer
   document.querySelectorAll(".drawer-item").forEach((el, idx) => {
@@ -167,22 +324,14 @@ function renderSlide(index) {
 }
 
 function setupEventHandlers() {
-  // Navigation buttons
   document.getElementById("btn-prev").addEventListener("click", prevSlide);
   document.getElementById("btn-next").addEventListener("click", nextSlide);
-  
-  // Drawer Panel toggle
   document.getElementById("btn-drawer-toggle").addEventListener("click", toggleSlideDrawer);
   document.getElementById("btn-close-drawer").addEventListener("click", toggleSlideDrawer);
-  
-  // Notes Sidebar toggle
   document.getElementById("btn-notes-toggle").addEventListener("click", toggleNotesPanel);
   document.getElementById("btn-close-notes").addEventListener("click", toggleNotesPanel);
-  
-  // Fullscreen toggle
   document.getElementById("btn-fullscreen").addEventListener("click", toggleFullscreen);
   
-  // Keyboard listeners
   document.addEventListener("keydown", (e) => {
     if (e.key === "ArrowRight" || e.key === " ") {
       nextSlide();
@@ -194,7 +343,6 @@ function setupEventHandlers() {
   });
 }
 
-// 4. NAV ACTIONS
 function nextSlide() {
   if (currentSlideIndex < slideData.length - 1) {
     currentSlideIndex++;
@@ -202,7 +350,6 @@ function nextSlide() {
   }
 }
 
-// Jump navigation for mock header nav links
 function jumpToSlide(slideNumber) {
   const index = slideNumber - 1;
   if (index >= 0 && index < slideData.length) {
@@ -239,7 +386,6 @@ function toggleFullscreen() {
   }
 }
 
-// Build Slide Drawer list
 function buildSlideDrawer() {
   const listContainer = document.getElementById("drawer-list");
   listContainer.innerHTML = "";
@@ -257,215 +403,5 @@ function buildSlideDrawer() {
       toggleSlideDrawer();
     });
     listContainer.appendChild(item);
-  });
-}
-
-// 5. INTERACTIVE WIDGET LOGICS
-function activateWidgets(slideId) {
-  // Slide 7 Query Builder (previously Slide 6, pushed by 1 page profile addition)
-  if (slideId === 7) {
-    const inputs = ["qb-concept-1", "qb-concept-2", "qb-concept-3", "qb-year"];
-    inputs.forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.addEventListener("input", updateQueryBuilderOutput);
-    });
-  }
-  
-  // VOSviewer Mock Widgets (Slides 18, 19, 20)
-  if (slideId === 18) {
-    renderVosMockMap("vos-canvas", "network");
-  } else if (slideId === 19) {
-    renderVosMockMap("vos-canvas-2", "overlay");
-  } else if (slideId === 20) {
-    renderVosMockMap("vos-canvas-3", "density");
-  }
-}
-
-// WIDGET 1: Query Builder
-function updateQueryBuilderOutput() {
-  const c1 = document.getElementById("qb-concept-1").value;
-  const c2 = document.getElementById("qb-concept-2").value;
-  const c3 = document.getElementById("qb-concept-3").value;
-  const yearVal = parseInt(document.getElementById("qb-year").value) - 1;
-  
-  const query = `TITLE-ABS-KEY(${c1}) AND TITLE-ABS-KEY(${c2}) AND TITLE-ABS-KEY(${c3}) AND PUBYEAR > ${yearVal} AND (LIMIT-TO(DOCTYPE, "ar") OR LIMIT-TO(DOCTYPE, "cp")) AND LIMIT-TO(LANGUAGE, "English")`;
-  
-  const codeBox = document.getElementById("qb-output-code");
-  if (codeBox) codeBox.innerText = query;
-}
-
-// WIDGET 2: VOSviewer Interactive Map
-function renderVosMockMap(canvasId, mode) {
-  const canvas = document.getElementById(canvasId);
-  if (!canvas) return;
-  canvas.innerHTML = "";
-  
-  const canvasWidth = canvas.clientWidth || 600;
-  const canvasHeight = canvas.clientHeight || 250;
-  
-  // Render Background Grid / Heatmap for Density mode
-  if (mode === "density") {
-    canvas.style.background = "radial-gradient(circle at 45% 50%, rgba(239, 68, 68, 0.4) 0%, rgba(245, 158, 11, 0.1) 40%, #030712 70%)";
-  } else {
-    canvas.style.background = "#030712";
-  }
-
-  // Draw lines first (beneath nodes)
-  vosLines.forEach(line => {
-    const fromNode = vosNodes.find(n => n.id === line.from);
-    const toNode = vosNodes.find(n => n.id === line.to);
-    
-    if (fromNode && toNode) {
-      const x1 = (fromNode.x / 100) * canvasWidth;
-      const y1 = (fromNode.y / 100) * canvasHeight;
-      const x2 = (toNode.x / 100) * canvasWidth;
-      const y2 = (toNode.y / 100) * canvasHeight;
-      
-      const length = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-      const angle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
-      
-      const lineEl = document.createElement("div");
-      lineEl.className = "vos-line";
-      lineEl.style.width = `${length}px`;
-      lineEl.style.left = `${x1}px`;
-      lineEl.style.top = `${y1}px`;
-      lineEl.style.transform = `rotate(${angle}deg)`;
-      
-      canvas.appendChild(lineEl);
-    }
-  });
-
-  // Draw nodes
-  vosNodes.forEach(node => {
-    const nodeEl = document.createElement("div");
-    nodeEl.className = "vos-node";
-    nodeEl.style.width = `${node.size}px`;
-    nodeEl.style.height = `${node.size}px`;
-    
-    // Position node center
-    const posX = (node.x / 100) * canvasWidth - (node.size / 2);
-    const posY = (node.y / 100) * canvasHeight - (node.size / 2);
-    nodeEl.style.left = `${posX}px`;
-    nodeEl.style.top = `${posY}px`;
-    
-    // Set colors based on mode
-    if (mode === "network") {
-      nodeEl.style.backgroundColor = clusterColors[node.cluster];
-      nodeEl.style.color = "#ffffff";
-    } else if (mode === "overlay") {
-      // Color gradient by year: 2020 (blue) to 2024 (yellow)
-      const ratio = (node.year - 2020) / (2024.5 - 2020);
-      nodeEl.style.backgroundColor = getInterpolatedColor("#3b82f6", "#f59e0b", ratio);
-      nodeEl.style.color = "#ffffff";
-    } else if (mode === "density") {
-      // Glow colors for heatmap
-      nodeEl.style.backgroundColor = `rgba(245, 158, 11, ${node.density})`;
-      nodeEl.style.color = "#000000";
-      nodeEl.style.boxShadow = `0 0 15px rgba(245, 158, 11, ${node.density})`;
-    }
-    
-    nodeEl.innerHTML = `<span>${node.label}</span>`;
-    
-    // Attach click metadata listener
-    nodeEl.addEventListener("click", () => {
-      let infoText = "";
-      if (mode === "network") {
-        infoText = `<h5>ðŸ”µ Node: ${node.label}</h5>
-                   <p>Klaster: <strong>Klaster ${node.cluster}</strong></p>
-                   <p>Kemunculan: <strong>${Math.round(node.size * 2.3)} kali</strong></p>
-                   <p>Kekuatan Tautan: <strong>${Math.round(node.size * 1.5)}</strong></p>`;
-      } else if (mode === "overlay") {
-        infoText = `<h5>ðŸ•’ Node: ${node.label}</h5>
-                   <p>Rata-rata Tahun Terbit: <strong>${node.year.toFixed(1)}</strong></p>
-                   <p>Status: <strong>${node.year >= 2023.5 ? 'Emerging Topic (Mulai Tren)' : 'Established Topic'}</strong></p>`;
-      } else if (mode === "density") {
-        infoText = `<h5>ðŸ”¥ Node: ${node.label}</h5>
-                   <p>Kepadatan Riset: <strong>${(node.density * 100).toFixed(0)}%</strong></p>
-                   <p>Status: <strong>${node.density >= 0.75 ? 'Hotspot (Sangat Padat)' : 'Coldspot (Peluang Riset)'}</strong></p>`;
-      }
-      
-      const boxId = mode === "network" ? "vos-info-box" : (mode === "overlay" ? "vos-info-box-2" : "vos-info-box-3");
-      const infoBox = document.getElementById(boxId);
-      if (infoBox) infoBox.innerHTML = infoText;
-    });
-    
-    canvas.appendChild(nodeEl);
-  });
-}
-
-// Color interpolator helper
-function getInterpolatedColor(color1, color2, factor) {
-  if (factor < 0) factor = 0;
-  if (factor > 1) factor = 1;
-  
-  // Simple hex parsing
-  const c1 = {
-    r: parseInt(color1.substring(1, 3), 16),
-    g: parseInt(color1.substring(3, 5), 16),
-    b: parseInt(color1.substring(5, 7), 16)
-  };
-  const c2 = {
-    r: parseInt(color2.substring(1, 3), 16),
-    g: parseInt(color2.substring(3, 5), 16),
-    b: parseInt(color2.substring(5, 7), 16)
-  };
-  
-  const r = Math.round(c1.r + factor * (c2.r - c1.r));
-  const g = Math.round(c1.g + factor * (c2.g - c1.g));
-  const b = Math.round(c1.b + factor * (c2.b - c1.b));
-  
-  return `rgb(${r}, ${g}, ${b})`;
-}
-
-// Tab switcher for VOSviewer interactive widget
-function switchVosTab(tabName) {
-  if (tabName === "network") {
-    currentSlideIndex = 17; // Slide 18 index is 17
-  } else if (tabName === "overlay") {
-    currentSlideIndex = 18; // Slide 19 index is 18
-  } else if (tabName === "density") {
-    currentSlideIndex = 19; // Slide 20 index is 19
-  }
-  renderSlide(currentSlideIndex);
-}
-
-// WIDGET 3: Data Cleaning Game demo merge
-function mergeDemo(btnId, cleanValue) {
-  const btn = document.getElementById(`merge-btn-${btnId}`);
-  if (!btn || btn.classList.contains("merged")) return;
-  
-  btn.classList.add("merged");
-  btn.innerHTML = `<i class="fa-solid fa-check"></i> Merged`;
-  
-  const msg = document.getElementById("merge-result-msg");
-  msg.innerHTML = `<i class="fa-solid fa-circle-check"></i> Berhasil mengkonsolidasikan data ke nama baku: <strong>"${cleanValue}"</strong>!`;
-}
-
-// WIDGET 4: Interactive Checklist
-function toggleChecklist(el) {
-  el.classList.toggle("checked");
-  const icon = el.querySelector(".checkbox-icon");
-  if (el.classList.contains("checked")) {
-    icon.className = "checkbox-icon fa-regular fa-square-check";
-  } else {
-    icon.className = "checkbox-icon fa-regular fa-square";
-  }
-}
-
-// Utilities: Copy text to clipboard
-function copyToClipboard(elementId) {
-  const codeText = document.getElementById(elementId).innerText;
-  navigator.clipboard.writeText(codeText).then(() => {
-    // Show feedback popup or button change
-    const btn = document.querySelector(`[onclick="copyToClipboard('${elementId}')"]`);
-    const origText = btn.innerHTML;
-    btn.innerHTML = `<i class="fa-solid fa-check" style="color: var(--accent-emerald);"></i> Copied!`;
-    btn.style.borderColor = "var(--accent-emerald)";
-    setTimeout(() => {
-      btn.innerHTML = origText;
-      btn.style.borderColor = "";
-    }, 2000);
-  }).catch(err => {
-    console.error("Gagal menyalin teks: ", err);
   });
 }
