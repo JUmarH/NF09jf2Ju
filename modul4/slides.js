@@ -1,4 +1,4 @@
-﻿const slides = [
+const slides = [
     {
         id: "intro",
         title: "Workshop AI Digilib FISIPOL",
