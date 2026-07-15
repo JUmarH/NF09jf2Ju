@@ -46,7 +46,7 @@ const slideData = [
     subtitle: "Juvita Umar Hadinata (Academic Library FISIPOL UGM)",
     layout: "custom-widget",
     content: `
-      <div class="profile-card-container" style="background: rgba(30, 41, 59, 0.2); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 20px;">
+      <div class="profile-card-container" style='background: rgba(30, 41, 59, 0.2); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 20px;'>
         <div class="profile-card-photo" style="width: 150px; height: 150px; font-size: 4rem; margin: 0 auto; overflow: hidden; border: 4px solid var(--accent-sky);">
           <img src="https://github.com/jumarh.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <i class="fa-solid fa-user-tie" style="display: none; font-size: 4rem; line-height: 140px;"></i>
@@ -90,7 +90,7 @@ const slideData = [
           </ul>
         </div>
         <div class="grid-col">
-          <div style="background: rgba(244, 63, 94, 0.1); border-left: 4px solid var(--accent-rose); padding: 15px; border-radius: 8px; font-size: 0.95rem;">
+          <div style='background: rgba(244, 63, 94, 0.1); border-left: 4px solid var(--accent-rose); padding: 15px; border-radius: 8px; font-size: 0.95rem;'>
             <h4 style="color: var(--accent-rose); margin-bottom: 10px;"><i class="fa-solid fa-triangle-exclamation"></i> Jebakan Tradisional</h4>
             <p style="color: #fecdd3;">Mengandalkan 100% pada Google Scholar dan Wikipedia akan membuat riset Anda kehilangan validitas akademis di mata dosen penguji internasional.</p>
           </div>
@@ -175,7 +175,7 @@ const slideData = [
           </ul>
         </div>
         <div class="grid-col" style="text-align: center;">
-          <div style="background: rgba(59,130,246,0.1); border: 1px solid var(--accent-blue); border-radius: 8px; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+          <div style='background: rgba(59,130,246,0.1); border: 1px solid var(--accent-blue); border-radius: 8px; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;'>
             <i class="fa-solid fa-building-columns" style="font-size: 4rem; color: var(--accent-sky); margin-bottom: 20px;"></i>
             <h3 style="color: var(--accent-sky); margin-bottom: 10px;">lib.ugm.ac.id</h3>
             <p style="font-size: 0.9rem; color: var(--text-muted);">Gerbang SSO Universitas Gadjah Mada menuju repositori pengetahuan global.</p>
@@ -194,7 +194,7 @@ const slideData = [
     layout: "standard",
     content: `
       <div class="slide-layout-standard">
-        <div style="background: rgba(16, 185, 129, 0.1); border-left: 5px solid var(--accent-emerald); padding: 2rem; border-radius: 0.5rem; margin-bottom: 20px;">
+        <div style='background: rgba(16, 185, 129, 0.1); border-left: 5px solid var(--accent-emerald); padding: 2rem; border-radius: 0.5rem; margin-bottom: 20px;'>
           <h3 style="color: var(--accent-emerald); margin-bottom: 1rem;"><i class="fa-solid fa-magnifying-glass-plus"></i> Apa itu Summon?</h3>
           <p style="font-size: 1.2rem; line-height: 1.6;">Summon 2.0 adalah <em>Federated Discovery Service</em>. Bayangkan ini seperti Google, tetapi kotak pencariannya khusus mencari ke dalam <strong>SELURUH database jurnal berbayar</strong> yang dilanggan UGM secara bersamaan.</p>
         </div>
@@ -224,7 +224,7 @@ const slideData = [
           </ul>
         </div>
         <div class="grid-col">
-          <div style="background: rgba(30, 41, 59, 0.4); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+          <div style='background: rgba(30, 41, 59, 0.4); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;'>
             <i class="fa-solid fa-book-atlas" style="font-size: 4rem; color: var(--accent-purple); margin-bottom: 15px;"></i>
             <h4 style="color: var(--accent-purple);">Koleksi Tandon</h4>
             <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 10px;">Buku-buku wajib mata kuliah (tandon) yang ada di Perpustakaan FISIPOL bisa dilacak lewat katalog daring.</p>
@@ -323,7 +323,7 @@ const slideData = [
               <td>Pusat jurnal ilmu sosial terapan terlengkap.</td>
             </tr>
             <tr>
-              <td style="color: var(--accent-rose); font-weight: bold;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Scopus_logo.svg" class="brand-logo-inline" alt="Scopus"> & Web of Science</td>
+              <td style="color: var(--accent-rose); font-weight: bold;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Scopus_logo.svg" class='brand-logo-inline' alt="Scopus"> & Web of Science</td>
               <td><em>Bukan untuk mengunduh Full-text.</em> Gunakan murni untuk menambang tren riset dan analisis jejaring bibliometrik.</td>
             </tr>
           </tbody>
@@ -356,7 +356,7 @@ const slideData = [
           </ul>
         </div>
         <div class="grid-col">
-           <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+           <div style='background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;'>
             <i class="fa-solid fa-graduation-cap" style="font-size: 3rem; color: var(--accent-emerald); margin-bottom: 15px;"></i>
             <h4 style="color: var(--accent-emerald); margin-bottom: 10px; text-align: center;">Pojok Kelas Berbagi</h4>
             <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center;">Portal khusus di web digilib untuk mengunduh modul PDF (termasuk materi ini), video tutorial, dan mendaftar sesi asistensi riset (1-on-1) dengan tim pustakawan fakultas.</p>
@@ -381,11 +381,11 @@ const slideData = [
         </p>
         
         <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 2rem;">
-          <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-emerald); padding: 15px; border-radius: 8px; width: 300px;">
+          <div style='background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-emerald); padding: 15px; border-radius: 8px; width: 300px;'>
             <h4 style="color: var(--accent-emerald); margin-bottom: 10px;">Fitur Klaster Topik</h4>
             <p style="font-size: 0.85rem; color: var(--text-muted);">Lihat visualisasi kata kunci yang paling sering diteliti oleh seorang dosen dalam 5 tahun terakhir.</p>
           </div>
-          <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-emerald); padding: 15px; border-radius: 8px; width: 300px;">
+          <div style='background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-emerald); padding: 15px; border-radius: 8px; width: 300px;'>
             <h4 style="color: var(--accent-emerald); margin-bottom: 10px;">Jejaring Kolaborasi</h4>
             <p style="font-size: 0.85rem; color: var(--text-muted);">Lihat dengan siapa dosen tersebut sering melakukan riset bersama.</p>
           </div>
@@ -429,7 +429,7 @@ const slideData = [
           <div style="flex: 2; text-align: left;">
             <h3 style="color: var(--accent-sky); margin-bottom: 10px;">Jaringan Dokumentasi dan Informasi Hukum Nasional (JDIHN)</h3>
             <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 15px;">Satu portal terpusat dari Kementerian Hukum dan HAM untuk melacak status ribuan Peraturan Presiden, Undang-Undang, hingga Peraturan Daerah.</p>
-            <div style="background: rgba(244, 63, 94, 0.1); border-left: 4px solid var(--accent-rose); padding: 12px; border-radius: 4px; font-size: 0.9rem; color: #fecdd3;">
+            <div style='background: rgba(244, 63, 94, 0.1); border-left: 4px solid var(--accent-rose); padding: 12px; border-radius: 4px; font-size: 0.9rem; color: #fecdd3;'>
               <strong>Kritis:</strong> Selalu cek kolom Status! Pastikan Undang-Undang yang Anda analisis di bab pembahasan berstatus <strong>"Berlaku"</strong>, bukan <strong>"Dicabut"</strong>.
             </div>
             <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 15px;">
@@ -462,7 +462,7 @@ const slideData = [
           </ul>
         </div>
         <div class="grid-col">
-           <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+           <div style='background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;'>
             <i class="fa-solid fa-chart-column" style="font-size: 4rem; color: var(--accent-cyan); margin-bottom: 15px;"></i>
             <h4 style="color: var(--accent-cyan); margin-bottom: 10px; text-align: center;">Sensus & Susenas</h4>
             <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center;">Gunakan hasil Survei Sosial Ekonomi Nasional (Susenas) untuk mendapatkan data tingkat makro tentang pendidikan, kesehatan, dan kesejahteraan rumah tangga.</p>
@@ -506,7 +506,7 @@ const slideData = [
       <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 15px;">
         <p style="font-size: 1.1rem; line-height: 1.5;">Tidak semua instansi negara mengunggah dataset-nya ke website (karena kurangnya digitalisasi). Apa yang harus Anda lakukan?</p>
         
-        <div style="background: rgba(16, 185, 129, 0.1); border-left: 5px solid var(--accent-emerald); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
+        <div style='background: rgba(16, 185, 129, 0.1); border-left: 5px solid var(--accent-emerald); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;'>
           <p><strong>1. Ketahui Hak Anda:</strong> UU No. 14 Tahun 2008 (Keterbukaan Informasi Publik) menjamin hak masyarakat (termasuk akademisi) untuk mendapatkan informasi negara secara terbuka.</p>
           <p><strong>2. Cari PPID Instansi:</strong> Cari <em>Pejabat Pengelola Informasi dan Dokumentasi (PPID)</em> pada kementerian/dinas terkait. Merekalah loket legal permintaan data.</p>
           <p><strong>3. Ajukan Surat Resmi:</strong> Bawa "Surat Pengantar Penelitian" resmi bertanda tangan dari Dekanat FISIPOL UGM sebagai bukti legalitas tujuan akademis.</p>
@@ -548,7 +548,7 @@ const slideData = [
           <li><strong style="color:#ef4444;">NOT:</strong> Mengecualikan kata kunci agar noise berkurang.</li>
           <li><strong style="color:#facc15;">"Tanda Kutip" :</strong> Pencarian Frasa Eksak (<em>Exact Phrase</em>).</li>
         </ul>
-        <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 8px;">
+        <div style='background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 8px;'>
            <p style="font-family: var(--font-code); color: var(--accent-amber); font-size: 1rem; text-align: center;">Contoh Query: <br><code>("Social Media" OR "Twitter") AND "Political Participation"</code></p>
         </div>
       </div>
@@ -568,14 +568,14 @@ const slideData = [
           <p style="font-size: 1rem; line-height: 1.6;">
             Pencarian <strong>Leksikal</strong> di OPAC/Google biasa hanya mencocokkan karakter teks (huruf demi huruf). 
           </p>
-          <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin-top: 10px;">
+          <div style='background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin-top: 10px;'>
             <h4 style="color: var(--accent-sky); margin-bottom: 5px;">Contoh Skripsi:</h4>
             <p style="font-size: 0.9rem; color: var(--text-muted);">Mencari literatur isu mahasiswa.</p>
             <p style="font-family: var(--font-code); color: var(--accent-rose); font-size: 0.85rem; margin-top: 10px;">Query:<br><code>("Mental Health" OR "Depression") AND "University Student"</code></p>
           </div>
         </div>
         <div class="grid-col">
-          <div style="background: rgba(244, 63, 94, 0.1); border-left: 4px solid var(--accent-rose); padding: 20px; border-radius: 4px; font-size: 0.95rem; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+          <div style='background: rgba(244, 63, 94, 0.1); border-left: 4px solid var(--accent-rose); padding: 20px; border-radius: 4px; font-size: 0.95rem; display: flex; flex-direction: column; justify-content: center; height: 100%;'>
             <h4 style="color: var(--accent-rose); margin-bottom: 10px;"><i class="fa-solid fa-triangle-exclamation"></i> Artikel Bagus yang Terlewat</h4>
             <p style="color: var(--text-muted); line-height: 1.6;">
               Terdapat 1 paper dengan ribuan sitasi berjudul: <br><strong style="color: white;">"Psychological Well-being in Higher Education"</strong>.
@@ -645,7 +645,7 @@ const slideData = [
       <div class="slide-grid-2">
         <div class="grid-col">
           <p style="font-size: 1rem; line-height: 1.6;">
-            Jauh lebih cerdas dari Google Scholar biasa. <strong><img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Semantic_Scholar_logo.svg" class="brand-logo-inline" style="background: white; padding: 2px; border-radius: 4px;" alt="Semantic Scholar"> Semantic Scholar</strong> didesain khusus untuk ilmuwan agar tidak mabuk membaca abstrak.
+            Jauh lebih cerdas dari Google Scholar biasa. <strong><img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Semantic_Scholar_logo.svg" class='brand-logo-inline' style='background: white; padding: 2px; border-radius: 4px;' alt="Semantic Scholar"> Semantic Scholar</strong> didesain khusus untuk ilmuwan agar tidak mabuk membaca abstrak.
           </p>
           <ul class="slide-list list-bullet" style="font-size: 0.9rem; margin-top: 15px;">
             <li><strong>Fitur TL;DR (Too Long; Didn't Read):</strong> AI secara otomatis meringkas teks abstrak (300 kata) menjadi <strong>satu kalimat kesimpulan padat (20 kata)</strong>.</li>
@@ -653,11 +653,11 @@ const slideData = [
           </ul>
         </div>
         <div class="grid-col">
-          <div style="background: #080c14; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; position: relative;">
+          <div style='background: #080c14; border: 1px solid var(--border-color); border-radius: 10px; padding: 20px; position: relative;'>
             <div style="font-size: 0.8rem; color: var(--accent-purple); font-weight: bold; margin-bottom: 10px;">[Mockup Semantic Scholar]</div>
             <h4 style="color: var(--accent-sky); margin-bottom: 5px; font-size: 0.9rem;">The Impact of Cash Transfers on Child Nutrition</h4>
             <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 15px;">Author: John Doe et al. (2024)</p>
-            <div style="background: rgba(236, 72, 153, 0.1); border-left: 3px solid var(--accent-pink); padding: 10px; font-size: 0.8rem;">
+            <div style='background: rgba(236, 72, 153, 0.1); border-left: 3px solid var(--accent-pink); padding: 10px; font-size: 0.8rem;'>
               <strong style="color: var(--accent-pink);">TL;DR:</strong> <em>Conditional cash transfers significantly improve child nutrition outcomes only when combined with mandatory health checkups.</em>
             </div>
             <p style="font-size: 0.7rem; color: var(--accent-emerald); margin-top: 10px; font-weight: bold;">^ Satu detik cukup untuk tahu inti artikel ini tanpa membuka PDF-nya!</p>
@@ -671,7 +671,7 @@ const slideData = [
   },
   {
     id: 25,
-    title: "Alat 2: <span style="background: white; color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">C</span> Consensus",
+    title: "Alat 2: <span style='background: white; color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;' class='brand-logo-inline'>C</span> Consensus",
     subtitle: "Mencari 'Klaim Ilmiah', Bukan Tautan Website",
     layout: "standard",
     content: `
@@ -680,7 +680,7 @@ const slideData = [
           Jika Google mencari "website yang mengandung kata kunci Anda",<br> <strong>Consensus mencari "KLAIM para ilmuwan atas pertanyaan spesifik Anda"</strong> langsung dari jurnal <em>peer-reviewed</em>.
         </p>
         
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; font-size: 0.95rem; max-width: 800px; margin: 0 auto;">
+        <div style='background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; font-size: 0.95rem; max-width: 800px; margin: 0 auto;'>
           <p style="color: var(--accent-cyan); font-weight: bold; margin-bottom: 10px;"><i class="fa-solid fa-wand-magic-sparkles"></i> Contoh Prompt Ajaib:</p>
           <p style="font-family: var(--font-code); background: #000; padding: 15px; border-radius: 4px; margin-bottom: 15px; color: white;">"Does social media algorithms increase political polarization in developing countries?"</p>
           
@@ -704,7 +704,7 @@ const slideData = [
     `,
     discussionNote: "Bandingkan Consensus dengan ChatGPT biasa. Consensus akan mengutip paper spesifik untuk mendukung argumen 'Yes' atau 'No', tidak mengarang bebas.",
     speakerNote: "Demo waktu nyata (live). Buka consensus.app. Ketik mitos yang populer (misal tentang kopi dan jantung) untuk menunjukkan cara kerjanya.",
-    referenceNote: "<span style="background: white; color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">C</span> Consensus Search Engine."
+    referenceNote: "<span style='background: white; color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;' class='brand-logo-inline'>C</span> Consensus Search Engine."
   },
   {
     id: 26,
@@ -723,7 +723,7 @@ const slideData = [
           </p>
         </div>
         <div class="grid-col">
-          <div style="background: #111; padding: 15px; border-radius: 8px; border: 1px solid #333;">
+          <div style='background: #111; padding: 15px; border-radius: 8px; border: 1px solid #333;'>
             <table style="width:100%; font-size:0.7rem; color: #ccc; border-collapse: collapse;">
               <tr style="border-bottom:1px solid #444;">
                 <th style="padding:5px; text-align:left; color: var(--accent-sky);">Paper Title</th>
@@ -757,9 +757,9 @@ const slideData = [
     layout: "list",
     content: `
       <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 15px;">
-        <p style="font-size: 1.1rem; line-height: 1.6;"><strong><span style="background: #111; color: white; border: 1px solid #333; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">SciSpace</span></strong> memiliki fitur Copilot yang tertanam langsung di penampil PDF.</p>
+        <p style="font-size: 1.1rem; line-height: 1.6;"><strong><span style='background: #111; color: white; border: 1px solid #333; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;' class='brand-logo-inline'>SciSpace</span></strong> memiliki fitur Copilot yang tertanam langsung di penampil PDF.</p>
         
-        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
+        <div style='background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;'>
           <p><i class="fa-solid fa-highlighter" style="color: var(--accent-amber);"></i> <strong>Blok & Jelaskan:</strong> Anda tidak paham sebuah rumus regresi statistik atau paragraf metodologi yang rumit? Blok teks tersebut, dan minta AI SciSpace menjelaskannya dengan <em>"Gunakan bahasa anak SMA (Explain like I'm 5)"</em>.</p>
           <p><i class="fa-solid fa-table-cells" style="color: var(--accent-sky);"></i> <strong>Bedah Tabel (Snip):</strong> Potong area tabel data di jurnal, AI akan membacakan dan menyimpulkan angka-angka tabel tersebut dalam bentuk kalimat (narasi).</p>
           <p><i class="fa-solid fa-language" style="color: var(--accent-emerald);"></i> <strong>Terjemahan Instan Berkonteks Akademik:</strong> Jauh lebih baik dari Google Translate karena mengenali jargon-jargon spesifik ilmu sosial (misal: 'State Apparatus' bukan 'Alat Negara', melainkan 'Aparatur Negara').</p>
@@ -787,7 +787,7 @@ const slideData = [
           </ul>
         </div>
         <div class="grid-col">
-          <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+          <div style='background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;'>
             <i class="fa-solid fa-diagram-project" style="font-size: 4rem; color: var(--accent-emerald); margin-bottom: 15px;"></i>
             <h4 style="color: var(--accent-emerald); margin-bottom: 10px; text-align: center;">Mencegah Plagiasi Tak Disengaja</h4>
             <p style="font-size: 0.85rem; color: var(--text-muted); text-align: center;">Banyak mahasiswa merasa topik risetnya "Novel/Baru", padahal sudah diteliti orang 5 tahun lalu. Alat ini mencegah klaim palsu (*false novelty*).</p>
@@ -808,7 +808,7 @@ const slideData = [
       <div class="slide-layout-standard">
         <p style="font-size:1.1rem; margin-bottom: 1.5rem;">Menggunakan mesin akademis (Consensus/Elicit) butuh ketajaman merumuskan <strong>batasan</strong> (constraints).</p>
         
-        <div style="background: rgba(59, 130, 246, 0.1); border-left: 5px solid var(--accent-blue); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+        <div style='background: rgba(59, 130, 246, 0.1); border-left: 5px solid var(--accent-blue); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;'>
           <h4 style="color: var(--accent-sky); margin-bottom: 0.5rem;">Formula Prompt Standar:</h4>
           <p style="font-family: var(--font-code); font-weight: bold; color: white;">[Topik / Pertanyaan Utama] + [Batas Region/Waktu] + [Syarat Jenis Metodologi]</p>
         </div>
@@ -858,7 +858,7 @@ const slideData = [
           <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-muted);">
             Sistem AI (seperti ChatGPT versi gratis) menggunakan model probabilitas kata. Jika ia tidak tahu jawaban faktualnya, ia cenderung <strong>memalsukan data</strong> agar jawabannya tetap terdengar cerdas dan meyakinkan.
           </p>
-          <div style="background: rgba(244, 63, 94, 0.1); border-left: 3px solid var(--accent-rose); padding: 10px; margin-top: 15px; font-size: 0.85rem;">
+          <div style='background: rgba(244, 63, 94, 0.1); border-left: 3px solid var(--accent-rose); padding: 10px; margin-top: 15px; font-size: 0.85rem;'>
             <strong style="color: #fecdd3;">Contoh Fatal:</strong> AI membuatkan daftar pustaka lengkap dengan Nama Pengarang, Tahun, Judul, dan DOI yang formatnya persis APA Style. Padahal... <strong>JURNAL ITU TIDAK PERNAH DITULIS ATAU TERBIT DI DUNIA NYATA!</strong>
           </div>
         </div>
@@ -884,7 +884,7 @@ const slideData = [
       <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 15px;">
         <p style="font-size: 1.1rem; line-height: 1.6;">Pustakawan UGM merumuskan <strong>Protokol Validasi Tiga Lapis (Triangulasi)</strong> setiap kali Anda menggunakan asisten kecerdasan buatan:</p>
         
-        <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-emerald); border-radius: 8px; padding: 25px; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
+        <div style='background: rgba(16, 185, 129, 0.1); border: 1px solid var(--accent-emerald); border-radius: 8px; padding: 25px; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;'>
           <p><strong>Langkah 1:</strong> Jika AI Generatif memberikan kutipan atau judul jurnal/buku kepada Anda...</p>
           <p><strong style="color: var(--accent-rose);">Langkah 2: JANGAN PERNAH</strong> langsung menyalin (Copy-Paste) judul tersebut ke naskah/daftar pustaka Anda.</p>
           <p><strong>Langkah 3:</strong> <em>Copy</em> judul tersebut secara utuh.</p>
@@ -933,7 +933,7 @@ const slideData = [
       <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 15px;">
         <p style="font-size: 1.1rem; line-height: 1.5; color: var(--accent-sky);"><strong>Misi Anda:</strong> Membuktikan kekuatan Triangulasi Data.</p>
         
-        <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
+        <div style='background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;'>
           <p><strong>Langkah 1:</strong> Buka <a href="https://consensus.app" target="_blank" style="color: var(--accent-sky);">consensus.app</a>. Ketik: <em>"Does universal basic income reduce extreme poverty?"</em>.</p>
           <p><strong>Langkah 2:</strong> Lihat indikator *Consensus Meter*. (Apakah jawabannya bulat setuju atau ada bantahan?).</p>
           <p><strong>Langkah 3:</strong> Pilih 1 judul paper yang paling meyakinkan (misal terbitan tahun 2023/2024). Salin (Copy) judul teks aslinya.</p>
@@ -1011,13 +1011,13 @@ const slideData = [
         </p>
         
         <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-          <div style="background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;">
+          <div style='background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;'>
             <i class="fa-solid fa-envelope" style="color: var(--accent-cyan); margin-right: 8px;"></i> juvitaumarhadinata@ugm.ac.id
           </div>
-          <div style="background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;">
+          <div style='background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;'>
             <i class="fa-solid fa-globe" style="color: var(--accent-emerald); margin-right: 8px;"></i> juvitaumarhadinata.web.ugm.ac.id
           </div>
-          <div style="background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;">
+          <div style='background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 8px; font-size: 0.9rem;'>
             <i class="fa-brands fa-linkedin" style="color: #0a66c2; margin-right: 8px;"></i> Juvita Umar Hadinata
           </div>
         </div>
