@@ -12,7 +12,13 @@ const slideData = [
     layout: "cover",
     content: `
       <div class="header-logos">
-        <img src="https://ugm.ac.id/wp-content/uploads/sites/1671/2024/11/ugm_header.png" class="ugm-logo" alt="UGM Logo">
+        <div style="display: flex; align-items: center; gap: 12px; margin-right: 15px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Logo_UGM.svg" class="ugm-logo" alt="UGM Logo" style="height: 50px; filter: brightness(0) invert(1);">
+          <div style="color: white; font-weight: bold; font-family: 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.1; display:flex; flex-direction: column;">
+            <span>UNIVERSITAS</span>
+            <span>GADJAH MADA</span>
+          </div>
+        </div>
         <div class="digilib-logo" style="display: flex; flex-direction: column; justify-content: center;">
           <div style="color: white; font-weight: 800; font-size: 1.2rem; letter-spacing: 1px;">DIGILIB<span style="color: var(--accent-amber); margin-left: 5px;">FISIPOL</span></div>
           <div style="color: rgba(255,255,255,0.7); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">Fakultas Ilmu Sosial dan Ilmu Politik UGM</div>
@@ -555,12 +561,19 @@ function renderSlide(index) {
     `;
   }
   
+  let slideHeaderHtml = "";
+  if (slide.layout !== "cover" && slide.layout !== "custom-widget") {
+    slideHeaderHtml = `
+      <div class="slide-header">
+        <h2>${slide.title}</h2>
+        ${slide.subtitle ? '<div class="slide-subtitle">' + slide.subtitle + '</div>' : ''}
+      </div>
+    `;
+  }
+  
   wrapper.innerHTML = `
     ${headerHtml}
-    <div class="slide-header">
-      <h2>${slide.title}</h2>
-      ${slide.subtitle ? '<div class="slide-subtitle">' + slide.subtitle + '</div>' : ''}
-    </div>
+    ${slideHeaderHtml}
     <div class="slide-body">${slide.content}</div>
     <div class="slide-footer">
       <span style="font-size:0.7rem;">Juvita Umar Hadinata (FISIPOL UGM)</span>
