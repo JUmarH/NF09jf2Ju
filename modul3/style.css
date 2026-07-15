@@ -1111,3 +1111,44 @@ ul.slide-list.list-bullet li::before {
     margin-right: -100% !important;
   }
 }
+
+/* BRAND LOGOS & UGM IDENTITIES */
+.brand-logo-inline {
+  height: 1.5em;
+  vertical-align: middle;
+  margin-right: 8px;
+  display: inline-block;
+}
+
+.brand-logo-large {
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.header-logos {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  z-index: 100;
+}
+
+.ugm-logo {
+  height: 55px;
+  object-fit: contain;
+}
+
+.digilib-logo {
+  height: 40px;
+  object-fit: contain;
+  border-left: 2px solid rgba(255,255,255,0.2);
+  padding-left: 15px;
+}
+
+.slide-layout-cover {
+  padding-top: 80px;
+}

@@ -12,7 +12,13 @@ const slideData = [
     subtitle: "Modul 1: Akses E-Resources, Open Data, & AI Semantic Search",
     layout: "cover",
     content: `
+      
+      <div class="header-logos">
+        <img src="https://ugm.ac.id/wp-content/uploads/sites/1671/2024/11/ugm_header.png" class="ugm-logo" alt="UGM Logo">
+        <div class="digilib-logo" style="display: flex; flex-direction: column; justify-content: center;"><div style="color: white; font-weight: 800; font-size: 1.2rem; letter-spacing: 1px;">DIGILIB<span style="color: var(--accent-sky); margin-left: 5px;">FISIPOL</span></div><div style="color: rgba(255,255,255,0.7); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">Fakultas Ilmu Sosial dan Ilmu Politik UGM</div></div>
+      </div>
       <div class="slide-layout-cover">
+
         <h1>Etika AI & Penelusuran<br>Semantik Cerdas</h1>
         <p class="subtitle">E-Resources UGM · Open Data Publik · Consensus AI · Semantic Scholar</p>
         <div class="cover-meta" style="margin-bottom: 20px;">
@@ -311,7 +317,7 @@ const slideData = [
               <td>Pusat jurnal ilmu sosial terapan terlengkap.</td>
             </tr>
             <tr>
-              <td style="color: var(--accent-rose); font-weight: bold;">Scopus & Web of Science</td>
+              <td style="color: var(--accent-rose); font-weight: bold;"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Scopus_logo.svg" class="brand-logo-inline" alt="Scopus"> & Web of Science</td>
               <td><em>Bukan untuk mengunduh Full-text.</em> Gunakan murni untuk menambang tren riset dan analisis jejaring bibliometrik.</td>
             </tr>
           </tbody>
@@ -633,7 +639,7 @@ const slideData = [
       <div class="slide-grid-2">
         <div class="grid-col">
           <p style="font-size: 1rem; line-height: 1.6;">
-            Jauh lebih cerdas dari Google Scholar biasa. <strong>Semantic Scholar</strong> didesain khusus untuk ilmuwan agar tidak mabuk membaca abstrak.
+            Jauh lebih cerdas dari Google Scholar biasa. <strong><img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Semantic_Scholar_logo.svg" class="brand-logo-inline" style="background: white; padding: 2px; border-radius: 4px;" alt="Semantic Scholar"> Semantic Scholar</strong> didesain khusus untuk ilmuwan agar tidak mabuk membaca abstrak.
           </p>
           <ul class="slide-list list-bullet" style="font-size: 0.9rem; margin-top: 15px;">
             <li><strong>Fitur TL;DR (Too Long; Didn't Read):</strong> AI secara otomatis meringkas teks abstrak (300 kata) menjadi <strong>satu kalimat kesimpulan padat (20 kata)</strong>.</li>
@@ -659,7 +665,7 @@ const slideData = [
   },
   {
     id: 25,
-    title: "Alat 2: Consensus.app",
+    title: "Alat 2: <span style="background: white; color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">C</span> Consensus",
     subtitle: "Mencari 'Klaim Ilmiah', Bukan Tautan Website",
     layout: "standard",
     content: `
@@ -692,7 +698,7 @@ const slideData = [
     `,
     discussionNote: "Bandingkan Consensus dengan ChatGPT biasa. Consensus akan mengutip paper spesifik untuk mendukung argumen 'Yes' atau 'No', tidak mengarang bebas.",
     speakerNote: "Demo waktu nyata (live). Buka consensus.app. Ketik mitos yang populer (misal tentang kopi dan jantung) untuk menunjukkan cara kerjanya.",
-    referenceNote: "Consensus.app Search Engine."
+    referenceNote: "<span style="background: white; color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">C</span> Consensus Search Engine."
   },
   {
     id: 26,
@@ -745,7 +751,7 @@ const slideData = [
     layout: "list",
     content: `
       <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 15px;">
-        <p style="font-size: 1.1rem; line-height: 1.6;"><strong>SciSpace (Typeset.io)</strong> memiliki fitur Copilot yang tertanam langsung di penampil PDF.</p>
+        <p style="font-size: 1.1rem; line-height: 1.6;"><strong><span style="background: #111; color: white; border: 1px solid #333; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">SciSpace</span></strong> memiliki fitur Copilot yang tertanam langsung di penampil PDF.</p>
         
         <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
           <p><i class="fa-solid fa-highlighter" style="color: var(--accent-amber);"></i> <strong>Blok & Jelaskan:</strong> Anda tidak paham sebuah rumus regresi statistik atau paragraf metodologi yang rumit? Blok teks tersebut, dan minta AI SciSpace menjelaskannya dengan <em>"Gunakan bahasa anak SMA (Explain like I'm 5)"</em>.</p>
@@ -1167,3 +1173,4 @@ function buildSlideDrawer() {
     listContainer.appendChild(item);
   });
 }
+

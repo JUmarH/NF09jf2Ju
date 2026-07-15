@@ -8,12 +8,18 @@ const slideData = [
   {
     id: 1,
     title: "Meningkatkan Kualitas Literature Review dengan Bibliometrik",
-    subtitle: "Scopus · OpenRefine · VOSviewer · AI-Assisted Interpretation",
+    subtitle: "Scopus · <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine · <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer · AI-Assisted Interpretation",
     layout: "cover",
     content: `
+      
+      <div class="header-logos">
+        <img src="https://ugm.ac.id/wp-content/uploads/sites/1671/2024/11/ugm_header.png" class="ugm-logo" alt="UGM Logo">
+        <div class="digilib-logo" style="display: flex; flex-direction: column; justify-content: center;"><div style="color: white; font-weight: 800; font-size: 1.2rem; letter-spacing: 1px;">DIGILIB<span style="color: var(--accent-emerald); margin-left: 5px;">FISIPOL</span></div><div style="color: rgba(255,255,255,0.7); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;">Fakultas Ilmu Sosial dan Ilmu Politik UGM</div></div>
+      </div>
       <div class="slide-layout-cover">
+
         <h1>Meningkatkan Kualitas Literature<br>Review dengan Bibliometrik</h1>
-        <p class="subtitle">Scopus · OpenRefine · VOSviewer · AI-Assisted Interpretation</p>
+        <p class="subtitle">Scopus · <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine · <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer · AI-Assisted Interpretation</p>
         <div class="cover-meta" style="margin-bottom: 20px;">
           <strong>Juvita Umar Hadinata</strong><br>
           Digital Library Staff | Academic Library FISIPOL UGM
@@ -167,11 +173,11 @@ const slideData = [
           </div>
           <div class="search-agenda-item" onclick="jumpToSlide(10)">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <div>Babak 3: <strong>Pembersihan Data OpenRefine</strong> — Mengeliminasi Variasi & Typo</div>
+            <div>Babak 3: <strong>Pembersihan Data <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine</strong> — Mengeliminasi Variasi & Typo</div>
           </div>
           <div class="search-agenda-item" onclick="jumpToSlide(15)">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <div>Babak 4: <strong>Visualisasi Jejaring VOSviewer</strong> — Memetakan Struktur Keilmuan</div>
+            <div>Babak 4: <strong>Visualisasi Jejaring <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer</strong> — Memetakan Struktur Keilmuan</div>
           </div>
           <div class="search-agenda-item" onclick="jumpToSlide(22)">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -180,7 +186,7 @@ const slideData = [
         </div>
       </div>
     `,
-    discussionNote: "Semua sudah menginstal VOSviewer dan OpenRefine di laptop masing-masing? Jika ada kendala instalasi, silakan angkat tangan.",
+    discussionNote: "Semua sudah menginstal <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer dan <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine di laptop masing-masing? Jika ada kendala instalasi, silakan angkat tangan.",
     speakerNote: "Gambarkan alur workshop secara cepat. Peta agenda ini dibuat menyerupai dropdown bar pencarian Google untuk memicu interaksi visual yang menarik bagi audiens.",
     referenceNote: "Standardized Bibliometric Pedagogy Guide, ACRL (2020)."
   },
@@ -298,11 +304,11 @@ const slideData = [
             Scopus membatasi ekspor metadata lengkap sebanyak <strong>2.000 dokumen</strong> per sekali unduh. 
           </p>
           <div style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid var(--accent-amber); padding: 12px; border-radius: 4px; font-size: 0.85rem; color: #fbd38d;">
-            <strong>PENTING:</strong> Saat mengekspor, pastikan mencentang pilihan <strong>"Include references"</strong>. Tanpa ini, analisis co-citation dan bibliometrik coupling di VOSviewer tidak akan bisa dijalankan!
+            <strong>PENTING:</strong> Saat mengekspor, pastikan mencentang pilihan <strong>"Include references"</strong>. Tanpa ini, analisis co-citation dan bibliometrik coupling di <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer tidak akan bisa dijalankan!
           </div>
           <ul class="slide-list list-bullet" style="font-size: 0.85rem; margin-top: 5px;">
             <li><strong>Format:</strong> Selalu pilih file CSV.</li>
-            <li><strong>Bagi Data:</strong> Jika query Anda menghasilkan >2.000 paper, bagi per rentang tahun ekspor lalu satukan kembali di Excel/OpenRefine.</li>
+            <li><strong>Bagi Data:</strong> Jika query Anda menghasilkan >2.000 paper, bagi per rentang tahun ekspor lalu satukan kembali di Excel/<span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine.</li>
           </ul>
         </div>
         <div class="grid-col">
@@ -327,7 +333,7 @@ const slideData = [
         </div>
       </div>
     `,
-    discussionNote: "Pernahkah Anda mencoba mengimpor file ke VOSviewer tapi grafiknya kosong melompong? Hal itu hampir pasti terjadi karena kolom 'Include References' terlewat saat ekspor.",
+    discussionNote: "Pernahkah Anda mencoba mengimpor file ke <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer tapi grafiknya kosong melompong? Hal itu hampir pasti terjadi karena kolom 'Include References' terlewat saat ekspor.",
     speakerNote: "Minta seluruh peserta membuka akun Scopus masing-masing melalui jaringan UGM. Tuntun mereka secara perlahan di layar proyektor untuk mencentang checklist di atas.",
     referenceNote: "Scopus Export Limit Documentation (2025)."
   },
@@ -356,7 +362,7 @@ const slideData = [
   {
     id: 10,
     title: "Mengapa Data Harus Dibersihkan?",
-    subtitle: "Babak 3: Pembersihan Data — OpenRefine | Unduh: <a href='https://openrefine.org' target='_blank' style='color: var(--accent-sky); text-decoration: underline;'>openrefine.org</a>",
+    subtitle: "Babak 3: Pembersihan Data — <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine | Unduh: <a href='https://openrefine.org' target='_blank' style='color: var(--accent-sky); text-decoration: underline;'>openrefine.org</a>",
     layout: "split",
     content: `
       <div class="slide-grid-2">
@@ -395,18 +401,18 @@ const slideData = [
       </div>
     `,
     discussionNote: "Coba bayangkan Anda memetakan riset fakultas kita, dan nama dekan atau dosen senior terpecah menjadi 3 node karena beda singkatan nama tengah. Bagaimana cara mengoreksinya di Excel?",
-    speakerNote: "Jelaskan bahwa mengoreksi manual satu per satu di Excel untuk ribuan baris data adalah siksaan. Itulah mengapa kita membutuhkan OpenRefine yang memiliki clustering otomatis.",
+    speakerNote: "Jelaskan bahwa mengoreksi manual satu per satu di Excel untuk ribuan baris data adalah siksaan. Itulah mengapa kita membutuhkan <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine yang memiliki clustering otomatis.",
     referenceNote: "Van Eck, N. J., & Waltman, L. (2014). 'Visualizing Bibliometric Networks.' Springer."
   },
   {
     id: 11,
-    title: "Mengenal OpenRefine",
+    title: "Mengenal <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine",
     subtitle: "Solusi Cerdas Pengolah Data Tabular",
     layout: "list",
     content: `
       <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 20px;">
         <p style="font-size: 1.1rem; line-height: 1.6;">
-          <strong>OpenRefine</strong> (dahulu Google Refine) adalah alat open-source gratis untuk membersihkan dan mentransformasikan data yang berantakan.
+          <strong><span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine</strong> (dahulu Google Refine) adalah alat open-source gratis untuk membersihkan dan mentransformasikan data yang berantakan.
         </p>
         <div class="stat-card-row">
           <div class="stat-card">
@@ -427,9 +433,9 @@ const slideData = [
         </p>
       </div>
     `,
-    discussionNote: "Apakah ada yang sudah pernah menggunakan OpenRefine sebelumnya? Di perpustakaan, kita juga sering menggunakannya untuk membersihkan katalog buku cetak.",
-    speakerNote: "Jelaskan bahwa OpenRefine sangat ramah privasi karena data riset yang diunggah ke dalamnya tidak akan bocor ke publik, berjalan 100% luring.",
-    referenceNote: "OpenRefine Documentation (2025)."
+    discussionNote: "Apakah ada yang sudah pernah menggunakan <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine sebelumnya? Di perpustakaan, kita juga sering menggunakannya untuk membersihkan katalog buku cetak.",
+    speakerNote: "Jelaskan bahwa <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine sangat ramah privasi karena data riset yang diunggah ke dalamnya tidak akan bocor ke publik, berjalan 100% luring.",
+    referenceNote: "<span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine Documentation (2025)."
   },
   {
     id: 12,
@@ -466,8 +472,8 @@ const slideData = [
       </div>
     `,
     discussionNote: "Buka facet kata kunci pada dataset Anda. Kata kunci terpopuler apa yang paling atas? Dan adakah penulisan kata kunci yang memiliki arti sama namun ejaannya berbeda?",
-    speakerNote: "Pastikan peserta mengerti navigasi antarmuka OpenRefine. Pandu mereka membuka panel facet ini secara langsung.",
-    referenceNote: "Verborgh, R., & De Wilde, M. (2013). 'Using OpenRefine' Book."
+    speakerNote: "Pastikan peserta mengerti navigasi antarmuka <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine. Pandu mereka membuka panel facet ini secara langsung.",
+    referenceNote: "Verborgh, R., & De Wilde, M. (2013). 'Using <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine' Book."
   },
   {
     id: 13,
@@ -503,25 +509,25 @@ const slideData = [
     `,
     discussionNote: "Mengapa pemula disarankan menggunakan Fingerprint terlebih dahulu? Karena metodenya deterministik dan tidak akan menggabungkan kata yang berbeda arti secara acak.",
     speakerNote: "Jelaskan bahwa Key Collision menyatukan perbedaan kapitalisasi dan spasi. Sedangkan Nearest Neighbor membandingkan kemiripan susunan huruf.",
-    referenceNote: "OpenRefine Clustering Algorithms Manual."
+    referenceNote: "<span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine Clustering Algorithms Manual."
   },
   {
     id: 14,
     title: "Teknik 3: Mengekspor CSV Hasil Pembersihan",
-    subtitle: "Menyiapkan Berkas untuk VOSviewer",
+    subtitle: "Menyiapkan Berkas untuk <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer",
     layout: "list",
     content: `
       <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 20px;">
         <p style="font-size: 1.1rem; line-height: 1.6;">
-          Setelah proses pembersihan data selesai dilakukan, ekspor data dalam format yang dipahami VOSviewer:
+          Setelah proses pembersihan data selesai dilakukan, ekspor data dalam format yang dipahami <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer:
         </p>
         <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; display: flex; flex-direction: column; gap: 15px;">
-          <p><i class="fa-solid fa-circle-chevron-right" style="color: var(--accent-sky);"></i> Langkah 1: Klik tombol <strong>Export</strong> di pojok kanan atas OpenRefine.</p>
+          <p><i class="fa-solid fa-circle-chevron-right" style="color: var(--accent-sky);"></i> Langkah 1: Klik tombol <strong>Export</strong> di pojok kanan atas <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine.</p>
           <p><i class="fa-solid fa-circle-chevron-right" style="color: var(--accent-sky);"></i> Langkah 2: Pilih format ekspor: <strong>Comma-separated value (CSV)</strong>.</p>
           <p><i class="fa-solid fa-circle-chevron-right" style="color: var(--accent-sky);"></i> Langkah 3: Beri nama file secara jelas, contoh: <code>skripsi_cleaned_2026.csv</code>.</p>
         </div>
         <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 8px; padding: 12px; font-size: 0.9rem; text-align: center; color: var(--accent-emerald);">
-          ✅ Data yang bersih kini siap menjadi basis peta visualisasi berkualitas tinggi di VOSviewer.
+          ✅ Data yang bersih kini siap menjadi basis peta visualisasi berkualitas tinggi di <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer.
         </div>
       </div>
     `,
@@ -531,34 +537,34 @@ const slideData = [
   },
   {
     id: 15,
-    title: "Mengenal VOSviewer",
-    subtitle: "Babak 4: Visualisasi Jejaring dengan VOSviewer | Unduh: <a href='https://vosviewer.com' target='_blank' style='color: var(--accent-sky); text-decoration: underline;'>vosviewer.com</a>",
+    title: "Mengenal <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer",
+    subtitle: "Babak 4: Visualisasi Jejaring dengan <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer | Unduh: <a href='https://vosviewer.com' target='_blank' style='color: var(--accent-sky); text-decoration: underline;'>vosviewer.com</a>",
     layout: "split",
     content: `
       <div class="slide-grid-2">
         <div class="grid-col">
           <p style="line-height: 1.5; margin-bottom: 8px;">
-            <strong>VOSviewer</strong> adalah perangkat lunak visualisasi analisis bibliometrik paling populer di dunia akademik. 
+            <strong><span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer</strong> adalah perangkat lunak visualisasi analisis bibliometrik paling populer di dunia akademik. 
           </p>
           <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px;">
             Dibangun oleh Nees Jan van Eck dan Ludo Waltman dari Universitas Leiden, software ini sangat tangguh untuk memetakan klaster penelitian.
           </p>
           <div style="background: rgba(245, 158, 11, 0.1); border-left: 4px solid var(--accent-amber); padding: 10px; border-radius: 4px; font-size: 0.75rem; color: #fbd38d; line-height: 1.4;">
-            <strong>Prasyarat Wajib (Java Runtime):</strong> VOSviewer memerlukan mesin <strong>Java Runtime Environment (JRE)</strong> untuk dapat berjalan. Pastikan Java sudah terinstal di komputer Anda sebelum membuka file VOSviewer. Unduh di: <a href="https://www.java.com" target="_blank" style="color: var(--accent-sky); text-decoration: underline;">java.com</a>.
+            <strong>Prasyarat Wajib (Java Runtime):</strong> <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer memerlukan mesin <strong>Java Runtime Environment (JRE)</strong> untuk dapat berjalan. Pastikan Java sudah terinstal di komputer Anda sebelum membuka file <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer. Unduh di: <a href="https://www.java.com" target="_blank" style="color: var(--accent-sky); text-decoration: underline;">java.com</a>.
           </div>
         </div>
         <div class="grid-col" style="text-align: center;">
           <div style="font-size: 4rem; color: var(--accent-sky); font-family: var(--font-title); font-weight: 800; line-height: 1;">14.000+</div>
           <div style="font-size: 1.1rem; color: var(--text-main); font-weight: 600; margin-top: 5px;">Kutipan Karya Ilmiah</div>
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">
-            Paper pengantar VOSviewer dideklarasikan sebagai salah satu paper metodologi riset yang paling sering dikutip di dunia.
+            Paper pengantar <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer dideklarasikan sebagai salah satu paper metodologi riset yang paling sering dikutip di dunia.
           </p>
         </div>
       </div>
     `,
     discussionNote: "Mengapa memvisualisasikan data jejaring ilmiah jauh lebih mudah dipahami oleh pembaca jurnal riset Anda dibandingkan hanya menyajikan tabel baris data?",
-    speakerNote: "Gunakan data kutipan 14.000+ ini untuk menunjukkan legitimasi VOSviewer sebagai software standar yang diakui oleh para reviewer jurnal internasional terkemuka.",
-    referenceNote: "Van Eck, N. J., & Waltman, L. (2010). 'Software survey: VOSviewer.' Scientometrics, 84."
+    speakerNote: "Gunakan data kutipan 14.000+ ini untuk menunjukkan legitimasi <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer sebagai software standar yang diakui oleh para reviewer jurnal internasional terkemuka.",
+    referenceNote: "Van Eck, N. J., & Waltman, L. (2010). 'Software survey: <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer.' Scientometrics, 84."
   },
   {
     id: 16,
@@ -571,16 +577,16 @@ const slideData = [
           Ikuti langkah-langkah navigasi awal berikut pada laptop Anda:
         </p>
         <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--border-color); border-radius: 12px; padding: 25px; display: flex; flex-direction: column; gap: 15px;">
-          <p><strong>1.</strong> Buka VOSviewer → Klik tombol <strong>Create</strong> di bilah navigasi kiri.</p>
+          <p><strong>1.</strong> Buka <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer → Klik tombol <strong>Create</strong> di bilah navigasi kiri.</p>
           <p><strong>2.</strong> Pilih opsi ke-2: <strong>"Create a map based on bibliographic data"</strong>.</p>
-          <p><strong>3.</strong> Pilih tab **Scopus** → Arahkan berkas ke lokasi file CSV hasil bersih OpenRefine Anda.</p>
+          <p><strong>3.</strong> Pilih tab **Scopus** → Arahkan berkas ke lokasi file CSV hasil bersih <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine Anda.</p>
           <p><strong>4.</strong> Klik <strong>Next</strong> untuk menuju ke panel pengaturan tipe analisis.</p>
         </div>
       </div>
     `,
-    discussionNote: "Apakah ada opsi pengimporan data selain Scopus? VOSviewer juga mendukung data mentah dari Web of Science dan PubMed.",
-    speakerNote: "Buka proyektor dan tunjukkan tampilan software VOSviewer secara nyata agar peserta dapat mengikuti instruksi dengan tepat.",
-    referenceNote: "VOSviewer Manual guide (2025)."
+    discussionNote: "Apakah ada opsi pengimporan data selain Scopus? <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer juga mendukung data mentah dari Web of Science dan PubMed.",
+    speakerNote: "Buka proyektor dan tunjukkan tampilan software <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer secara nyata agar peserta dapat mengikuti instruksi dengan tepat.",
+    referenceNote: "<span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer Manual guide (2025)."
   },
   {
     id: 17,
@@ -675,7 +681,7 @@ const slideData = [
     `,
     discussionNote: "Bandingkan kata kunci di ujung-ujung terluar peta Anda yang berwarna kuning. Mengapa topik-topik tersebut relatif jarang disitasi oleh penelitian sebelumnya?",
     speakerNote: "Fokuskan pandangan peserta pada node berwarna kuning (kuning = masa depan riset, biru = masa lalu riset). Cari topik kuning yang masih berada di pinggiran jejaring.",
-    referenceNote: "VOSviewer Overlay mapping system."
+    referenceNote: "<span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer Overlay mapping system."
   },
   {
     id: 20,
@@ -735,7 +741,7 @@ const slideData = [
       <div class="slide-grid-2">
         <div class="grid-col" style="gap: 5px;">
           <p style="line-height: 1.4; font-size: 0.85rem;">
-            Sebelum memformulakan riset baru, bedakan 3 jenis celah (*gap*) riset berikut pada peta VOSviewer Anda:
+            Sebelum memformulakan riset baru, bedakan 3 jenis celah (*gap*) riset berikut pada peta <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer Anda:
           </p>
           <ul class="slide-list list-bullet" style="font-size: 0.8rem; gap: 5px; margin-top: 5px;">
             <li><strong>Void (Celah Kosong):</strong> Absensi total literatur yang menghubungkan dua bidang besar. Pada peta, terlihat sebagai area kosong putih lebar di antara dua klaster padat. Menandakan belum ada jembatan riset sama sekali.</li>
@@ -822,7 +828,7 @@ const slideData = [
             <span class="terminal-dot dot-yellow"></span>
             <span class="terminal-dot dot-green"></span>
           </div>
-          <code id="prompt-template-1">"Saya sedang melakukan analisis bibliometrik VOSviewer untuk topik [MASUKKAN TOPIK UTAMA RISET ANDA]. Dari hasil pemetaan co-occurrence, klaster [MASUKKAN NOMOR/WARNA KLASTER] berisi kata kunci berikut: [SALIN KATA KUNCI DARI VOSVIEWER]. Pertanyaan: 1. Apa tema teoretis utama yang menghubungkan konsep-konsep ini? 2. Teori konseptual apa yang relevan untuk menjelaskannya? 3. Sebutkan 3 artikel ilmiah seminal di area ini."</code>
+          <code id="prompt-template-1">"Saya sedang melakukan analisis bibliometrik <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer untuk topik [MASUKKAN TOPIK UTAMA RISET ANDA]. Dari hasil pemetaan co-occurrence, klaster [MASUKKAN NOMOR/WARNA KLASTER] berisi kata kunci berikut: [SALIN KATA KUNCI DARI VOSVIEWER]. Pertanyaan: 1. Apa tema teoretis utama yang menghubungkan konsep-konsep ini? 2. Teori konseptual apa yang relevan untuk menjelaskannya? 3. Sebutkan 3 artikel ilmiah seminal di area ini."</code>
           <button class="btn-copy" onclick="copyToClipboard('prompt-template-1')"><i class="fa-regular fa-copy"></i> Copy Prompt</button>
         </div>
         <p style="font-size: 0.85rem; color: var(--accent-rose); font-weight: 500;">
@@ -845,7 +851,7 @@ const slideData = [
           <div class="terminal-header">
             <span class="terminal-dot dot-red"></span><span class="terminal-dot dot-yellow"></span><span class="terminal-dot dot-green"></span>
           </div>
-          <code id="prompt-template-2">"Berdasarkan analisis VOSviewer saya untuk klaster [A] bertopik [TEMA A] dan klaster [B] bertopik [TEMA B] yang terpisah secara fisik di peta, rumuskan 3 pertanyaan penelitian kritis yang mengeksplorasi hubungan kedua topik ini dalam konteks [KONTEKS WADAH/LOKAL]."</code>
+          <code id="prompt-template-2">"Berdasarkan analisis <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer saya untuk klaster [A] bertopik [TEMA A] dan klaster [B] bertopik [TEMA B] yang terpisah secara fisik di peta, rumuskan 3 pertanyaan penelitian kritis yang mengeksplorasi hubungan kedua topik ini dalam konteks [KONTEKS WADAH/LOKAL]."</code>
           <button class="btn-copy" onclick="copyToClipboard('prompt-template-2')"><i class="fa-regular fa-copy"></i> Copy Prompt</button>
         </div>
         <div style="font-size: 0.75rem; color: var(--text-muted); display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
@@ -931,7 +937,7 @@ const slideData = [
               <span class="terminal-dot dot-yellow"></span>
               <span class="terminal-dot dot-green"></span>
             </div>
-            <code id="declaration-template" style="color: #93c5fd;">"Dalam proses perumusan research gap dan pertanyaan penelitian, penulis menggunakan analisis bibliometrik VOSviewer dan bantuan model bahasa besar [Sebutkan model, misal: ChatGPT-4o] untuk brainstorming asosiasi teoritis kata kunci. Seluruh referensi yang disarankan telah divalidasi manual di database Scopus oleh penulis."</code>
+            <code id="declaration-template" style="color: #93c5fd;">"Dalam proses perumusan research gap dan pertanyaan penelitian, penulis menggunakan analisis bibliometrik <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer dan bantuan model bahasa besar [Sebutkan model, misal: ChatGPT-4o] untuk brainstorming asosiasi teoritis kata kunci. Seluruh referensi yang disarankan telah divalidasi manual di database Scopus oleh penulis."</code>
             <button class="btn-copy" onclick="copyToClipboard('declaration-template')"><i class="fa-regular fa-copy"></i> Copy</button>
           </div>
         </div>
@@ -961,11 +967,11 @@ const slideData = [
               <td>Merancang formula pencarian data riset terstruktur yang presisi.</td>
             </tr>
             <tr>
-              <td>2. OpenRefine</td>
+              <td>2. <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine</td>
               <td>Membersihkan ribuan kata kunci dan duplikasi nama pengarang secara cepat.</td>
             </tr>
             <tr>
-              <td>3. VOSviewer</td>
+              <td>3. <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer</td>
               <td>Memvisualisasikan network, tren overlay waktu, dan kepadatan hotspot riset.</td>
             </tr>
             <tr>
@@ -990,7 +996,7 @@ const slideData = [
         <div class="grid-col" style="font-size: 0.8rem; gap: 8px;">
           <h4 style="font-family: var(--font-title); color: var(--accent-sky); font-size: 0.95rem;"><i class="fa-solid fa-book"></i> Referensi Metodologis</h4>
           <p>• Donthu, N., Kumar, S., Mukherjee, D.,... & Lim, W. M. (2021). <em>How to conduct a bibliometric analysis: An overview and guidelines</em>. Journal of Business Research, 133, 285-296. (Kutipan Definisi Induk)</p>
-          <p>• Van Eck, N. J., & Waltman, L. (2010). <em>Software survey: VOSviewer, a computer program for bibliometric mapping</em>. Scientometrics, 84(2), 523-538. (Kutipan VOSviewer)</p>
+          <p>• Van Eck, N. J., & Waltman, L. (2010). <em>Software survey: <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer, a computer program for bibliometric mapping</em>. Scientometrics, 84(2), 523-538. (Kutipan <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer)</p>
           <p>• Zupic, I., & Čater, T. (2015). <em>Bibliometric methods in management and organization</em>. Organizational Research Methods, 18(3), 429-472. (Kutipan Co-Citation)</p>
         </div>
         <div class="grid-col" style="font-size: 0.8rem; gap: 8px;">
@@ -1052,7 +1058,7 @@ const slideData = [
 // 2. STATE MANAGEMENT
 let currentSlideIndex = 0;
 
-// Mock node dataset for VOSviewer widgets (Slides 18, 19, 20)
+// Mock node dataset for <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer widgets (Slides 18, 19, 20)
 const vosNodes = [
   { id: 1, label: "Artificial Intelligence", x: 50, y: 55, size: 45, cluster: 1, year: 2021.5, density: 0.9 },
   { id: 2, label: "Higher Education", x: 30, y: 40, size: 35, cluster: 1, year: 2022.0, density: 0.8 },
@@ -1068,7 +1074,7 @@ const vosLines = [
   { from: 3, to: 4 }, { from: 2, to: 6 }, { from: 5, to: 7 }, { from: 2, to: 5 }
 ];
 
-// Color palettes for VOSviewer tabs
+// Color palettes for <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer tabs
 const clusterColors = {
   1: "#3b82f6", // Blue
   2: "#a855f7", // Purple
@@ -1103,8 +1109,8 @@ function renderSlide(index) {
         <nav class="mock-web-nav">
           <button class="mock-web-link ${slide.id <= 5 ? 'active' : ''}" onclick="jumpToSlide(1)">Home</button>
           <button class="mock-web-link ${slide.id > 5 && slide.id <= 9 ? 'active' : ''}" onclick="jumpToSlide(6)">1. Query Scopus</button>
-          <button class="mock-web-link ${slide.id > 9 && slide.id <= 14 ? 'active' : ''}" onclick="jumpToSlide(10)">2. OpenRefine</button>
-          <button class="mock-web-link ${slide.id > 14 && slide.id <= 21 ? 'active' : ''}" onclick="jumpToSlide(15)">3. VOSviewer</button>
+          <button class="mock-web-link ${slide.id > 9 && slide.id <= 14 ? 'active' : ''}" onclick="jumpToSlide(10)">2. <span style="background: #0ea5e9; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">OR</span>OpenRefine</button>
+          <button class="mock-web-link ${slide.id > 14 && slide.id <= 21 ? 'active' : ''}" onclick="jumpToSlide(15)">3. <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer</button>
           <button class="mock-web-link ${slide.id > 21 ? 'active' : ''}" onclick="jumpToSlide(22)">4. AI & Gap</button>
         </nav>
       </header>
@@ -1253,7 +1259,7 @@ function activateWidgets(slideId) {
     });
   }
   
-  // VOSviewer Mock Widgets (Slides 18, 19, 20)
+  // <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer Mock Widgets (Slides 18, 19, 20)
   if (slideId === 18) {
     renderVosMockMap("vos-canvas", "network");
   } else if (slideId === 19) {
@@ -1276,7 +1282,7 @@ function updateQueryBuilderOutput() {
   if (codeBox) codeBox.innerText = query;
 }
 
-// WIDGET 2: VOSviewer Interactive Map
+// WIDGET 2: <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer Interactive Map
 function renderVosMockMap(canvasId, mode) {
   const canvas = document.getElementById(canvasId);
   if (!canvas) return;
@@ -1399,7 +1405,7 @@ function getInterpolatedColor(color1, color2, factor) {
   return `rgb(${r}, ${g}, ${b})`;
 }
 
-// Tab switcher for VOSviewer interactive widget
+// Tab switcher for <span style="background: var(--accent-emerald); color: black; padding: 2px 6px; border-radius: 4px; font-weight: bold; font-family: sans-serif;" class="brand-logo-inline">VOS</span>VOSviewer interactive widget
 function switchVosTab(tabName) {
   if (tabName === "network") {
     currentSlideIndex = 17; // Slide 18 index is 17
@@ -1451,3 +1457,4 @@ function copyToClipboard(elementId) {
     console.error("Gagal menyalin teks: ", err);
   });
 }
+
