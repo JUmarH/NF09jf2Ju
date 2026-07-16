@@ -21,7 +21,6 @@
     <!-- 1. MAIN PRESENTATION AREA -->
     <main id="presentation-area">
       <div id="slide-container">
-        <!-- Slide content will be rendered dynamically here via slides.js -->
         <div id="active-slide-wrapper"></div>
       </div>
       
@@ -29,7 +28,7 @@
       <div id="nav-overlay">
         <div class="nav-control-group">
           <button id="btn-prev" class="nav-btn" title="Slide Sebelumnya (Panah Kiri)"><i class="fa-solid fa-chevron-left"></i></button>
-          <span id="slide-indicator">1 / 28</span>
+          <span id="slide-indicator">1 / ?</span>
           <button id="btn-next" class="nav-btn" title="Slide Selanjutnya (Panah Kanan / Spasi)"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
         
@@ -41,7 +40,7 @@
       </div>
     </main>
     
-    <!-- 2. PRESENTER NOTES PANEL (Toggleable Sidebar) -->
+    <!-- 2. PRESENTER NOTES PANEL -->
     <aside id="presenter-panel" class="hidden">
       <div class="panel-header">
         <h3><i class="fa-solid fa-chalkboard-user"></i> Presenter Hub</h3>
@@ -49,40 +48,32 @@
       </div>
       <div class="panel-content">
         <div class="notes-section">
-          <h4><i class="fa-solid fa-comments"></i> ðŸ’¬ Diskusi Pemantik</h4>
-          <div id="discussion-note-box" class="note-box discussion">
-            <!-- Rendered dynamically -->
-          </div>
+          <h4><i class="fa-solid fa-comments"></i> 💬 Diskusi Pemantik</h4>
+          <div id="discussion-note-box" class="note-box discussion"></div>
         </div>
         <div class="notes-section">
-          <h4><i class="fa-solid fa-microphone"></i> ðŸŽ¤ Catatan Pembicara</h4>
-          <div id="speaker-note-box" class="note-box speaker">
-            <!-- Rendered dynamically -->
-          </div>
+          <h4><i class="fa-solid fa-microphone"></i> 🎤 Catatan Pembicara</h4>
+          <div id="speaker-note-box" class="note-box speaker"></div>
         </div>
         <div class="notes-section">
-          <h4><i class="fa-solid fa-circle-info"></i> ðŸ“Š Data & Referensi</h4>
-          <div id="reference-note-box" class="note-box reference">
-            <!-- Rendered dynamically -->
-          </div>
+          <h4><i class="fa-solid fa-circle-info"></i> 📊 Data & Referensi</h4>
+          <div id="reference-note-box" class="note-box reference"></div>
         </div>
       </div>
     </aside>
 
-    <!-- 3. SLIDE DRAWER (Slide List / Thumbnails Navigation) -->
+    <!-- 3. SLIDE DRAWER -->
     <div id="slide-drawer" class="drawer-hidden">
       <div class="drawer-header">
         <h3>Peta Navigasi Slide</h3>
         <button id="btn-close-drawer" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
       </div>
-      <div id="drawer-list" class="drawer-content">
-        <!-- Rendered dynamically -->
-      </div>
+      <div id="drawer-list" class="drawer-content"></div>
     </div>
     
   </div>
 
-  <!-- Slide Data and Presentation Engine -->
+  <!-- Slide Data and Presentation Engine for Modul 2 -->
   <script src="slides.js"></script>
 </body>
 </html>
