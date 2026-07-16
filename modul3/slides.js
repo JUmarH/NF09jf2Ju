@@ -14,7 +14,6 @@ const slideData = [
       
       <div class="header-logos">
         <div style="display: flex; align-items: center; gap: 12px; margin-right: 15px;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Logo_UGM.svg" class="ugm-logo" alt="UGM Logo" style="height: 50px; filter: brightness(0) invert(1);">
           <div style="color: white; font-weight: bold; font-family: 'Times New Roman', serif; font-size: 1.1rem; line-height: 1.1; display:flex; flex-direction: column;">
             <span>UNIVERSITAS</span>
             <span>GADJAH MADA</span>
@@ -1024,8 +1023,8 @@ const slideData = [
     layout: "custom-widget",
     content: `
       <div class="profile-card-container">
-        <div class="profile-card-photo" style="overflow: hidden; border: 4px solid var(--accent-sky);">
-          <img src="https://github.com/jumarh.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="profile-card-photo" style="overflow: hidden; border: 4px solid var(--accent-sky); text-align: center;">
+          <img src="https://github.com/jumarh.png" alt="Profile" style="max-height: 300px; width: auto; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <i class="fa-solid fa-user-tie" style="display: none; font-size: 5rem; line-height: 200px;"></i>
         </div>
         <div class="profile-card-info">
