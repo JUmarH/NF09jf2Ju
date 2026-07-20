@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handout Modul 3: Analisis Bibliometrik — Digilib FISIPOL UGM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PAGE 1: Cover -->
+    <div class="page page--cover">
+        <div class="badge">📖 HANDOUT MODUL 3</div>
+        <h1 class="title">Analisis <span style="color: gold;">Bibliometrik</span></h1>
+        <p class="subtitle">Cheatsheet Scopus &rarr; OpenRefine &rarr; VOSviewer &rarr; AI Gap Detection</p>
+        <div class="footer">PERPUSTAKAAN FISIPOL UGM &bull; 2026</div>
+    </div>
+
+    <!-- PAGE 2: Pipeline Overview -->
+    <div class="page page--content">
+        <div class="top-bar">DIGILIB FISIPOL UGM | 2/4</div>
+        <div class="section-label">ALUR KERJA</div>
+        <h2 class="section-heading">Pipeline Bibliometrik</h2>
+        
+        <div class="flow-component">
+            <div class="flow-node">
+                <span class="icon">🔍</span>
+                <span class="label">Query Scopus</span>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-node">
+                <span class="icon">🧹</span>
+                <span class="label">Bersihkan Data</span>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-node">
+                <span class="icon">🗺️</span>
+                <span class="label">Mapping Jaringan</span>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-node">
+                <span class="icon">🤖</span>
+                <span class="label">Deteksi Gap</span>
+            </div>
+        </div>
+
+        <div class="step-cards">
+            <div class="step-card">
+                <h3>1. Scopus Query</h3>
+                <p>Rancang query kompleks, ekspor maks 2.000 data/batch (CSV)</p>
+            </div>
+            <div class="step-card">
+                <h3>2. OpenRefine</h3>
+                <p>Cluster &amp; Merge variasi ejaan kata kunci sejenis</p>
+            </div>
+            <div class="step-card">
+                <h3>3. VOSviewer</h3>
+                <p>Import CSV, analisis Co-occurrence, Co-authorship, Citation</p>
+            </div>
+            <div class="step-card">
+                <h3>4. AI Gap Detection</h3>
+                <p>Prompt engineering untuk analisis klaster VOSviewer</p>
+            </div>
+        </div>
+        
+        <div class="bottom-bar"></div>
+    </div>
+
+    <!-- PAGE 3: VOSviewer 3 Visualisasi Kunci -->
+    <div class="page page--content-dark">
+        <div class="top-bar top-bar--dark">DIGILIB FISIPOL UGM | 3/4</div>
+        <h2 class="section-heading">3 Visualisasi VOSviewer</h2>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <span class="icon" style="color: blue;">🕸️</span>
+                <h3>Network View</h3>
+                <p>Melihat klaster topik, hubungan antar-kata kunci, dan kolaborasi penulis</p>
+            </div>
+            <div class="info-card">
+                <span class="icon" style="color: green;">📅</span>
+                <h3>Overlay View</h3>
+                <p>Menampilkan tren waktu: topik lama vs. topik terkini berdasarkan warna</p>
+            </div>
+        </div>
+        <div style="margin-top: 1rem;">
+            <div class="info-card info-card--full-width">
+                <span class="icon" style="color: orange;">🔥</span>
+                <h3>Density View</h3>
+                <p>Mengidentifikasi hotspot topik penelitian populer berdasarkan kepadatan</p>
+            </div>
+        </div>
+
+        <div class="callout callout--warning callout--dark" style="margin-top: 1.5rem;">
+            <p>VOSviewer memberi peta statistik. Manusia tetap memegang kendali analisis substantif. Hindari utang kognitif!</p>
+        </div>
+
+        <div class="bottom-bar bottom-bar--dark"></div>
+    </div>
+
+    <!-- PAGE 4: Closing -->
+    <div class="page page--closing">
+        <div class="icon-large" style="font-size: 4rem;">📊</div>
+        <h1 class="title">Pemetaan Riset <span style="color: gold;">Berbasis Data</span></h1>
+        <p class="desc">Dari metadata mentah ke peta keilmuan. Bibliometrik adalah senjata peneliti modern untuk menemukan celah riset yang belum terjamah.</p>
+        <div class="contact" style="margin-top: 2rem;">Perpustakaan FISIPOL UGM &mdash; digilib.fisipol.ugm.ac.id</div>
+    </div>
+
+</body>
+</html>
